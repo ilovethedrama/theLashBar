@@ -29,7 +29,9 @@
                 <span id='lashTitle3' class='title--small title--neat2 title--uppercase title--spaceOut font--weight--thin'>Bar </span> 
             </h1>
         </nav>
-        <main role='main'>
+        <main role='main' class=''>
+        <!-- <main role='main' class='wrapper'> -->
+        <!-- <main role='main' class='section parallax bg1'> -->
             <aside class="navMini navPointer">
                 <div class=' '>
                     <span class='navPointer--item title--neat2'><a href="#location">O</a> </span>
@@ -54,21 +56,39 @@
                         <input class='title--xs title--uppercase  widthMod300 form__button--submit title--padding--mini' type="submit" value="Next">
                         <!-- <input  class='title--xs title--uppercase' type="submit" value="Submit"> -->
                     </fieldset>
+                    <fieldset class=" item--rails contentContainer title--padding">
+                        <label class=' contentContainer--collapseA' for="treatment">Treatment :<span class='item--red icon-cancel-circle'></span></label>
+                        <input class=' form__button--text' type="text" name="treatment" id="" pattern=[a-zA-Z]{2,30} required placeholder="" autofocus='true'>
+                        <label class='contentContainer--collapseA' for="allergies">Allergies :<span class="item--green icon-tick"></span></label>
+                        <input class='form__button--text' type="text" name="allergies" id="" pattern=[a-zA-Z]{2,30} required placeholder="">
+                        <label class='contentContainer--collapseA' for="phoneNumber">Time :<span class="item--green icon-tick"></span></label>
+                        <input class='form__button--text' type="time" step="1800" name="time" id="" pattern=^(07)[0-9]{9} required placeholder="">
+                        <!-- <label class='contentContainer--collapseA' for="date">Date :<span class="item--green icon-tick"></span></label>
+                        <input type="datetime-local" name="date" id="" placeholder="" required> -->
+                        <label class='contentContainer--collapseA' for="date">Date :<span class="item--green icon-tick"></span></label>
+                        <input class='form__button--text' type="date" name="date" id="" placeholder="" required>
+    
+                        <input class='title--xs title--uppercase  widthMod300 form__button--submit title--padding--mini' type="submit" value="Next">
+                        <!-- <input  class='title--xs title--uppercase' type="submit" value="Submit"> -->
+                    </fieldset>
                 </form>
                 <div class='sellbox--inner close--CB item--pointer' id='itemClose' >
                     <h3 class='title--xs title--uppercase form__button--submit font--weight--thin title--neat title--padding--mini'>Close</h3>
                 </div>
             </section>
 
-            <!-- <section >
+            <!-- <section class=' parallaxTry3'> -->
+            <!-- <section class='section parallax bg1'> -->
+            <!-- <section class='section static'> -->
+            <section class=''>
                 <article role='article' class='contentContainer'>
                     <aside class='textPanel text-overlap title--lg title--fancy'>
                         <h1 id=''>Nails</h1>
                     </aside>
-                    <img id='' class='img--screenHg img--fade' src="../Media/nails1.jpg" alt="image of manicured nails held close to a woman's face">
+                    <img id='' class=' img--screenHg img--fade' src="../Media/nails1.jpg" alt="image of manicured nails held close to a woman's face">
                 </article>
             </section>
-            <section>
+            <!-- <section>
                 <article role='article' class='contentContainer'>
                     <aside class='textPanel text-overlap title--lg title--fancy'>
                         <h1>Brows</h1>
@@ -85,11 +105,12 @@
                 </article>
             </section> -->
             <section class='' id='location'>
-                    <article role='article' class='height700 section--lightblue contentContainer--oneMiddle article--outer '>
+            <!-- <section class='section static' id='location'> -->
+                    <article role='article' class=' height700 section--lightblue contentContainer--oneMiddle article--outer '>
               
     
                       
-                        <div class="sellBox footer contentContainer--onTop contentContainer__sideByside sellbox--inner bc ">
+                        <div class=" sellBox footer contentContainer--onTop contentContainer__sideByside sellbox--inner bc ">
 
                             <div class="sellBox title title--padding title--md title--neat2a title--uppercase">
                                 <h1 class='' >Locations</h1>
@@ -156,23 +177,22 @@
                             </div> -->
                         </aside>
 
-                        <section id='social' class='contentContainer--spreadOutWide title--padding'>
+                        <!-- <section id='social' class='contentContainer--spreadOutWide title--padding'>
                                 <article class='img--stretch'>
                                     <div class='contentContainer--spreadOutWide '>
-                                        <!-- <div class="">
+                                        <div class="">
                                             <a class="twitter-timeline sellBox__img--small" data-lang="en" data-height="300" href="https://twitter.com/TheLashBarSheff?ref_src=twsrc%5Etfw">Tweets by TheLashBarSheff</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
-                                        </div> -->
+                                        </div>
                                         <div class="contentContainer--spreadOutWide">
                                             <div class="sellBox item--snap--small"><img class='sellBox__img--small img--padding--sm' src="../Media/flower.jpg" alt=""></div>
                                             <div class="sellBox item--snap--small"><img class='sellBox__img--small img--padding--sm' src="../Media/eye4.jpg" alt=""></div>
                                             <div class="sellBox item--snap--small"><img class='sellBox__img--small img--padding--sm' src="../Media/hair3.jpg" alt=""></div>
                                             <div class="sellBox item--snap--small"><img class='sellBox__img--small img--padding--sm' src="../Media/mouth2.jpg" alt=""></div>
-                                            <!-- <div class="sellBox item--snap--small"><img class='sellBox__img--small img--padding--sm' src="../Media/art1.jpg" alt=""></div> -->
-                                            <!-- <div class="sellBox item--snap--small"><img class='sellBox__img--small img--padding--sm' src="../Media/nail2.jpg" alt=""></div> -->
                                         </div>
                                     </div>
                                 </article>
-                            </section>
+                            </section> -->
+
 
                         <aside class='sellBox sellBox--bdr--topR'>                       
                             <img class='sellBox__img' src="../Media/brow2.jpg" alt="">
@@ -187,6 +207,28 @@
                             </div> -->
                         </aside>
                     </div>
+                </article>
+            </section>
+
+            <section id='social' class='section--lightgrey contentContainer--spreadOutWide title--padding'>
+                <article class='img--stretch'>
+                    <div class='contentContainer--spreadOutWide'>
+                        <div class="contentContainer--spreadOutWide">
+                            <div class="sellBox item--snap--small"><img class='sellBox__img--small img--padding--sm' src="../Media/flower.jpg" alt=""></div>
+                            <div class="sellBox item--snap--small"><img class='sellBox__img--small img--padding--sm' src="../Media/eye4.jpg" alt=""></div>
+                            <div class="sellBox item--snap--small"><img class='sellBox__img--small img--padding--sm' src="../Media/hair3.jpg" alt=""></div>
+                            <div class="sellBox item--snap--small"><img class='sellBox__img--small img--padding--sm' src="../Media/mouth2.jpg" alt=""></div>
+                        </div>
+                    </div>
+                </article>
+            </section>
+            <section class='section parallax bg2'>
+                <!-- <article class=' parallaxTry2'>  -->
+                <article > 
+                    <!-- <img class='item--showDaBlock' src="../Media/nail3.jpg" alt=""> -->
+                    <aside class='textPanel text-overlap title--lg title--fancy'>
+                            <h1 id=''>Nails</h1>
+                        </aside>
                 </article>
             </section>
             <section >
@@ -244,11 +286,13 @@
                     </article>
                 </section>
 
-            <section>
-                <article role='article'>
-                    
+            <!-- <section>
+                <article role='article' class='parallaxTry'>
+                        <aside class='textPanel text-overlap title--lg title--fancy'>
+                                <h1 id=''>Nails</h1>
+                            </aside>
                 </article>
-            </section>
+            </section> -->
             <section id='blogPost'>
                 <article role='article' class='sideBySide '>
                     <aside>
@@ -259,7 +303,7 @@
                             <span class='title title--small title--fancy title--uppercase'>More</span> 
                             <span class='title title--xl'>Lash</span>
                             <div class='title title__details'>
-                                <h5 class='title title__caption title--fancy'>More words here blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah</h5>
+                                <h5 class='title--uppercase title--xs title--neat2a'>More words here blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah</h5>
                             </div>
                         </div>     
 

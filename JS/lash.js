@@ -1,5 +1,3 @@
-
-
 var acc = document.getElementsByClassName("footer__title");
 var i;
 
@@ -25,7 +23,7 @@ window.onscroll = function() {
   scrollFunction()};
 
 function scrollFunction() {
-  if (document.body.scrollTop > 80 || document.documentElement.scrollTop > 80) {
+  if (document.body.scrollTop > 30 || document.documentElement.scrollTop > 30) {
     document.getElementById("lashTitle1").style.fontSize = "1rem";
     document.getElementById("lashTitle2").style.fontSize = "3.5rem";
     document.getElementById("lashTitle3").style.fontSize = "1rem";
