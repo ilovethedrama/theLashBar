@@ -1,0 +1,33 @@
+<% include ./partials/header %>
+
+            <section class="bookingForm item--hide" id='bookingForm'>
+                <form action="POST" class="item--bottom item--H100pc title--padding--mini contentContainer title--neat2 title--uppercase title--xs ">
+                    <fieldset class=" item--rails contentContainer title--padding">
+                        <label class=' contentContainer--collapseA' for="firstName">First Name :<span class='item--red icon-cancel-circle'></span></label>
+                        <input class=' form__button--text' type="text" name="firstName" id="" pattern=[a-zA-Z]{2,30} required placeholder="" autofocus='true'>
+                        <label class='contentContainer--collapseA' for="lastName">Last Name :<span class="item--green icon-tick"></span></label>
+                        <input class='form__button--text' type="text" name="lastName" id="" pattern=[a-zA-Z]{2,30} required placeholder="">
+                        <label class='contentContainer--collapseA' for="phoneNumber">Mobile Number :<span class="item--green icon-tick"></span></label>
+                        <input class='form__button--text' type="tel" name="phoneNumber" id="" pattern=^(07)[0-9]{9} required placeholder="">
+                        <label class='contentContainer--collapseA' for="email">Email :<span class="item--green icon-tick"></span></label>
+                        <input class='form__button--text' type="email" name="email" id="" placeholder="" required>
+                        <input class='title--xs title--uppercase  widthMod300 form__button--submit title--padding--mini' type="submit" value="Next">
+                    </fieldset>
+                    <fieldset class=" item--rails contentContainer title--padding">
+                        <label class=' contentContainer--collapseA' for="treatment">Treatment :<span class='item--red icon-cancel-circle'></span></label>
+                        <input class=' form__button--text' type="text" name="treatment" id="" pattern=[a-zA-Z]{2,30} required placeholder="" autofocus='true'>
+                        <label class='contentContainer--collapseA' for="allergies">Allergies :<span class="item--green icon-tick"></span></label>
+                        <input class='form__button--text' type="text" name="allergies" id="" pattern=[a-zA-Z]{2,30} required placeholder="">
+                        <label class='contentContainer--collapseA' for="phoneNumber">Time :<span class="item--green icon-tick"></span></label>
+                        <input class='form__button--text' type="time" step="1800" name="time" id="" pattern=^(07)[0-9]{9} required placeholder="">
+                        <label class='contentContainer--collapseA' for="date">Date :<span class="item--green icon-tick"></span></label>
+                        <input class='form__button--text' type="date" name="date" id="" placeholder="" required>
+                        <input class='title--xs title--uppercase  widthMod300 form__button--submit title--padding--mini' type="submit" value="Next">
+                    </fieldset>
+                </form>
+                <div class='sellbox--inner close--CB item--pointer' id='itemClose' >
+                    <h3 class='title--xs title--uppercase form__button--submit font--weight--thin title--neat title--padding--mini'>Close</h3>
+                </div>
+            </section>
+
+<% include ./partials/footer %>
