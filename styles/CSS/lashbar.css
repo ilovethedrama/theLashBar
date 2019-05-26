@@ -222,14 +222,16 @@ ul {
 .navPointer--item a {
   color: blanchedalmond; }
 
-.navPointer--item a:active, .navPointer--item a:hover {
+.navPointer--item a:active,
+.navPointer--item a:hover {
   color: maroon; }
 
 .item--noborder {
   border: none; }
 
 .navMini {
-  z-index: 5; }
+  z-index: 5;
+  color: blanchedalmond; }
 
 .bookingForm {
   position: fixed;
@@ -293,7 +295,6 @@ ul {
   border-right: 3px solid blanchedalmond; }
 
 a {
-  color: blanchedalmond;
   text-decoration: none; }
 
 article {
@@ -577,12 +578,9 @@ img {
   background: lightblue;
   text-align: center; }
 
-.footer__title:hover, .active {
+.footer__title:hover,
+.active {
   background: blanchedalmond; }
-
-form {
-  width: 3500px;
-  overflow-x: hidden; }
 
 .footer__title {
   cursor: pointer;

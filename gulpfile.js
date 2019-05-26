@@ -1,9 +1,17 @@
-const { watch, series, parallel, src, dest, gulp } = require('gulp');
+const {
+  watch,
+  series,
+  parallel,
+  src,
+  dest,
+  gulp
+} = require('gulp');
 
 // var { gulp, series, dest }    = require('gulp'),
-var sass    = require('gulp-sass'),
-    open    = require('gulp-open'),
-    connect = require('gulp-connect');
+
+// var sass    = require('gulp-sass'),
+//     open    = require('gulp-open'),
+//     connect = require('gulp-connect');
 
 // gulp.task('micCheck', function(fin) {
 //     console.log(
@@ -26,28 +34,30 @@ var sass    = require('gulp-sass'),
 
 // Launch Chrome web browser
 // https://www.npmjs.com/package/gulp-open
-function openBrowser(done) {
-    var options = {
-      uri: 'http://localhost:8080'
-    };
-    return src('./')
-    .pipe(open(options));
-    done();
-  }
-  
-  // Gulp plugin to run a webserver (with LiveReload)
-  // https://www.npmjs.com/package/gulp-connect
-  function server(done) {
-    return connect.server({
-      root: './',
-      port: 8080,
-      debug: true,
-    });
-    done();
-  }
-  
-  // Default Gulp command
-  exports.default = series(openBrowser, server);
+
+// function openBrowser(done) {
+//     var options = {
+//       uri: 'http://localhost:8080'
+//     };
+//     return src('./')
+//     .pipe(open(options));
+//     done();
+//   }
+
+// Gulp plugin to run a webserver (with LiveReload)
+// https://www.npmjs.com/package/gulp-connect
+
+// function server(done) {
+//   return connect.server({
+//     root: './',
+//     port: 8080,
+//     debug: true,
+//   });
+//   done();
+// }
+
+// Default Gulp command
+// exports.default = series(openBrowser, server);
 
 // the (old) way to watch a file in gulp 3.0 Version 4 is above ^^
 // gulp.watch('styles/scss/*.+(scss|sass)', ['sass']); 

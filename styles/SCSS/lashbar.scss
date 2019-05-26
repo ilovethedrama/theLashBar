@@ -1,11 +1,11 @@
 // Block: The outermost parent element of the component is defined as the block.
 // Element: Inside of the component may be one or more children called elements.
 // Modifier: Either a block or element may have a variation signified by a modifier.
-       
+
 /* Block component */
 // .btn {}
 
-/* Element that depends upon the block */ 
+/* Element that depends upon the block */
 // .btn__price {}
 
 /* Modifier that changes the style of the block */
@@ -21,28 +21,29 @@
 // font-family: 'Elsie', cursive;
 
 * {
-    padding:0;
-    margin:0;
+    padding: 0;
+    margin: 0;
     box-sizing: border-box;
     font-weight: normal;
 }
 
 html {
     scroll-behavior: smooth;
-    overflow-y: scroll;
+    // overflow: scroll;
+    // overflow: hidden;
 }
 
 ul {
     list-style-type: none;
 }
-    
+
 
 .title {
     font-family: 'Caveat Brush', cursive;
 }
 
 .title--blanchedA {
-    color:blanchedalmond;
+    color: blanchedalmond;
 }
 
 
@@ -59,31 +60,31 @@ ul {
 }
 
 .title--lg {
-    font-size: 15rem;
-    display:block;
+    font-size: 15em;
+    display: block;
     line-height: 150px;
 }
 
 .title--xl {
-    font-size: 20rem;
-    display:block;
+    font-size: 20em;
+    display: block;
     line-height: 150px;
 }
 
 .title--md {
-    display:block;
-    font-size: 7rem;
-    padding:10px;
+    display: block;
+    font-size: 7em;
+    padding: 10px;
 }
 
 .title--small {
-    display:block;
-    font-size: 2rem;
+    display: block;
+    font-size: 2em;
 }
 
 .title--xs {
-    display:block;
-    font-size: 1rem;
+    display: block;
+    font-size: 1em;
 }
 
 .textPanel {
@@ -92,7 +93,7 @@ ul {
 }
 
 .title__caption {
-    font-size: 1.5rem;
+    font-size: 1.5em;
 }
 
 .title__details {
@@ -105,24 +106,26 @@ ul {
 .title--fancy {
     font-family: 'Caveat', cursive;
 }
+
 .title--fancy2 {
-     font-family: 'Caveat Brush', cursive;
+    font-family: 'Caveat Brush', cursive;
 }
 
 .title--neat {
-font-family: 'Nova Round', cursive;
-// font-family: 'Fjalla One', sans-serif;
-// font-family: 'Teko', sans-serif;
-// font-family: 'Niramit', sans-serif;
+    font-family: 'Nova Round', cursive;
+    // font-family: 'Fjalla One', sans-serif;
+    // font-family: 'Teko', sans-serif;
+    // font-family: 'Niramit', sans-serif;
 }
 
 .title--neat2 {
-    font-family:'Josefin Sans', sans-serif;
-    font-weight:700;
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight: 700;
 }
+
 .title--neat2a {
-    font-family:'Josefin Sans', sans-serif;
-    font-weight:300;
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight: 300;
 }
 
 .title--uppercase {
@@ -130,11 +133,11 @@ font-family: 'Nova Round', cursive;
 }
 
 .title--vacuumSeal {
-    height:110px;
+    height: 110px;
 }
 
 .title--border {
-    border: 2px solid rgba(0,0,0,1);
+    border: 2px solid rgba(0, 0, 0, 1);
     // padding: 0px 30px;
     margin: 0px 10px;
 }
@@ -144,21 +147,21 @@ font-family: 'Nova Round', cursive;
 }
 
 .title--padding {
-    padding:30px;
+    padding: 30px;
 }
 
 .title--padding--mini {
-    padding:10px;
+    padding: 10px;
 }
 
 .title--blush {
-    color:pink;
+    color: pink;
     text-shadow: 1px 1px 2px red, 0 0 4em pink, 0 0 0.2em pink;
     z-index: 20;
 }
 
 .text--middleLeft {
-    display:flex;
+    display: flex;
     justify-content: left;
     align-content: center;
 }
@@ -174,15 +177,15 @@ font-family: 'Nova Round', cursive;
     display: block;
 }
 
-.img--fade--stronger{
+.img--fade--stronger {
     opacity: .15;
 }
 
 
 .img--screenHg {
-    height:100vh;
+    height: 100vh;
     object-fit: cover;
-    display:block;
+    display: block;
 }
 
 .contentBorder {
@@ -190,8 +193,8 @@ font-family: 'Nova Round', cursive;
 }
 
 .contentContainer--topToBtm {
-    display:flex;
-    flex-flow:column wrap;
+    display: flex;
+    flex-flow: column wrap;
 }
 
 .contentContainer--pale {
@@ -203,15 +206,50 @@ font-family: 'Nova Round', cursive;
     position: relative;
 }
 
+.parallaxTry {
+    /* The image used */
+    background-image: url("/Media/nails1.jpg");
 
-#n1 {
-    position: absolute;
+    /* Full height */
+    height: 900px;
+
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
-.n2 {
-    position: absolute;
+.parallaxTry2 {
+    /* The image used */
+    background-image: url("/Media/nail3.jpg");
 
+    /* Full height */
+    height: 900px;
+
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
+
+.parallaxTry3 {
+    /* The image used */
+    background-image: url("/Media/hair5.jpg");
+
+    /* Full height */
+    height: 900px;
+
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+
 
 .priceList__category {
     li {
@@ -221,10 +259,11 @@ font-family: 'Nova Round', cursive;
 
 .priceList__ColorBlock--pink {
     background: blanchedalmond;
-    height:20px;
-    width:10px;
+    height: 20px;
+    width: 10px;
+
     ::after {
-        content:'beep';
+        content: 'beep';
     }
 }
 
@@ -232,11 +271,9 @@ font-family: 'Nova Round', cursive;
 .sellBox {
     text-align: center;
     overflow: hidden;
-    // margin:15px;
 }
 
 .sellBox--bdr--topL {
-    // padding: 30px;
     border-left: 100px solid blanchedalmond;
     border-top: 50px solid blanchedalmond;
 }
@@ -254,7 +291,7 @@ font-family: 'Nova Round', cursive;
 
 
 .sellBox--bdr--bottom {
-    border-bottom: 25px solid blanchedalmond; 
+    border-bottom: 25px solid blanchedalmond;
 }
 
 
@@ -275,96 +312,104 @@ font-family: 'Nova Round', cursive;
     text-align: center;
     font-size: 2rem;
 }
+
 .navPointer--item a {
     color: blanchedalmond;
 }
 
-.navPointer--item a:active, .navPointer--item a:hover {
+.navPointer--item a:active,
+.navPointer--item a:hover {
     color: maroon;
 }
 
 
 .item--noborder {
-    border:none;
+    border: none;
 }
 
+
 .navMini {
-    z-index:5;
+    z-index: 5;
+    color: blanchedalmond;
 }
 
 .bookingForm {
     position: fixed;
-    z-index:6;
-    width:100vw;
-    height:100vh;
-    bottom:0;
-    left:0;
+    z-index: 6;
+    width: 100vw;
+    height: 100vh;
+    bottom: 0;
+    left: 0;
     // color: #000;
-    background:white;
+    background: white;
     text-align: center;
+
     label {
-        padding:10px;
-        width:100%;
-        
+        padding: 10px;
+        width: 100%;
+
     }
 }
 
 .form__button--text {
     text-align: left;
-    padding:5px;
+    padding: 5px;
     margin-bottom: 40px;
     width: 300px;
     border-top: none;
     border-left: none;
-    border-right:none;
+    border-right: none;
     outline-color: none;
     border-bottom: 2px blanchedalmond solid;
     text-transform: uppercase;
+
     // :active {
-        //     background: lightblue;
-        // }
-        // :after {
-            //     content:'Tick';
-            //     color: green;
-            // }
-            // :hover {
-                //     background:lightblue;
-                //     color:lightblue;
-                // }
-                :valid {
-                    color:green;
-                }
-                :invalid {
-                    color:red;
-                }
-            }
-            
-    
-            .form__button--text:valid {
-                color:green;
-                font-weight: 900;
-            }
-            .form__button--text:invalid {
-                font-weight: 900;
-                color:maroon;
-            }
+    //     background: lightblue;
+    // }
+    // :after {
+    //     content:'Tick';
+    //     color: green;
+    // }
+    // :hover {
+    //     background:lightblue;
+    //     color:lightblue;
+    // }
+    :valid {
+        color: green;
+    }
+
+    :invalid {
+        color: red;
+    }
+}
 
 
-            .form__button--submit {
-                // input[type=submit] {
-                    border: none;
-                    // border-radius: 10px;
-                    text-align: center;
+.form__button--text:valid {
+    color: green;
+    font-weight: 900;
+}
+
+.form__button--text:invalid {
+    font-weight: 900;
+    color: maroon;
+}
+
+
+.form__button--submit {
+    // input[type=submit] {
+    border: none;
+    // border-radius: 10px;
+    text-align: center;
     margin-bottom: 0px;
-    color:blanchedalmond;
+    color: blanchedalmond;
     background: lightblue;
 }
 
-.form__button--submit:hover{
+.form__button--submit:hover {
     // input[type=submit]:hover {
-        transition: .5s ease-out;
-        background: blanchedalmond;
-        color:maroon;
+    transition: .5s ease-out;
+    background: blanchedalmond;
+    color: maroon;
 }
 
 
@@ -374,7 +419,7 @@ font-family: 'Nova Round', cursive;
 }
 
 .item--H100pc {
-    height:100%;
+    height: 100%;
 }
 
 .item--rails {
@@ -383,9 +428,8 @@ font-family: 'Nova Round', cursive;
     border-bottom: none;
     border-right: 3px solid blanchedalmond;
 }
- 
+
 a {
-    color: blanchedalmond;
     text-decoration: none;
 }
 
@@ -402,19 +446,19 @@ article {
 }
 
 .footer {
-    height:auto;
+    height: auto;
     overflow: hidden;
     width: 100%;
 }
 
 .img--stretch {
-    width:100%;
+    width: 100%;
     height: 500px;
 }
 
 .item--sticky {
-    top:-70px;
-    position:sticky;
+    top: -70px;
+    position: sticky;
 }
 
 .item--snap--5Hunna {
@@ -422,27 +466,27 @@ article {
 }
 
 .height700 {
-    min-height:700px;   
+    min-height: 700px;
 }
 
 .img--largefill {
     // object-position: -100px -250px;
-    height:100%;
-    width:100%;
+    height: 100%;
+    width: 100%;
     object-fit: cover;
     transform: scale(1.4);
 }
 
 .item--green {
-    color:green;
+    color: green;
 }
 
 .item--red {
-    color:red;
+    color: red;
 }
 
 .item--hide {
-    display:none;
+    display: none;
 }
 
 .item--showDaBlock {
@@ -453,11 +497,11 @@ article {
     width: 100%;
     position: fixed;
     z-index: 10;
-    top:44px;
+    top: 44px;
     padding: 10px;
     overflow: hidden;
-    background:white;
-    box-shadow: 3px 4px 14px 1px rgba(0,0,0,0.67);
+    background: white;
+    box-shadow: 3px 4px 14px 1px rgba(0, 0, 0, 0.67);
     transition: 4s;
 }
 
@@ -470,16 +514,16 @@ article {
     z-index: 10;
     padding: 10px;
     overflow: hidden;
-    background:blanchedalmond;
+    background: blanchedalmond;
 }
 
 
 
 body {
     position: relative;
-    height:auto;
+    height: auto;
+    font-size: 16px;
 }
-
 
 // main {
 //     // margin-top: 150px;
@@ -489,6 +533,52 @@ section {
     max-width: 100vw;
     overflow: hidden;
     position: relative;
+
+    //       /* Needed for children to be absolutely positioned relative to the parent. */
+    //   position: relative;
+    //   /* The height of the container. Must be set, but it doesn't really matter what the value is. */
+    //   height: 100vh;
+
+    //   /* For text formatting. */
+    //   display: flex;
+    //   align-items: center;
+    //   justify-content: center;
+}
+
+
+
+
+.parallax::after {
+    /* Display and position the pseudo-element */
+    content: " ";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+
+    /* Move the pseudo-element back away from the camera,
+     * then scale it back up to fill the viewport.
+     * Because the pseudo-element is further away, it appears to move more slowly, like in real life. */
+    transform: translateZ(-1px) scale(1.5);
+    /* Force the background image to fill the whole element. */
+    background-size: 100%;
+    /* Keep the image from overlapping sibling elements. */
+    z-index: -1;
+}
+
+/* The styling for the static div. */
+.static {
+    background: red;
+}
+
+/* Sets the actual background images to adorable kitties. This part is crucial. */
+.bg1::after {
+    background-image: url(/Media/nail3.jpg);
+}
+
+.bg2::after {
+    background-image: url(/Media/hair5.jpg);
 }
 
 .section--screenHg {
@@ -501,7 +591,7 @@ section {
 
 .text-overlap {
     position: absolute;
-    right:0;
+    right: 0;
     z-index: 3;
     top: 33%;
     padding: 20px;
@@ -509,21 +599,21 @@ section {
 
 .section__article {
     width: 100vw;
-    height:60vh;
+    height: 60vh;
     position: absolute;
     margin-top: 140px;
 }
 
 .section--grey {
-    background:grey;
+    background: grey;
 }
 
 .section--lightblue {
-    background:lightblue;
+    background: lightblue;
 }
 
 .section--lightgrey {
-    background:lightgray;
+    background: lightgray;
 }
 
 h3 {
@@ -531,20 +621,20 @@ h3 {
 }
 
 .contentContainer {
-    display:flex;
+    display: flex;
     align-content: center;
     justify-content: space-around;
 }
 
 .contentContainer--collapse {
-    display:flex;
+    display: flex;
     align-content: center;
     justify-content: space-around;
     flex-flow: row wrap;
 }
 
 .contentContainer--collapseA {
-    display:flex;
+    display: flex;
     align-content: center;
     justify-content: space-between;
     flex-flow: row wrap;
@@ -562,8 +652,9 @@ h3 {
 .item--snap--3Hunna {
     flex: 1 1 300px;
 }
+
 .contentContainer--allMiddle {
-    display:flex;
+    display: flex;
     justify-content: center;
     align-content: center;
     flex-flow: row wrap;
@@ -571,16 +662,16 @@ h3 {
 
 
 .contentContainer--oneMiddle {
-    display:flex;
+    display: flex;
     justify-content: center;
     align-items: center;
 }
 
 .contentContainer--spreadOut {
-    display:flex;
+    display: flex;
     justify-content: space-evenly;
     align-items: center;
-    height:100%;
+    height: 100%;
 }
 
 
@@ -588,7 +679,7 @@ h3 {
     display: inline-grid;
     grid-gap: 10px;
     // grid-template-columns: repeat(auto-fit, minmax(200px, 200px)); 
-    grid-template-columns: repeat(auto-fit, minmax(300px, 100px) minmax(100px, 100px)); 
+    grid-template-columns: repeat(auto-fit, minmax(300px, 100px) minmax(100px, 100px));
 }
 
 
@@ -604,8 +695,20 @@ h3 {
 
 .close--CB {
     top: 30%;
-    right:7%;
+    right: 7%;
 }
+
+// .wrapper {
+//       /* The height needs to be set to a fixed value for the effect to work.
+//    * 100vh is the full height of the viewport. */
+//   height: 100vh;
+//   /* The scaling of the images would add a horizontal scrollbar, so disable x overflow. */
+//   overflow-x: hidden;
+//   /* Enable scrolling on the page. */
+//   overflow-y: auto;
+//   /* Set the perspective to 2px. This is essentailly the simulated distance from the viewport to transformed objects.*/
+//   perspective: 2px;
+// }
 
 
 .edgeRound {
@@ -614,11 +717,11 @@ h3 {
 }
 
 .contentContainer--spreadOutWide {
-    display:flex;
+    display: flex;
     justify-content: space-evenly;
     align-items: center;
-    height:100%;
-    width:100%;
+    height: 100%;
+    width: 100%;
     flex-flow: row wrap;
 }
 
@@ -651,14 +754,14 @@ h3 {
 
 .sellBox__img {
     height: 400px;
-    width:400px;
+    width: 400px;
     object-fit: cover;
-    display:block;
+    display: block;
 }
 
 .sellBox__img--small {
     height: 200px;
-    width:200px;
+    width: 200px;
     object-fit: cover;
     // display:block;
 }
@@ -668,18 +771,19 @@ h3 {
 }
 
 .img--padding--sm {
-    padding:10px;
-}   
+    padding: 10px;
+}
 
-img  {
-    width:100%;
+img {
+    width: 100%;
 }
 
 .sideBySide {
     display: flex;
     flex-flow: row nowrap;
+
     img {
-        width:50vw;
+        width: 50vw;
     }
 }
 
@@ -687,7 +791,7 @@ img  {
     // width:100%;
     // height:100%;
     // margin:15px;
-    background:grey;
+    background: grey;
 }
 
 .font--weight--thin {
@@ -697,16 +801,16 @@ img  {
 
 .adc {
     overflow: hidden;
-    width:auto;
+    width: auto;
 }
 
 .ABZ {
-    position:absolute;
+    position: absolute;
     font-size: 7rem;
     font-weight: 900;
     left: -150px;
-    top:-70px;
-    color:rgba(0,0,0,0.3)
+    top: -70px;
+    color: rgba(0, 0, 0, 0.3)
 }
 
 .relativo {
@@ -721,8 +825,8 @@ img  {
 
 
 .map--image {
-    width:auto;
-    object-position: -120px -260px;   
+    width: auto;
+    object-position: -120px -260px;
 }
 
 .contentContainer--onTop {
@@ -731,20 +835,22 @@ img  {
 
 
 .border--black {
-    border:2px solid black;
+    border: 2px solid black;
 }
 
 .footer__section {
-    width:100%;
-    background:lightblue;
+    width: 100%;
+    background: lightblue;
     text-align: center;
-    
+
 }
 
-.footer__title:hover, .active {
-    background:blanchedalmond;
+.footer__title:hover,
+.active {
+    background: blanchedalmond;
     // transition: 0.4s;
 }
+
 
 .footer__title {
     cursor: pointer;
@@ -764,37 +870,10 @@ img  {
 
 
 
-.parallax {
-    perspective: 1px;
-    height: 100vh;
-    overflow-x: hidden;
-    overflow-y: auto;
-  }
-  .parallax__layer {
-    position: absolute;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-  }
-
-  .parallax__group {
-    position: relative;
-    height: 100vh;
-    transform-style: preserve-3d;
-  }
-
-  .parallax__layer--base {
-    transform: translateZ(0);
-  }
-
-  .parallax__layer--back {
-    transform: translateZ(-1px);
-  }
 
 
-  @media screen and (max-width: 1050px) {
-    .dividerBlack--thin { 
-           display:none; 
-        }
-     } 
+@media screen and (max-width: 1050px) {
+    .dividerBlack--thin {
+        display: none;
+    }
+}
