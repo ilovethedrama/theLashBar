@@ -1,10 +1,13 @@
 var mongoose = require('mongoose');
 var ppLocMong = require('passport-local-mongoose');
 
-var CustomerSchema = new mongoose.Schema({
-    firstName: String,
-    lastName: String,
-    mobile: Number,
+var customerSchema = new mongoose.Schema({
+    name: {
+        firstName: String,
+        middleName: String,
+        lastName: String
+    },
+    mobile: String,
     email: String,
     visit: {
         treatment: String,
@@ -18,4 +21,4 @@ var CustomerSchema = new mongoose.Schema({
 
 CustomerSchema.plugin(ppLocMong); //takes the ppLocMong package and adds the methods in this to the UserSchema
 
-module.exports = mongoose.model('Customer', CustomerSchema);
+module.exports = mongoose.model('Customer', customerSchema);
