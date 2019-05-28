@@ -26,14 +26,16 @@ window.onscroll = function () {
 function scrollFunction() {
   if (document.body.scrollTop > 30 || document.documentElement.scrollTop > 30) {
     document.getElementById("lashTitle1").style.fontSize = "1rem";
-    document.getElementById("lashTitle2").style.fontSize = "3.5rem";
+    // document.getElementById("lashTitle2").style.fontSize = "3.5rem";
     document.getElementById("lashTitle3").style.fontSize = "1rem";
-    document.getElementById("lashTitle2").style.height = "auto";
+    // document.getElementById("lashTitle2").style.height = "auto";
+    
   } else {
+    
     document.getElementById("lashTitle1").style.fontSize = "2rem";
-    document.getElementById("lashTitle2").style.fontSize = "7rem";
+    // document.getElementById("lashTitle2").style.fontSize = "7rem";
     document.getElementById("lashTitle3").style.fontSize = "2rem";
-    document.getElementById("lashTitle2").style.height = "110px";
+    // document.getElementById("lashTitle2").style.height = "110px";
   }
 }
 
@@ -45,8 +47,8 @@ function close() {
 
 }
 
-var formclose = document.getElementById('itemClose');
-formclose.addEventListener('click', close);
+// var formclose = document.getElementById('itemClose');
+// formclose.addEventListener('click', close);
 
 
 function open() {
