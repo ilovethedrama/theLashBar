@@ -38,13 +38,17 @@ mongCon.on('disconnected', function () {
 // });
 
 
-app.get("/", function(req, res) {
+app.get("/", function (req, res) {
     res.render("main");
-  });
-  
-  app.get("/appointment", function(req, res) {
+});
+
+app.get("/appointment", function (req, res) {
     res.render("appointment");
-  });
+});
+
+app.get("/appointmentConfirmation", function (req, res) {
+    res.render("appConfirmation");
+});
 
 app.listen(port, function () {
     console.log('You rockin now on port ' + port);
