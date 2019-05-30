@@ -1,13 +1,15 @@
 <% include partials/header %>
 
 
-    <section class="bookingForm section--lightblue" id='bookingForm'>
+    <section class="bookingForm padding-top-boost contentContainer--collapse contentContainer section--lightblue" id='bookingForm'>
         <form action='/appointment' method="POST" class="">
-                   
-            <p class='title--small title--neat2a title--uppercase text-overlap title--padding'>
+
+            <div class='title--small title--neat2a title--uppercase
+             title--padding'>
             
+            <div class='form__line'>
             Hi, I'm 
-            
+
             <input 
                     type='text' 
                     class='form__input form__input--short ' 
@@ -19,26 +21,32 @@
                 type='text' 
                 class='form__input--short form__input' 
                 name='lName' 
-                placeholder='last name'> <br>
+                placeholder='last name'
+            ><br>
+            </div>
+            
+            <div class='form__line'>
             & I want you to give me a gorgeous 
             
             <input 
                 list="treatments" 
-                class='form__input form__input--long' 
+                class='form__input' 
                 placeholder='the treatment'
             >
                 <datalist id="treatments">
                     <option value="Express Manicure">
                     <option value="Express Pedicure">
-                    <option value="Express Brows">
-                    <option value="Express Lashes">
+                    <option value="Express Brow">
+                    <option value="Express Lash">
                     <option value="Mani Pedi deluxe">
                     <option value="Dermabrasion">
                     <option value="Shellac 4 week nail">
                 </datalist> 
             
-            treatment. <br>
+            </div>
             
+
+            <div class='form__line'>
             I want it on the 
             
             <input class='form__input' 
@@ -51,37 +59,52 @@
         
             <input 
                 type='time' 
-                class='form__input' 
+                class='form__input ' 
                 name='time' 
                 min="12:00" 
                 max="18:00" 
                 placeholder='time'
-            >. <br>
-        
+            ><br>
+        </div>
+        <div class='form__line'>
             You can contact me on 
             
             <input 
-                type='number' 
+                type='text' 
                 class='form__input' 
                 name='mobile' 
                 placeholder='mobile number'
-            > <br>
+            ><br>
+        </div>
         
-            and send me an email at 
-        
+        <div class='form__line'>
+            & send me an email at 
+        </div>
+ 
+        <div class='form__line'>
             <input 
                 type='email' 
-                class='form__input' 
+                class='form__input form__input--long' 
                 name='email' 
-                placeholder='email'
-            >. <br>
-        
+                placeholder='                   email'
+            ><br>
+        </div>
+
+        <div class='form__line'>
             Thanks!
+
+        </div>    
+            </div>
         
+        <div class='contentContainer'>
+            <input class='title--xs title--uppercase form__button--submit font--weight--thin title--neat title--padding--mini' type='submit'>   
+        </div>
+
         </form>
         <div class='sellbox--inner close--CB item--pointer' id='itemClose' >
             <h3 class='title--xs title--uppercase form__button--submit font--weight--thin title--neat title--padding--mini'><a href='/'>Close</a></h3>
-        </div>            
+        </div>  
+          
     </section>
 
 
