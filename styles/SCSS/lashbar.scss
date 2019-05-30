@@ -351,6 +351,11 @@ ul {
     }
 }
 
+
+*:focus {
+    outline: none;
+}
+
 .form__button--text {
     text-align: left;
     padding: 5px;
@@ -521,7 +526,7 @@ article {
 }
 
 .itemlimit {
-    width:auto; 
+    width: auto;
 }
 
 
@@ -706,6 +711,27 @@ h3 {
     grid-template-columns: repeat(auto-fit, minmax(300px, 100px) minmax(100px, 100px));
 }
 
+.form__input {
+    height: 30px;
+    top: 40px;
+    outline: none;
+    color:blanchedalmond;
+    border: none;
+    background: none;
+    border-bottom: 2px solid blanchedalmond;
+    font-family: 'Caveat Brush', cursive;
+    text-transform: uppercase;
+    font-size: 2rem;
+    padding: 0px 10px; 
+}
+
+.form__input--short {
+    width: 170px;
+}
+
+.form__input--long {
+    width: 230px;
+}
 
 
 [id *='lashTitle'] {
