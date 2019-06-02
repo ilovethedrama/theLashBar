@@ -730,7 +730,7 @@ h3 {
 }
 
 .padding-top-boost {
-    padding-top:100px;
+    padding-top: 100px;
 
 }
 
@@ -951,4 +951,13 @@ img {
     .dividerBlack--thin {
         display: none;
     }
+}
+
+
+@media screen and (max-width: 900px) {
+    #location article div div h1, #prices {
+        font-size: 5rem;
+        transition: 1s ease;
+    }
+
 }
