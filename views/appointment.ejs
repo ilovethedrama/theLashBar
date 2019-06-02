@@ -1,42 +1,27 @@
 <% include partials/header %>
 
 
-    <section class="bookingForm padding-top-boost contentContainer--collapse contentContainer section--lightblue" id='bookingForm'>
-        <form action='/appointment' method="POST" class="">
+<section class="bookingForm padding-top-boost contentContainer--collapse contentContainer section--lightblue"
+    id='bookingForm'>
+    <form action='/appointment' method="POST" class="">
 
-            <div class='title--small title--neat2a title--uppercase
+        <div class='title--small title--neat2a title--uppercase
              title--padding'>
-            
-            <div class='form__line'>
-            Hi, I'm 
 
-            <input 
-                type='text' 
-                class='form__input form__input--short' 
-                name='fName' 
-                placeholder='first name'
-                required
-            > 
-            
-            <input 
-                type='text' 
-                class='form__input--short form__input' 
-                name='lName' 
-                placeholder='last name'
-                required
-            ><br>
-            </div>
-            
             <div class='form__line'>
-            & I want you to give me a gorgeous 
-            
-            <input 
-                list="treatments" 
-                name ='treatment'
-                class='form__input' 
-                placeholder='the treatment'
-                required
-            >
+                Hi, I'm
+
+                <input type='text' class='form__input form__input--short' name='fName' placeholder='first name'
+                    required>
+
+                <input type='text' class='form__input--short form__input' name='lName' placeholder='last name'
+                    required><br>
+            </div>
+
+            <div class='form__line'>
+                & I want you to give me a gorgeous
+
+                <input list="treatments" name='treatment' class='form__input' placeholder='the treatment' required>
                 <datalist id="treatments">
                     <option value="Express Manicure">
                     <option value="Express Pedicure">
@@ -45,75 +30,55 @@
                     <option value="Mani Pedi deluxe">
                     <option value="Dermabrasion">
                     <option value="Shellac 4 week nail">
-                </datalist> 
-            
+                </datalist>
+
             </div>
-            
+
 
             <div class='form__line'>
-            I want it on the 
-            
-            <input class='form__input' 
-                type='date' 
-                name='date' 
-                placeholder='date'
-                required
-            > 
-        
-            at 
-        
-            <input 
-                type='time' 
-                class='form__input ' 
-                name='time' 
-                min="12:00" 
-                max="18:00" 
-                placeholder='time'
-                required
-            ><br>
-        </div>
-        <div class='form__line'>
-            You can contact me on 
-            
-            <input 
-                type='text' 
-                class='form__input' 
-                name='mobile' 
-                placeholder='mobile number'
-                required
-            ><br>
-        </div>
-        
-        <div class='form__line'>
-            & send me an email at 
-        </div>
- 
-        <div class='form__line'>
-            <input 
-                type='email' 
-                class='form__input form__input--long' 
-                name='email' 
-                placeholder='                   email'
-                required
-            ><br>
-        </div>
+                I want it on the
 
-        <div class='form__line'>
-            Thanks!
+                <input class='form__input' type='date' name='date' placeholder='date' required>
 
-        </div>    
+                at
+
+                <input type='time' class='form__input ' name='time' min="12:00" max="18:00" placeholder='time'
+                    required><br>
             </div>
-        
-        <div class='contentContainer'>
-            <input class='title--xs title--uppercase form__button--submit font--weight--thin title--neat title--padding--mini' type='submit'>   
+            <div class='form__line'>
+                You can contact me on
+
+                <input type='text' class='form__input' name='mobile' placeholder='mobile number' required><br>
+            </div>
+
+            <div class='form__line'>
+                & send me an email at
+            </div>
+
+            <div class='form__line'>
+                <input type='email' class='form__input form__input--long' name='email'
+                    placeholder='                   email' required><br>
+            </div>
+
+            <div class='form__line'>
+                Thanks!
+
+            </div>
         </div>
 
-        </form>
-        <div class='sellbox--inner close--CB item--pointer' id='itemClose' >
-            <h3 class='title--xs title--uppercase form__button--submit font--weight--thin title--neat title--padding--mini'><a href='/'>Close</a></h3>
-        </div>  
-          
-    </section>
+        <div class='contentContainer'>
+            <a href='/appConfirmation'><input
+                    class='title--xs title--uppercase form__button--submit font--weight--thin title--neat title--padding--mini'
+                    type='submit'></a>
+        </div>
+
+    </form>
+    <div class='sellbox--inner close--CB item--pointer' id='itemClose'>
+        <h3 class='title--xs title--uppercase form__button--submit font--weight--thin title--neat title--padding--mini'>
+            <a href='/'>Close</a></h3>
+    </div>
+
+</section>
 
 
 <% include partials/footer %>
