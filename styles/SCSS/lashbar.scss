@@ -953,11 +953,17 @@ img {
     }
 }
 
-
 @media screen and (max-width: 900px) {
-    #location article div div h1, #prices {
+
+    #location article div div h1,
+    #prices {
         font-size: 5rem;
         transition: 1s ease;
     }
+}
 
+@media screen and (max-width: 600px) {
+    #navi a .item--pointer {
+        display: none;
+    }
 }
