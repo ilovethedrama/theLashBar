@@ -954,7 +954,6 @@ img {
 }
 
 @media screen and (max-width: 900px) {
-
     #location article div div h1,
     #prices {
         font-size: 5rem;
@@ -963,7 +962,13 @@ img {
 }
 
 @media screen and (max-width: 600px) {
-    #navi a .item--pointer {
+    #navi a span {
+        transition: 1s ease;
         display: none;
+    }
+    #location article div div h1,
+    #prices {
+        font-size: 3.5rem;
+        transition: 1s ease;
     }
 }
