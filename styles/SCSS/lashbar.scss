@@ -199,8 +199,10 @@ ul {
 
 .contentContainer--pale {
     background: lightblue;
+    transition: 1s ease;
     // opacity: .7;
 }
+
 
 .hero {
     position: relative;
@@ -318,14 +320,17 @@ ul {
 }
 
 .navPointer--item a:active,
-.navPointer--item a:hover {
+.navPointer--item a:hover,
+.nav--link:hover {
     color: maroon;
 }
 
 .nav--link {
     display: inline-block;
-    transition: 2s all ease;
+    transition: .5s all ease;
 }
+
+
 
 .item--noborder {
     border: none;
@@ -644,6 +649,10 @@ section {
 
 .section--lightblue {
     background: lightblue;
+}
+
+.section--white {
+    background: white;
 }
 
 .section--lightgrey {
@@ -969,10 +978,12 @@ img {
         display: none;
         transition: 2s all ease;
     }
+
     #imgMap {
         transform: scale(2.4);
     }
 }
+
 
 @media screen and (max-width: 600px) {
     #navi a span {
