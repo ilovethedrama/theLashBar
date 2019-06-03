@@ -322,6 +322,10 @@ ul {
     color: maroon;
 }
 
+.nav--link {
+    display: inline-block;
+    transition: 2s all ease;
+}
 
 .item--noborder {
     border: none;
@@ -797,7 +801,7 @@ select:-webkit-autofill:focus {
     align-items: center;
     height: 100%;
     width: 100%;
-    flex-flow: row wrap;
+    flex-flow: row nowrap;
 }
 
 
@@ -954,10 +958,19 @@ img {
 }
 
 @media screen and (max-width: 900px) {
+
     #location article div div h1,
     #prices {
         font-size: 5rem;
         transition: 1s ease;
+    }
+
+    .nav--link {
+        display: none;
+        transition: 2s all ease;
+    }
+    #imgMap {
+        transform: scale(2.4);
     }
 }
 
@@ -966,6 +979,7 @@ img {
         transition: 1s ease;
         display: none;
     }
+
     #location article div div h1,
     #prices {
         font-size: 3.5rem;
