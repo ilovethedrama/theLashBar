@@ -29,9 +29,9 @@ function scrollFunction() {
     // document.getElementById("lashTitle2").style.fontSize = "3.5rem";
     document.getElementById("lashTitle3").style.fontSize = "1rem";
     // document.getElementById("lashTitle2").style.height = "auto";
-    
+
   } else {
-    
+
     document.getElementById("lashTitle1").style.fontSize = "2rem";
     // document.getElementById("lashTitle2").style.fontSize = "7rem";
     document.getElementById("lashTitle3").style.fontSize = "2rem";
@@ -63,3 +63,16 @@ function open() {
 
 var bookIt = document.getElementById('navi');
 bookIt.addEventListener('click', open);
+
+
+function backgroundSwitch() {
+  if (this.scrollY > this.innerHeight / 2.5) {
+    document.body.classList.add('contentContainer--pale');
+  } else {
+    document.body.classList.remove('contentContainer--pale');
+  }
+}
+
+
+var priceSection = document.getElementById('priceSection');
+window.addEventListener('scroll', backgroundSwitch);
