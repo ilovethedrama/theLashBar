@@ -199,7 +199,7 @@ ul {
 
 .contentContainer--pale {
     background: lightblue;
-    transition: 1s ease;
+    // transition: 1s ease;
     // opacity: .7;
 }
 
@@ -327,7 +327,7 @@ ul {
 
 .nav--link {
     display: inline-block;
-    transition: .5s all ease;
+    // transition: .5s all ease;
 }
 
 
@@ -421,7 +421,7 @@ ul {
 
 .form__button--submit:hover {
     // input[type=submit]:hover {
-    transition: .5s ease-out;
+    // transition: .5s ease-out;
     background: blanchedalmond;
     color: maroon;
 }
@@ -516,7 +516,7 @@ article {
     overflow: hidden;
     background: white;
     box-shadow: 3px 4px 14px 1px rgba(0, 0, 0, 0.67);
-    transition: 4s;
+    // transition: 4s;
 }
 
 .itemUnderline:before {
@@ -530,7 +530,7 @@ article {
     background: #000;
     visibility: hidden;
     transform: scaleX(0);
-    transition: .25s linear;
+    // transition: .25s linear;
     box-sizing: border-box;
 }
 
@@ -774,13 +774,13 @@ select:-webkit-autofill:focus {
     box-shadow: none;
     -webkit-box-shadow: none;
     -webkit-text-fill-color: blanchedalmond;
-    transition: background-color 5000s ease-in-out 0s;
+    // transition: background-color 5000s ease-in-out 0s;
 }
 
 
-[id *='lashTitle'] {
-    transition: .4s ease-in;
-}
+// [id *='lashTitle'] {
+// transition: .4s ease-in;
+// }
 
 #prices {
     padding-top: 160px;
@@ -948,7 +948,7 @@ img {
 
 .footer__title {
     cursor: pointer;
-    transition: 0.4s;
+    // transition: 0.4s;
 }
 
 .item--pointer {
@@ -959,7 +959,7 @@ img {
     padding: 0 100px;
     overflow: hidden;
     max-height: 0;
-    transition: max-height 0.3s ease-in-out;
+    // transition: max-height 0.3s ease-in-out;
 }
 
 
@@ -977,12 +977,12 @@ img {
     #location article div div h1,
     #prices {
         font-size: 5rem;
-        transition: 1s ease;
+        // transition: 1s ease;
     }
 
     .nav--link {
         display: none;
-        transition: 2s all ease;
+        // transition: 2s all ease;
     }
 
     #imgMap {
@@ -997,13 +997,13 @@ img {
 
 @media screen and (max-width: 600px) {
     #navi a span {
-        transition: 1s ease;
+        // transition: 1s ease;
         display: none;
     }
 
     #location article div div h1,
     #prices {
         font-size: 3.5rem;
-        transition: 1s ease;
+        // transition: 1s ease;
     }
 }
