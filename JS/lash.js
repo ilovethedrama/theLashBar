@@ -23,21 +23,21 @@ window.onscroll = function () {
   scrollFunction()
 };
 
-function scrollFunction() {
-  if (document.body.scrollTop > 30 || document.documentElement.scrollTop > 30) {
-    document.getElementById("lashTitle1").style.fontSize = "1rem";
-    // document.getElementById("lashTitle2").style.fontSize = "3.5rem";
-    document.getElementById("lashTitle3").style.fontSize = "1rem";
-    // document.getElementById("lashTitle2").style.height = "auto";
+// function scrollFunction() {
+//   if (document.body.scrollTop > 30 || document.documentElement.scrollTop > 30) {
+//     document.getElementById("lashTitle1").style.fontSize = "1rem";
+//     // document.getElementById("lashTitle2").style.fontSize = "3.5rem";
+//     document.getElementById("lashTitle3").style.fontSize = "1rem";
+//     // document.getElementById("lashTitle2").style.height = "auto";
 
-  } else {
+//   } else {
 
-    document.getElementById("lashTitle1").style.fontSize = "2rem";
-    // document.getElementById("lashTitle2").style.fontSize = "7rem";
-    document.getElementById("lashTitle3").style.fontSize = "2rem";
-    // document.getElementById("lashTitle2").style.height = "110px";
-  }
-}
+//     document.getElementById("lashTitle1").style.fontSize = "2rem";
+//     // document.getElementById("lashTitle2").style.fontSize = "7rem";
+//     document.getElementById("lashTitle3").style.fontSize = "2rem";
+//     // document.getElementById("lashTitle2").style.height = "110px";
+//   }
+// }
 
 
 function close() {
@@ -51,15 +51,15 @@ function close() {
 // formclose.addEventListener('click', close);
 
 
-function open() {
-  console.log('hsoooob');
-  var form = document.getElementById('bookingForm');
-  form.className = "bookingForm";
-  document.getElementById("lashTitle1").style.fontSize = "1rem";
-  document.getElementById("lashTitle2").style.fontSize = "3.5rem";
-  document.getElementById("lashTitle3").style.fontSize = "1rem";
-  document.getElementById("lashTitle2").style.height = "auto";
-}
+// function open() {
+//   console.log('hsoooob');
+//   var form = document.getElementById('bookingForm');
+//   form.className = "bookingForm";
+//   document.getElementById("lashTitle1").style.fontSize = "1rem";
+//   document.getElementById("lashTitle2").style.fontSize = "3.5rem";
+//   document.getElementById("lashTitle3").style.fontSize = "1rem";
+//   document.getElementById("lashTitle2").style.height = "auto";
+// }
 
 var bookIt = document.getElementById('navi');
 bookIt.addEventListener('click', open);
