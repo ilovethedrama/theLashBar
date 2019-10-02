@@ -50,7 +50,7 @@ const nexmo = new Nexmo({
 });*/
 
 // this links the db with eith mongolab or the local version of the db
-mongoose.connect(mongolab_PW || 'mongodb://localhost/lashB' , {
+mongoose.connect(mongolab_PW || 'mongodb://localhost/lashB', {
   useNewUrlParser: true
 });
 
@@ -181,7 +181,7 @@ app.post('/appointment', function (req, res) {
 
   // this is the unicode equivalent of the 100 emoji
   const hunna = 'U+1F4AF'
-  // nexmo.message.sendSms(from, to, `LASHBAR NYC: Thanks ${firstName} we'll be in touch shortly to confirm your ${treatment} treatment. x`);
+  nexmo.message.sendSms(from, to, `LASHBAR NYC: Thanks ${firstName} we'll be in touch shortly to confirm your ${treatment} treatment. x`);
 
   res.render('appConfirmation', {
       firstName: firstName
