@@ -12,6 +12,7 @@ app.set("view engine", "ejs");
 // Initialize the Nexmo deets in env var
 const nexmoAPI_KEY = process.env.API_KEY;
 const nexmoAPI_SECRET = process.env.API_SECRET;
+const mongolab_PW = process.env.MONGOLAB_LINK;
 
 
 
@@ -42,9 +43,20 @@ const nexmo = new Nexmo({
 }, {
   debug: true
 });
-mongoose.connect("mongodb://localhost/lashB", {
+
+
+/*mongoose.connect("mongodb://localhost/lashB", {
+  useNewUrlParser: true
+});*/
+
+// this links the db with eith mongolab or the local version of the db
+mongoose.connect(mongolab_PW || 'mongodb://localhost/lashB' , {
   useNewUrlParser: true
 });
+
+/* format for mongolab
+mongodb://<dbuser>:<dbpassword>@ds039231.mlab.com:39231/lashbar */
+
 
 const mongCon = mongoose.connection;
 
@@ -58,7 +70,7 @@ mongCon.on("disconnected", function () {
 });
 
 mongCon.on("error", function () {
-  console.log(`We've got company...there's an error!!!`);
+  console.log(`We've got company...there's an error!!!`, Error);
 });
 
 app.get("/", function (req, res) {
@@ -100,7 +112,7 @@ const options = {
 var customerSchema = new mongoose.Schema({
   firstName: String,
   lastName: String,
-  mobile: String,
+  mobile: Number,
   email: String,
   treatment: String,
   time: String,
@@ -108,7 +120,36 @@ var customerSchema = new mongoose.Schema({
 });
 
 var Customer = mongoose.model("Customer", customerSchema, "Customer");
-// this makes a model based on the customer schema with methods on it so that you can do Customer.find etc
+/* this makes a model based on the customer schema with methods on it so that you can do Customer.find etc
+ and expressly names it customer as mongo will by default change the collection name to Customers */
+
+
+
+/*app.post('/appointment', function (req, res) {
+  var firstName = req.body.firstName,
+    lastName = req.body.lastName,
+    mobile = req.body.mobile,
+    email = req.body.email,
+    treatment = req.body.treatment,
+    time = req.body.time,
+    date = req.body.date;
+  var deetz = {
+    date: date,
+    time: time,
+    treatment: treatment,
+    email: email,
+    mobile: mobile,
+    firstName: firstName,
+    lastName: lastName
+  }
+  Customer.collection.insertOne(deetz, function (err, info) {
+    if (err) {
+      console.log(err, `something went wrong`);
+    } else {
+      console.log(`this is the info passed through: `, info);
+      console.log('newly created file for a customer');
+    }
+  }); */
 
 app.post('/appointment', function (req, res) {
   var firstName = req.body.firstName,
@@ -127,27 +168,20 @@ app.post('/appointment', function (req, res) {
     firstName: firstName,
     lastName: lastName
   }
-
-  Customer.collection.insertOne(deetz, function (err, info) {
+  Customer.create(deetz, function (err, info) {
     if (err) {
       console.log(err, `something went wrong`);
     } else {
-      console.log(`this is the info passed through: `, info);
+      console.log(`info returned was:`, info, `and the deetz were:`, deetz);
       console.log('newly created file for a customer');
     }
   });
-  // Customer.create(deetz, function (err, info) {
-  //   if (err) {
-  //     console.log(err, `something went wrong`);
-  //   } else {
-  //     console.log(info);
-  //     console.log('newly created file for a customer');
-  //   }
-  // });
+
+
 
   // this is the unicode equivalent of the 100 emoji
   const hunna = 'U+1F4AF'
-  nexmo.message.sendSms(from, to, `LASHBAR NYC: Thanks ${firstName} we'll be in touch shortly to confirm your ${treatment} treatment. x`);
+  // nexmo.message.sendSms(from, to, `LASHBAR NYC: Thanks ${firstName} we'll be in touch shortly to confirm your ${treatment} treatment. x`);
 
   res.render('appConfirmation', {
       firstName: firstName
