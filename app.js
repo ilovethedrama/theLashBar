@@ -35,6 +35,7 @@ app.use(express.static(__dirname + "/styles/CSS/"));
 app.use(express.static(__dirname + "/Media/"));
 app.use(express.static(__dirname + "/JS/"));
 
+console.log(`the path is`, __dirname + "/styles/CSS/");
 
 
 const nexmo = new Nexmo({
