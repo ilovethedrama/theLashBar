@@ -113,12 +113,9 @@ ul {
 .img--fade {
   opacity: .5; }
 
-.img--med--tile {
-  height: 400px;
-  width: 600px;
-  -o-object-fit: cover;
-     object-fit: cover;
-  display: block; }
+.sellBox--tile__med {
+  flex: 1 1 400px;
+  margin: 15px; }
 
 .img--fade--stronger {
   opacity: .15; }
@@ -584,7 +581,7 @@ select:-webkit-autofill:focus {
 
 .sellBox__img {
   height: 400px;
-  width: 400px;
+  width: 100%;
   -o-object-fit: cover;
      object-fit: cover;
   display: block; }
@@ -606,9 +603,10 @@ img {
 
 .sideBySide {
   display: flex;
-  flex-flow: row nowrap; }
-  .sideBySide img {
-    width: 50vw; }
+  flex-flow: row wrap;
+  justify-content: space-between; }
+  .sideBySide aside {
+    flex: 1 1 45%; }
 
 .locationSection {
   background: grey; }
