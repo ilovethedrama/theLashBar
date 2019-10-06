@@ -37,6 +37,7 @@ ul {
 .title--xl {
   font-size: 20em;
   display: block;
+  padding: 10px;
   line-height: 250px; }
 
 .title--md {
@@ -709,7 +710,7 @@ img {
   #nailIntro h1 {
     font-size: 3rem; }
   .title--xl {
-    font-size: 12rem; } }
+    font-size: 13rem; } }
 
 @media (prefers-reduced-motion: reduce) {
   html {
