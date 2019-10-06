@@ -687,4 +687,6 @@ img {
     display: none; }
   #location article div div h1,
   #prices {
-    font-size: 3.5rem; } }
+    font-size: 3.5rem; }
+  #lashTitle1, #lashTitle2, #lashTitle3 {
+    font-size: 1em; } }
