@@ -36,8 +36,7 @@ ul {
 
 .title--xl {
   font-size: 20em;
-  display: block;
-  line-height: 150px; }
+  display: block; }
 
 .title--md {
   display: block;
@@ -383,7 +382,7 @@ article {
   position: fixed;
   top: 0;
   z-index: 10;
-  padding: 10px;
+  height: 44px;
   overflow: hidden;
   background: blanchedalmond; }
 
@@ -696,7 +695,11 @@ img {
   #locationContent h1 {
     font-size: 2rem; }
   .form__line {
-    font-size: 1.5rem; }
+    font-size: 1rem; }
+  .form__input {
+    width: 100%;
+    display: block;
+    border-bottom: none; }
   .close--CB {
     bottom: 0%;
     left: 0%;

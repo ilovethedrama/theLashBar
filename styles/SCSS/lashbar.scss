@@ -66,7 +66,6 @@ ul {
 .title--xl {
     font-size: 20em;
     display: block;
-    line-height: 150px;
 }
 
 .title--md {
@@ -545,9 +544,8 @@ article {
     width: 100%;
     position: fixed;
     top: 0;
-    // box-shadow: 3px 4px 14px 1px rgba(0,0,0,0.67);
     z-index: 10;
-    padding: 10px;
+    height: 44px;
     overflow: hidden;
     background: blanchedalmond;
 }
@@ -752,6 +750,7 @@ h3 {
 
 .form__line {
     padding: 15px;
+    // font-size:1.5rem;
 }
 
 .form__input--long {
@@ -1021,7 +1020,13 @@ img {
     }
 
     .form__line {
-        font-size: 1.5rem;
+        font-size: 1rem;
+    }
+
+    .form__input {
+        width: 100%;
+        display: block;
+        border-bottom: none;
     }
 
     .close--CB {
