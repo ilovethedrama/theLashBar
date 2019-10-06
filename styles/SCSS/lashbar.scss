@@ -994,10 +994,9 @@ img {
 
 
 @media screen and (max-width: 600px) {
-    // #navi a span {
-    //     // transition: 1s ease;
-    //     display: none;
-    // }
+    .item--pointer {
+        display: none;
+    }
 
     #location article div div h1,
     #prices {
