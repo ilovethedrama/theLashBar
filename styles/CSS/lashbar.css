@@ -683,10 +683,16 @@ img {
     flex-flow: row wrap; } }
 
 @media screen and (max-width: 600px) {
-  #navi a span {
-    display: none; }
   #location article div div h1,
   #prices {
     font-size: 3.5rem; }
-  #lashTitle1, #lashTitle2, #lashTitle3 {
-    font-size: 1em; } }
+  #lashTitle1,
+  #lashTitle2,
+  #lashTitle3 {
+    font-size: 1em; }
+  #locationContent h1 {
+    font-size: 2rem; } }
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto; } }
