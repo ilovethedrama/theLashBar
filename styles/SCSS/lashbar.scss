@@ -629,7 +629,8 @@ section {
     right: 0;
     z-index: 3;
     top: 33%;
-    padding: 20px;
+    width: 100%;
+    text-align: center;
 }
 
 .section__article {
@@ -1000,7 +1001,7 @@ img {
 
     #location article div div h1,
     #prices {
-        font-size: 3.5rem;
+        font-size: 2rem;
         // transition: 1s ease;
     }
 
@@ -1020,6 +1021,21 @@ img {
         }
     }
 
+    .form__line {
+        font-size: 1.5rem;
+    }
+
+    .close--CB {
+        bottom: 0%;
+        left: 0%;
+        right: 0%;
+    }
+
+    #nailIntro {
+        h1 {
+            font-size: 3rem;
+        }
+    }
 }
 
 
