@@ -36,7 +36,8 @@ ul {
 
 .title--xl {
   font-size: 20em;
-  display: block; }
+  display: block;
+  line-height: 250px; }
 
 .title--md {
   display: block;
@@ -299,7 +300,8 @@ ul {
   border-right: 3px solid blanchedalmond; }
 
 a {
-  text-decoration: none; }
+  text-decoration: none;
+  color: black; }
 
 article {
   height: auto; }
@@ -705,7 +707,9 @@ img {
     left: 0%;
     right: 0%; }
   #nailIntro h1 {
-    font-size: 3rem; } }
+    font-size: 3rem; }
+  .title--xl {
+    font-size: 12rem; } }
 
 @media (prefers-reduced-motion: reduce) {
   html {

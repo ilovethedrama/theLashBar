@@ -66,6 +66,8 @@ ul {
 .title--xl {
     font-size: 20em;
     display: block;
+    padding: 10px;
+    line-height: 250px;
 }
 
 .title--md {
@@ -440,6 +442,7 @@ ul {
 
 a {
     text-decoration: none;
+    color: black;
 }
 
 
@@ -1040,6 +1043,12 @@ img {
             font-size: 3rem;
         }
     }
+
+    // this changes the xl class font size to a smaller option, may need an alternate way to do this? 
+    .title--xl {
+        font-size: 10rem;
+    }
+
 }
 
 
