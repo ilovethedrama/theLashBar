@@ -691,6 +691,8 @@ img {
   #location article div div h1,
   #prices {
     font-size: 2rem; }
+  #social .img--stretch {
+    height: auto; }
   #lashTitle1,
   #lashTitle2,
   #lashTitle3 {
@@ -710,7 +712,19 @@ img {
   #nailIntro h1 {
     font-size: 3rem; }
   .title--xl {
-    font-size: 13rem; } }
+    font-size: 10rem; }
+  #momentContent aside {
+    border: none; }
+  #lashIntro aside {
+    margin: 0; }
+    #lashIntro aside h1 {
+      font-size: 8rem; }
+  .ABZ {
+    display: none; }
+  #imgMap {
+    transform: scale(6.4); }
+  #navbar div ul {
+    display: none; } }
 
 @media (prefers-reduced-motion: reduce) {
   html {

@@ -1006,6 +1006,12 @@ img {
         // transition: 1s ease;
     }
 
+    #social {
+        .img--stretch {
+            height: auto;
+        }
+    }
+
     // [id *='lashTitle'] {
     // font-size:1em;
     //  } or :
@@ -1046,7 +1052,38 @@ img {
 
     // this changes the xl class font size to a smaller option, may need an alternate way to do this? 
     .title--xl {
-        font-size: 13rem;
+        font-size: 10rem;
+
+    }
+
+    #momentContent aside {
+        border: none;
+    }
+
+    #lashIntro {
+        aside {
+            margin: 0;
+
+            h1 {
+                font-size: 8rem;
+            }
+        }
+    }
+
+    .ABZ {
+        display: none;
+    }
+
+    #imgMap {
+        transform: scale(6.4);
+    }
+
+    #navbar {
+        div {
+            ul {
+                display: none;
+            }
+        }
     }
 
 }
