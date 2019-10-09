@@ -704,7 +704,12 @@ img {
   .form__input {
     width: 100%;
     display: block;
-    border-bottom: none; }
+    border-bottom: none;
+    text-align: center;
+    font-size: 1rem; }
+  form {
+    height: 100vh;
+    overflow: scroll; }
   .close--CB {
     bottom: 0%;
     left: 0%;
