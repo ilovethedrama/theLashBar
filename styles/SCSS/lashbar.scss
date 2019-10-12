@@ -27,25 +27,27 @@
     font-weight: normal;
 }
 
- 
+
 input:-webkit-autofill,
-input:-webkit-autofill:hover, 
-input:-webkit-autofill:focus
-input:-webkit-autofill, 
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus input:-webkit-autofill,
 textarea:-webkit-autofill,
-textarea:-webkit-autofill:hover
-textarea:-webkit-autofill:focus,
+textarea:-webkit-autofill:hover textarea:-webkit-autofill:focus,
 select:-webkit-autofill,
 select:-webkit-autofill:hover,
 select:-webkit-autofill:focus {
-  border: 1px solid lightblue;
-  box-shadow: 0 0 0px 1000px lightblue inset;
-  -webkit-text-fill-color: black;
-  -webkit-box-shadow: 0 0 0px 1000px lightblue inset;
+    border: 1px solid lightblue;
+    box-shadow: 0 0 0px 1000px lightblue inset;
+    -webkit-text-fill-color: black;
+    -webkit-box-shadow: 0 0 0px 1000px lightblue inset;
 }
 
 html {
     scroll-behavior: smooth;
+}
+
+body {
+    height: 100vh;
 }
 
 ul {
@@ -341,11 +343,14 @@ ul {
 .navPointer--item a:hover,
 .nav--link:hover {
     color: maroon;
+    border-bottom: 2px solid maroon;
 }
 
 .nav--link {
     display: inline-block;
     // transition: .5s all ease;
+    border-bottom: 2px solid transparent;
+    transition: border-bottom ease .7s;
 }
 
 
@@ -361,15 +366,16 @@ ul {
 }
 
 .bookingForm {
-    position: fixed;
-    z-index: 6;
-    width: 100vw;
-    height: 100vh;
+    // position: fixed;
+    // z-index: 6;
+    height: auto;
+    // width: 100vw;
     bottom: 0;
     left: 0;
     // color: #000;
-    background: white;
+    // background: white;
     text-align: center;
+    overflow-x: hidden;
 
     label {
         padding: 10px;
@@ -378,6 +384,9 @@ ul {
     }
 }
 
+.testBorder {
+    border: 10px solid greenyellow;
+}
 
 *:focus {
     outline: none;
@@ -785,6 +794,10 @@ h3 {
     width: 570px;
 }
 
+.form__input--full {
+    width: 100%;
+}
+
 
 
 // [id *='lashTitle'] {
@@ -1025,6 +1038,10 @@ img {
     // [id *='lashTitle'] {
     // font-size:1em;
     //  } or :
+
+    .padding-top-boost {
+        padding-top:40px;
+    }
 
     #lashTitle1,
     #lashTitle2,
