@@ -76,3 +76,22 @@ function backgroundSwitch() {
 
 var priceSection = document.getElementById('priceSection');
 window.addEventListener('scroll', backgroundSwitch);
+
+const hiHello = () => {
+  const theTime = new Date(),
+    theHour = theTime.getHours();
+  console.log(theHour);
+  if (theHour > 6 && theHour <= 11) {
+    return ('Good Morning!');
+  } else if (theHour >= 12 && theHour < 18) {
+    return ('Good Afternoon');
+  } else {
+    return ('Sup Night Owl?');
+  }
+}
+
+hiHello();
+const welcomeMsg = document.getElementById('welcomeMsg');
+
+welcomeMsg.innerText = hiHello();
+console.log(welcomeMsg.innerText);
