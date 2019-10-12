@@ -13,6 +13,7 @@ app.set("view engine", "ejs");
 const nexmoAPI_KEY = process.env.API_KEY;
 const nexmoAPI_SECRET = process.env.API_SECRET;
 const mongolab_PW = process.env.MONGOLAB_LINK;
+const adzNUM = process.env.ADES_NUM;
 
 
 
@@ -101,7 +102,7 @@ app.get("/blogHome", function (req, res) {
 
 
 const from = 'The Lashbar';
-const to = '447525618042';
+const to = adzNUM;
 const text = `Thanks for placing your booking, we'll be in touch to confirm shortly. Stay classy bitch -LashBar`;
 const options = {
   "type": "unicode"
@@ -180,7 +181,7 @@ app.post('/appointment', function (req, res) {
 
   // this is the unicode equivalent of the 100 emoji
   const hunna = 'U+1F4AF'
-  nexmo.message.sendSms(from, to, `LASHBAR NYC: Thanks ${firstName} we'll be in touch shortly to confirm your ${treatment} treatment. x`);
+  nexmo.message.sendSms(from, to, `LATIFAH NAILS : Thanks ${firstName} we'll be in touch shortly to confirm your ${treatment} treatment. x`);
 
   res.render('appConfirmation', {
       firstName: firstName
