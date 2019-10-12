@@ -47,7 +47,7 @@ const bSync = () => {
         proxy: 'localhost:3000',
         port: 3003,
         online: true,
-        tunnel: 'yoMamaHouse'
+        tunnel: true
 
     });
     // done();
@@ -61,7 +61,7 @@ bSync.description = "allows for live browser view of file as changes are made";
 
 var watcher = (done) => {
     gulp.watch("styles/SCSS/*.scss").on("change", scssToCss);
-    gulp.watch("views/partials/*.ejs").on("change", browserSync.reload);
+    gulp.watch("views/**/*.ejs").on("change", browserSync.reload);
     done();
 };
 watcher.description = "watches both the ejs and scss files and triggers a browser reload or css injection";
