@@ -83,7 +83,7 @@ const hiHello = () => {
   console.log(theHour);
   if (theHour > 6 && theHour <= 11) {
     return ('Good Morning!');
-  } else if (theHour >= 12 && theHour < 18) {
+  } else if (theHour >= 12 && theHour < 19) {
     return ('Good Afternoon');
   } else {
     return ('Sup Night Owl?');
