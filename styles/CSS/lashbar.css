@@ -7,6 +7,21 @@
   box-sizing: border-box;
   font-weight: normal; }
 
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus
+input:-webkit-autofill,
+textarea:-webkit-autofill,
+textarea:-webkit-autofill:hover
+textarea:-webkit-autofill:focus,
+select:-webkit-autofill,
+select:-webkit-autofill:hover,
+select:-webkit-autofill:focus {
+  border: 1px solid lightblue;
+  box-shadow: 0 0 0px 1000px lightblue inset;
+  -webkit-text-fill-color: black;
+  -webkit-box-shadow: 0 0 0px 1000px lightblue inset; }
+
 html {
   scroll-behavior: smooth; }
 
@@ -521,7 +536,7 @@ h3 {
   height: 30px;
   top: 40px;
   outline: none;
-  color: blanchedalmond;
+  color: black;
   border: none;
   background: none;
   border-bottom: 2px solid blanchedalmond;
@@ -541,20 +556,6 @@ h3 {
 
 .form__input--long {
   width: 570px; }
-
-input:-webkit-autofill,
-input:-webkit-autofill:hover,
-input:-webkit-autofill:focus,
-textarea:-webkit-autofill,
-textarea:-webkit-autofill:hover,
-textarea:-webkit-autofill:focus,
-select:-webkit-autofill,
-select:-webkit-autofill:hover,
-select:-webkit-autofill:focus {
-  border: none;
-  box-shadow: none;
-  -webkit-box-shadow: none;
-  -webkit-text-fill-color: blanchedalmond; }
 
 #prices {
   padding-top: 160px; }
