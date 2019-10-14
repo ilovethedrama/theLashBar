@@ -393,7 +393,7 @@ ul {
 }
 
 ::placeholder {
-    color:black;
+    color: black;
     text-align: center;
 }
 
@@ -547,7 +547,7 @@ article {
     height: 100%;
     width: 100%;
     object-fit: cover;
-    
+
 }
 
 .img--scaleUp {
@@ -839,8 +839,8 @@ h3 {
 
 
 [id *='lashTitle'] {
-transition: .4s ease-in;
-font-size: 2.5rem;
+    transition: .4s ease-in;
+    font-size: 2.5rem;
 }
 
 
@@ -1174,8 +1174,33 @@ img {
         padding: 5px 0;
     }
 
+    #blogTitle {
+        margin-top: 40px;
+        padding-bottom: 0;
+    }
 
+    .blogPst--article--buffer {
+        margin: 0;
+        padding: 0px 0px 50px 0px;
+    }
 
+    h3.title--md,
+    span.title--small {
+        font-size: 2rem;
+        padding: 0;
+    }
+
+    .sideBySide {
+        flex-flow: column nowrap;
+    }
+
+    .sellBox--tile__med {
+        margin: 0;
+    }
+
+    p.title--padding {
+        padding: 10px 20px;
+    }
 }
 
 
