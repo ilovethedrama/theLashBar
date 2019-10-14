@@ -497,14 +497,12 @@ a {
     border-bottom: 2px solid blanchedalmond;
     color: blanchedalmond;
     transition: all ease-in-out .3s;
-    // margin: 0 5px ;
     padding: 0 5px;
 
     &:hover,
     &:active {
         color: maroon;
         border-bottom: 2px solid maroon;
-        // background-color: blanchedalmond;
     }
 }
 
@@ -625,9 +623,6 @@ body {
     font-size: 16px;
 }
 
-// main {
-//     // margin-top: 150px;
-// }
 
 section {
     max-width: 100vw;
@@ -825,7 +820,6 @@ h3 {
 
 .form__line {
     padding: 15px;
-    // font-size:1.5rem;
 }
 
 .form__input--long {
@@ -846,22 +840,6 @@ h3 {
 
 
 
-// .close--CB {
-//     top: 30%;
-//     right: 7%;
-// }
-
-// .wrapper {
-//       /* The height needs to be set to a fixed value for the effect to work.
-//    * 100vh is the full height of the viewport. */
-//   height: 100vh;
-//   /* The scaling of the images would add a horizontal scrollbar, so disable x overflow. */
-//   overflow-x: hidden;
-//   /* Enable scrolling on the page. */
-//   overflow-y: auto;
-//   /* Set the perspective to 2px. This is essentailly the simulated distance from the viewport to transformed objects.*/
-//   perspective: 2px;
-// }
 
 
 .edgeRound {
@@ -899,8 +877,7 @@ h3 {
 .borderCheck2 {
     border: 3px solid maroon;
     padding: 10px;
-    // margin: 10px;
-    // min-width: 400px;
+
 }
 
 
@@ -942,9 +919,7 @@ img {
 }
 
 .locationSection {
-    // width:100%;
-    // height:100%;
-    // margin:15px;
+
     background: grey;
 }
 
@@ -1005,13 +980,12 @@ img {
     background: blanchedalmond;
     transition: background .3s ease-in;
     color: maroon;
-    // font     -weight: 900;
+
 }
 
 
 .footer__title {
     cursor: pointer;
-    // transition: 0.4s;
     color: maroon;
 }
 
