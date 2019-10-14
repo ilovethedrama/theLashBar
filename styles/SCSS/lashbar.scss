@@ -201,11 +201,18 @@ ul {
     opacity: .15;
 }
 
+.img--position--btm {
+    object-position: 0px 100px;
+}
 
 .img--screenHg {
     height: 100vh;
     object-fit: cover;
     display: block;
+}
+
+.contentContainer--confine {
+    overflow: hidden;
 }
 
 .contentBorder {
@@ -219,9 +226,10 @@ ul {
 
 .contentContainer--pale {
     background: lightblue;
-    // transition: 1s ease;
+    transition: 1s ease;
     // opacity: .7;
 }
+
 
 
 .hero {
@@ -384,6 +392,11 @@ ul {
     }
 }
 
+::placeholder {
+    color:black;
+    text-align: center;
+}
+
 .testBorder {
     border: 10px solid greenyellow;
 }
@@ -441,17 +454,18 @@ ul {
     border: none;
     // border-radius: 10px;
     text-align: center;
-    margin-bottom: 0px;
-    color: blanchedalmond;
-    background: lightblue;
+    margin-bottom: 10px;
+    color: maroon;
+    cursor: pointer;
+    background: blanchedalmond;
 }
 
-.form__button--submit:hover {
-    // input[type=submit]:hover {
-    // transition: .5s ease-out;
-    background: blanchedalmond;
-    color: maroon;
-}
+// .form__button--submit:hover {
+//     input[type=submit]:hover {
+//     transition: .5s ease-out;
+//     background: blanchedalmond;
+//     color: maroon;
+// }
 
 
 
@@ -475,12 +489,30 @@ a {
     color: black;
 }
 
+.blogPst--article--buffer {
+    margin: 10rem 5rem;
+}
 
+.blogPst--moreTease {
+    border-bottom: 2px solid blanchedalmond;
+    color: blanchedalmond;
+    transition: all ease-in-out .3s;
+    // margin: 0 5px ;
+    padding: 0 5px;
 
+    &:hover,
+    &:active {
+        color: maroon;
+        border-bottom: 2px solid maroon;
+        // background-color: blanchedalmond;
+    }
+}
 
 
 article {
     height: auto;
+    // margin: 20px 0;
+    // min-height: 800px;
 }
 
 .article--outer {
@@ -512,10 +544,13 @@ article {
 }
 
 .img--largefill {
-    // object-position: -100px -250px;
     height: 100%;
     width: 100%;
     object-fit: cover;
+    
+}
+
+.img--scaleUp {
     transform: scale(1.4);
 }
 
@@ -544,7 +579,6 @@ article {
     overflow: hidden;
     background: white;
     box-shadow: 3px 4px 14px 1px rgba(0, 0, 0, 0.67);
-    // transition: 4s;
 }
 
 .itemUnderline:before {
@@ -785,6 +819,10 @@ h3 {
 
 }
 
+.padding-top-boost__extra {
+    padding-top: 160px;
+}
+
 .form__line {
     padding: 15px;
     // font-size:1.5rem;
@@ -800,19 +838,18 @@ h3 {
 
 
 
-// [id *='lashTitle'] {
-// transition: .4s ease-in;
+[id *='lashTitle'] {
+transition: .4s ease-in;
+font-size: 2.5rem;
+}
+
+
+
+
+// .close--CB {
+//     top: 30%;
+//     right: 7%;
 // }
-
-#prices {
-    padding-top: 160px;
-}
-
-
-.close--CB {
-    top: 30%;
-    right: 7%;
-}
 
 // .wrapper {
 //       /* The height needs to be set to a fixed value for the effect to work.
@@ -959,19 +996,23 @@ img {
     width: 100%;
     background: lightblue;
     text-align: center;
+    padding: 30px 0;
 
 }
 
 .footer__title:hover,
 .active {
     background: blanchedalmond;
-    // transition: 0.4s;
+    transition: background .3s ease-in;
+    color: maroon;
+    // font     -weight: 900;
 }
 
 
 .footer__title {
     cursor: pointer;
     // transition: 0.4s;
+    color: maroon;
 }
 
 .item--pointer {
@@ -1017,10 +1058,26 @@ img {
     }
 }
 
+@media screen and (max-width: 745px) {
+    .img--largefill {
+        max-height: 60vh;
+        object-position: 0 -80px;
+        width: 100%;
+        object-fit: cover;
+    }
+
+    .footer__section {
+        padding: 0;
+    }
+}
 
 @media screen and (max-width: 600px) {
     .item--pointer {
         display: none;
+    }
+
+    .img--largefill {
+        object-position: 0 -20px;
     }
 
     #location article div div h1,
@@ -1040,7 +1097,7 @@ img {
     //  } or :
 
     .padding-top-boost {
-        padding-top:40px;
+        padding-top: 40px;
     }
 
     #lashTitle1,
@@ -1070,7 +1127,7 @@ img {
     form {
         height: 100vh;
         overflow: scroll;
-        padding: 30px 0px;
+        padding: 0px;
     }
 
     .close--CB {
@@ -1094,9 +1151,7 @@ img {
         font-size: 10vw;
     }
 
-    #momentContent aside {
-        border: none;
-    }
+
 
     .ABZ {
         display: none;
@@ -1106,6 +1161,7 @@ img {
         transform: scale(6.4);
     }
 
+
     #navbar {
         div {
             ul {
@@ -1113,6 +1169,12 @@ img {
             }
         }
     }
+
+    .footer__section {
+        padding: 5px 0;
+    }
+
+
 
 }
 

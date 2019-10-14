@@ -140,11 +140,18 @@ ul {
 .img--fade--stronger {
   opacity: .15; }
 
+.img--position--btm {
+  -o-object-position: 0px 100px;
+     object-position: 0px 100px; }
+
 .img--screenHg {
   height: 100vh;
   -o-object-fit: cover;
      object-fit: cover;
   display: block; }
+
+.contentContainer--confine {
+  overflow: hidden; }
 
 .contentBorder {
   border: 40px solid grey; }
@@ -154,7 +161,8 @@ ul {
   flex-flow: column wrap; }
 
 .contentContainer--pale {
-  background: lightblue; }
+  background: lightblue;
+  transition: 1s ease; }
 
 .hero {
   position: relative; }
@@ -269,6 +277,26 @@ ul {
     padding: 10px;
     width: 100%; }
 
+::-webkit-input-placeholder {
+  color: black;
+  text-align: center; }
+
+::-moz-placeholder {
+  color: black;
+  text-align: center; }
+
+:-ms-input-placeholder {
+  color: black;
+  text-align: center; }
+
+::-ms-input-placeholder {
+  color: black;
+  text-align: center; }
+
+::placeholder {
+  color: black;
+  text-align: center; }
+
 .testBorder {
   border: 10px solid greenyellow; }
 
@@ -302,13 +330,10 @@ ul {
 .form__button--submit {
   border: none;
   text-align: center;
-  margin-bottom: 0px;
-  color: blanchedalmond;
-  background: lightblue; }
-
-.form__button--submit:hover {
-  background: blanchedalmond;
-  color: maroon; }
+  margin-bottom: 10px;
+  color: maroon;
+  cursor: pointer;
+  background: blanchedalmond; }
 
 .item--bottom {
   align-items: flex-end; }
@@ -325,6 +350,18 @@ ul {
 a {
   text-decoration: none;
   color: black; }
+
+.blogPst--article--buffer {
+  margin: 10rem 5rem; }
+
+.blogPst--moreTease {
+  border-bottom: 2px solid blanchedalmond;
+  color: blanchedalmond;
+  transition: all ease-in-out .3s;
+  padding: 0 5px; }
+  .blogPst--moreTease:hover, .blogPst--moreTease:active {
+    color: maroon;
+    border-bottom: 2px solid maroon; }
 
 article {
   height: auto; }
@@ -356,7 +393,9 @@ article {
   height: 100%;
   width: 100%;
   -o-object-fit: cover;
-     object-fit: cover;
+     object-fit: cover; }
+
+.img--scaleUp {
   transform: scale(1.4); }
 
 .item--green {
@@ -555,6 +594,9 @@ h3 {
 .padding-top-boost {
   padding-top: 100px; }
 
+.padding-top-boost__extra {
+  padding-top: 160px; }
+
 .form__line {
   padding: 15px; }
 
@@ -564,12 +606,9 @@ h3 {
 .form__input--full {
   width: 100%; }
 
-#prices {
-  padding-top: 160px; }
-
-.close--CB {
-  top: 30%;
-  right: 7%; }
+[id*='lashTitle'] {
+  transition: .4s ease-in;
+  font-size: 2.5rem; }
 
 .edgeRound {
   border-bottom-right-radius: 10px;
@@ -665,14 +704,18 @@ img {
 .footer__section {
   width: 100%;
   background: lightblue;
-  text-align: center; }
+  text-align: center;
+  padding: 30px 0; }
 
 .footer__title:hover,
 .active {
-  background: blanchedalmond; }
+  background: blanchedalmond;
+  transition: background .3s ease-in;
+  color: maroon; }
 
 .footer__title {
-  cursor: pointer; }
+  cursor: pointer;
+  color: maroon; }
 
 .item--pointer {
   cursor: pointer; }
@@ -700,9 +743,23 @@ img {
     justify-content: space-between;
     flex-flow: row wrap; } }
 
+@media screen and (max-width: 745px) {
+  .img--largefill {
+    max-height: 60vh;
+    -o-object-position: 0 -80px;
+       object-position: 0 -80px;
+    width: 100%;
+    -o-object-fit: cover;
+       object-fit: cover; }
+  .footer__section {
+    padding: 0; } }
+
 @media screen and (max-width: 600px) {
   .item--pointer {
     display: none; }
+  .img--largefill {
+    -o-object-position: 0 -20px;
+       object-position: 0 -20px; }
   #location article div div h1,
   #prices {
     font-size: 2rem; }
@@ -727,7 +784,7 @@ img {
   form {
     height: 100vh;
     overflow: scroll;
-    padding: 30px 0px; }
+    padding: 0px; }
   .close--CB {
     bottom: 0%;
     left: 0%;
@@ -738,14 +795,14 @@ img {
     font-size: 10rem; }
   .title--lg--vwVersion {
     font-size: 10vw; }
-  #momentContent aside {
-    border: none; }
   .ABZ {
     display: none; }
   #imgMap {
     transform: scale(6.4); }
   #navbar div ul {
-    display: none; } }
+    display: none; }
+  .footer__section {
+    padding: 5px 0; } }
 
 @media (prefers-reduced-motion: reduce) {
   html {
