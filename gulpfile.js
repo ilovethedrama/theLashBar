@@ -38,8 +38,9 @@ const distill = () => {
 
 let thePausinator;
 
-const holdIt = () => {
+const holdIt = (done) => {
     thePausinator = setTimeout(bSync, 3000);
+    done();
 }
 
 const bSync = () => {
