@@ -23,21 +23,19 @@ window.onscroll = function () {
   scrollFunction()
 };
 
-// function scrollFunction() {
-//   if (document.body.scrollTop > 30 || document.documentElement.scrollTop > 30) {
-//     document.getElementById("lashTitle1").style.fontSize = "1rem";
-//     // document.getElementById("lashTitle2").style.fontSize = "3.5rem";
-//     document.getElementById("lashTitle3").style.fontSize = "1rem";
-//     // document.getElementById("lashTitle2").style.height = "auto";
+function scrollFunction() {
+  if (document.body.scrollTop > 30 || document.documentElement.scrollTop > 30) {
+    document.getElementById("lashTitle1").style.fontSize = "1.5rem";
+    document.getElementById("lashTitle2").style.fontSize = "1.5rem";
+    document.getElementById("lashTitle3").style.fontSize = "1.5rem";
 
-//   } else {
+  } else {
 
-//     document.getElementById("lashTitle1").style.fontSize = "2rem";
-//     // document.getElementById("lashTitle2").style.fontSize = "7rem";
-//     document.getElementById("lashTitle3").style.fontSize = "2rem";
-//     // document.getElementById("lashTitle2").style.height = "110px";
-//   }
-// }
+    document.getElementById("lashTitle1").style.fontSize = "2.5rem";
+    document.getElementById("lashTitle2").style.fontSize = "2.5rem";
+    document.getElementById("lashTitle3").style.fontSize = "2.5rem";
+  }
+}
 
 
 function close() {
