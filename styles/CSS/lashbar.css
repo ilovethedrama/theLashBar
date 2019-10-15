@@ -409,6 +409,9 @@ article {
 .img--scaleUp {
   transform: scale(1.4); }
 
+.img--scaleUp--extra {
+  transform: scale(3.4); }
+
 .item--green {
   color: green; }
 

@@ -567,6 +567,10 @@ article {
     transform: scale(1.4);
 }
 
+.img--scaleUp--extra {
+    transform: scale(3.4);
+}
+
 .item--green {
     color: green;
 }
@@ -1037,6 +1041,7 @@ img {
         max-height: 60vh;
         object-position: 0 40px;
     }
+
     .nav--link {
         display: none;
         // transition: 2s all ease;
@@ -1076,7 +1081,7 @@ img {
     .img--largefill {
         object-position: top;
         // transform: scale(2);
-        width:100%;
+        width: 100%;
         // flex: 1 1 50%;
         height: 100%;
     }
