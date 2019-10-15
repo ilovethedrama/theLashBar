@@ -180,8 +180,8 @@ app.post('/appointment', function (req, res) {
 
 
   // this is the unicode equivalent of the 100 emoji
-  const hunna = 'U+1F4AF'
-  nexmo.message.sendSms(from, to, `LATIFAH NAILS : Thanks ${firstName} we'll be in touch shortly to confirm your ${treatment} treatment. x`);
+  // const hunna = 'U+1F4AF'
+  // nexmo.message.sendSms(from, to, `LATIFAH NAILS : Thanks ${firstName} we'll be in touch shortly to confirm your ${treatment} treatment. x`);
 
   res.render('appConfirmation', {
       firstName: firstName
