@@ -1089,11 +1089,11 @@ img {
 
 
     #social {
-        // display: none;
+        display: none;
 
-        .img--stretch {
-            height: auto;
-        }
+        // .img--stretch {
+        //     height: auto;
+        // }
     }
 
     .navChoices {
@@ -1108,6 +1108,10 @@ img {
 
     .padding-top-boost {
         padding-top: 40px;
+    }
+
+    .padding-bottom-boost {
+        padding-bottom: 40px;
     }
 
     // [id *='lashTitle'] {
@@ -1198,7 +1202,7 @@ img {
     }
 
     .footer__section {
-        padding: 5px 0;
+        padding: 0px;
     }
 
     #blogTitle {
@@ -1232,6 +1236,10 @@ img {
     .nav div {
         display: block;
         // border: 2px solid pink;
+    }
+
+    .img--scaleUp--extra {
+        transform: scale(6.4);
     }
 }
 

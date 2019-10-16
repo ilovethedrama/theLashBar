@@ -782,8 +782,8 @@ img {
        object-position: top;
     width: 100%;
     height: 100%; }
-  #social .img--stretch {
-    height: auto; }
+  #social {
+    display: none; }
   .navChoices {
     display: none; }
   .sellBox__img {
@@ -791,6 +791,8 @@ img {
     padding: 5px; }
   .padding-top-boost {
     padding-top: 40px; }
+  .padding-bottom-boost {
+    padding-bottom: 40px; }
   #lashTitle1,
   #lashTitle2,
   #lashTitle3 {
@@ -833,7 +835,7 @@ img {
   #navbar div ul {
     display: none; }
   .footer__section {
-    padding: 5px 0; }
+    padding: 0px; }
   #blogTitle {
     margin-top: 40px;
     padding-bottom: 0; }
@@ -851,7 +853,9 @@ img {
   p.title--padding {
     padding: 10px 20px; }
   .nav div {
-    display: block; } }
+    display: block; }
+  .img--scaleUp--extra {
+    transform: scale(6.4); } }
 
 @media (prefers-reduced-motion: reduce) {
   html {
