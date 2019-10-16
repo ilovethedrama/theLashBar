@@ -48,6 +48,7 @@ html {
 
 body {
     height: 100vh;
+    background-color: rgb(226, 226, 226);
 }
 
 ul {
@@ -75,6 +76,21 @@ ul {
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
+
+// #welcomeMsg {
+//     position: absolute;
+//     background-image: url(https://media.giphy.com/media/b5ujszyZhfZS0/source.gif);
+//     background-size: cover;
+//     color: transparent;
+//     background-clip: text;
+//     -moz-background-clip: text;
+//     -webkit-background-clip: text;
+//     text-transform: uppercase;
+//     // font-size: 120px;
+//     line-height: .75;
+//     margin: 10px 0;
+//     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+// }
 
 .title--lg {
     font-size: 15em;
@@ -131,7 +147,7 @@ ul {
     margin: 40px 0px;
     padding: 20px 0px;
     width: 80%;
-    // border: 3px solid green;
+
 }
 
 .title--fancy {
@@ -169,7 +185,6 @@ ul {
 
 .title--border {
     border: 2px solid rgba(0, 0, 0, 1);
-    // padding: 0px 30px;
     margin: 0px 10px;
 }
 
@@ -236,10 +251,97 @@ ul {
 .contentContainer--pale {
     background: lightblue;
     transition: 1s ease;
-    // opacity: .7;
+
 }
 
 
+.slideshow {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    /*this ensures the slideshow takes up the whole screen*/
+    top:0;
+    left:0;
+    /* this pushes the slideshow to the
+    top left corner position */
+    z-index:0;
+    /* this sets the slidshow behind the 
+    header text as it is furthest on the z axis */
+    margin:0;
+    padding:0;
+    /* this removes any padding or
+    margin around the slideshow*/
+    list-style-type: none;
+}
+
+.slideshow li {
+    /* selects each list item inside the unordered list within slideshow */
+    width :100%;
+    height :100%;
+    position:absolute;
+    top:0;
+    left:0;
+    background-size: cover;
+    /*allows images to take entire page */
+    background-position: 50% 50%;
+    /*this centers the images */
+    background-repeat: no-repeat;
+    /* this prevents and repetition of the image */
+    opacity: 0;
+    /*this allows the transition by starting each image as invisible */
+    z-index:0;
+    /* pushes the image to the back of the layer stack */
+    animation: flexOnEm 20s linear infinite;
+    /* this slowly fades the image back in, 
+    the animation is given the name flexOnEm, 
+    it lasts for 50 secs, is continuous speed
+    i.e. linear and keeps looping 4eva */
+}
+
+.slideshow li:nth-child(1){
+    background-image: url('/mouth2.jpg');
+}
+
+.slideshow li:nth-child(2){
+    background-image: url('/hair9.jpg');
+    animation-delay: 5s;
+}
+
+.slideshow li:nth-child(3){
+    background-image: url('/eye9.jpg');
+    animation-delay: 10s;
+}
+
+.slideshow li:nth-child(4){
+    background-image: url('/hair3.jpg');
+    animation-delay: 15s;
+}
+
+.slideshow li:nth-child(5){
+    background-image: url('/hair4.jpg');
+    animation-delay: 20s;
+}
+
+@keyframes flexOnEm {
+    0% {
+        opacity: 0;
+        animation-timing-function: ease-in;
+    }
+    10% {
+        opacity: 1;
+        animation-timing-function: ease-out;
+    }
+    20% {
+        opacity: 1;
+    }
+    30% {
+        opacity: 0;
+    }
+}
+
+#lashIntro img {
+    opacity: 0;
+}
 
 .hero {
     position: relative;
@@ -365,7 +467,6 @@ ul {
 
 .nav--link {
     display: inline-block;
-    // transition: .5s all ease;
     border-bottom: 2px solid transparent;
     transition: border-bottom ease .7s;
 }
@@ -383,14 +484,9 @@ ul {
 }
 
 .bookingForm {
-    // position: fixed;
-    // z-index: 6;
     height: auto;
-    // width: 100vw;
     bottom: 0;
     left: 0;
-    // color: #000;
-    // background: white;
     text-align: center;
     overflow-x: hidden;
 
@@ -459,22 +555,22 @@ ul {
 
 
 .form__button--submit {
-    // input[type=submit] {
     border: none;
-    // border-radius: 10px;
+    border-radius: 10px;
     text-align: center;
+    padding: 10px 60px;
     margin-bottom: 10px;
     color: maroon;
     cursor: pointer;
     background: blanchedalmond;
 }
 
-// .form__button--submit:hover {
-//     input[type=submit]:hover {
-//     transition: .5s ease-out;
-//     background: blanchedalmond;
-//     color: maroon;
-// }
+.form__button--submit:hover {
+    transition: .5s ease-out;
+    background: maroon;
+    color: blanchedalmond;
+
+}
 
 
 
@@ -518,8 +614,6 @@ a {
 
 article {
     height: auto;
-    // margin: 20px 0;
-    // min-height: 800px;
 }
 
 .article--outer {
@@ -538,7 +632,6 @@ article {
 }
 
 .tweetContainer {
-    // width: 100%;
     width: 55%;
     height: 500px;
 }
@@ -611,7 +704,6 @@ article {
     background: #000;
     visibility: hidden;
     transform: scaleX(0);
-    // transition: .25s linear;
     box-sizing: border-box;
 }
 
@@ -665,7 +757,7 @@ section {
 
 
 .parallax::after {
-    /* Display and position the pseudo-element */
+
     content: " ";
     position: absolute;
     top: 0;
@@ -798,6 +890,8 @@ h3 {
     align-items: center;
 }
 
+
+
 .contentContainer--spreadOut {
     display: flex;
     justify-content: space-evenly;
@@ -918,7 +1012,6 @@ h3 {
     height: 200px;
     width: 200px;
     object-fit: cover;
-    // display:block;
 }
 
 .sellbox--inner {
@@ -1022,7 +1115,6 @@ img {
     padding: 0 100px;
     overflow: hidden;
     max-height: 0;
-    // transition: max-height 0.3s ease-in-out;
 }
 
 
@@ -1044,7 +1136,6 @@ img {
 
     .nav--link {
         display: none;
-        // transition: 2s all ease;
     }
 
     .img--scaleUp {
@@ -1080,7 +1171,6 @@ img {
 
     .img--largefill {
         object-position: top;
-        // transform: scale(2);
         width: 100%;
         // flex: 1 1 50%;
         height: 100%;
@@ -1090,10 +1180,6 @@ img {
 
     #social {
         display: none;
-
-        // .img--stretch {
-        //     height: auto;
-        // }
     }
 
     .navChoices {
@@ -1114,15 +1200,16 @@ img {
         padding-bottom: 40px;
     }
 
-    // [id *='lashTitle'] {
-    // font-size:1em;
-    //  } or :
-
+    [id *='lashTitle'] {
+    font-size:1em;
+     } 
+    
+   /* or :
     #lashTitle1,
     #lashTitle2,
     #lashTitle3 {
         font-size: 1em;
-    }
+    }*/
 
     [class *='sellBox--bdr'] {
         border: none;
@@ -1169,7 +1256,6 @@ img {
         margin-bottom: 30px;
     }
 
-    // this changes the xl class font size to a smaller option, may need an alternate way to do this? 
     .title--xl {
         font-size: 10rem;
     }
@@ -1235,12 +1321,13 @@ img {
 
     .nav div {
         display: block;
-        // border: 2px solid pink;
     }
 
     .img--scaleUp--extra {
         transform: scale(6.4);
     }
+
+ 
 }
 
 
