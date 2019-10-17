@@ -55,7 +55,7 @@ ul {
   font-size: 15vw; }
 
 .title--md--vwVersion {
-  font-size: 9vw; }
+  font-size: 6vw; }
 
 .title--underline {
   border-bottom: none;
@@ -149,14 +149,17 @@ ul {
   opacity: .15; }
 
 .img--position--btm {
-  -o-object-position: 0px 150px;
-     object-position: 0px 150px; }
+  -o-object-position: 0px 144px;
+     object-position: 0px 144px; }
 
 .img--screenHg {
   height: 100vh;
   -o-object-fit: cover;
      object-fit: cover;
   display: block; }
+
+.blog--introText {
+  line-height: 2.3rem; }
 
 .contentContainer--confine {
   overflow: hidden; }
@@ -171,6 +174,24 @@ ul {
 .contentContainer--pale {
   background: lightblue;
   transition: 1s ease; }
+
+.progress--container {
+  width: 50%;
+  height: 10px;
+  background: blanchedalmond;
+  position: fixed;
+  z-index: 1;
+  top: 100px;
+  right: 0; }
+
+#blogPst {
+  border: 3px solid orange; }
+
+/* The progress bar (scroll indicator) */
+.progress--bar {
+  height: 10px;
+  background: maroon;
+  width: 0%; }
 
 .slideshow {
   position: fixed;
@@ -313,6 +334,12 @@ ul {
   width: 10px; }
   .priceList__ColorBlock--pink ::after {
     content: 'beep'; }
+
+.fab {
+  transition: all 1s ease;
+  color: black; }
+  .fab:hover {
+    color: maroon; }
 
 .sellBox {
   text-align: center;
@@ -934,11 +961,15 @@ img {
   .title--lg--vwVersion {
     font-size: 10vw; }
   .ABZ {
-    display: none; }
+    display: none;
+    transition: all 1s ease; }
   .img--scaleUp {
     transform: scale(1); }
-  .blog--intoText {
-    font-size: .7em; }
+  .blog--introText {
+    font-size: .7em;
+    line-height: 1rem; }
+  .blogPst--introText--extra {
+    display: none; }
   #navbar div ul {
     display: none; }
   .footer__section {
