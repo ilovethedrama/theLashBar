@@ -16,11 +16,45 @@ for (i = 0; i < acc.length; i++) {
   });
 }
 
+const progressBar = document.getElementsByClassName('progress--bar')[0];
+const progBarContainer = document.querySelector('.progress--container');
+
+// This refers to the whole article section
+const singlePost = document.getElementById('blogPst');
+
+function articleProgressBar() {
+  /*document.documentElement refers to the html file/window scope itself and scrolltop is the number of pixels that it is scrolled vertically...
+  so this is the number of pixels the html window is scrolled vertically */
+  var winScroll = document.body.scrollTop || document.documentElement.scrollTop;
+
+  // the height of the window content, including content not visible on the screen minus the window height - not including the scrollbar
+  var height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+
+  // var artheight = article.scrollHeight - article.clientHeight;
+  var scrolled = (winScroll / singlePost.offsetTop) * 25;
+
+
+  progressBar.style.width = scrolled + "%";
+  console.log(singlePost.offsetTop - winScroll)
+  // element.offsetTop — document.body.scrollTop
+
+  
+
+}
+
+
+ function isItDone(){
+  if (progressBar.style.width === 100) {
+    progBarContainer.classList.add('item--hide');
+  } else {
+    progBarContainer.classList.remove('item--hide');
+  }  
+}
 
 
 window.onscroll = function () {
-
-  scrollFunction()
+  articleProgressBar();
+  scrollFunction();
 };
 
 function scrollFunction() {
