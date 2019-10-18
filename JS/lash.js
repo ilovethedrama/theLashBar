@@ -31,25 +31,28 @@ function articleProgressBar() {
   var height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
 
   // var artheight = article.scrollHeight - article.clientHeight;
-  var scrolled = (winScroll / singlePost.offsetTop) * 25;
+  var scrolled = (winScroll / height) * 100;
 
+  //this is the height of the section containing all the blog content
+  // var scrolled = (winScroll / singlePost.offsetTop) * 10;
+
+  if (scrolled <= 5) {
+    progressBar.style.background = 'lightblue';
+  } else if (scrolled <= 37.5) {
+    progressBar.style.background = 'yellow';
+  } else if (scrolled <= 71.5) {
+    progressBar.style.background = 'maroon';
+  } else {
+    progressBar.style.background = 'blanchedalmond';
+  }
 
   progressBar.style.width = scrolled + "%";
-  console.log(singlePost.offsetTop - winScroll)
-  // element.offsetTop — document.body.scrollTop
+  console.log(scrolled)
 
-  
+
 
 }
 
-
- function isItDone(){
-  if (progressBar.style.width === 100) {
-    progBarContainer.classList.add('item--hide');
-  } else {
-    progBarContainer.classList.remove('item--hide');
-  }  
-}
 
 
 window.onscroll = function () {
@@ -79,19 +82,7 @@ function close() {
 
 }
 
-// var formclose = document.getElementById('itemClose');
-// formclose.addEventListener('click', close);
 
-
-// function open() {
-//   console.log('hsoooob');
-//   var form = document.getElementById('bookingForm');
-//   form.className = "bookingForm";
-//   document.getElementById("lashTitle1").style.fontSize = "1rem";
-//   document.getElementById("lashTitle2").style.fontSize = "3.5rem";
-//   document.getElementById("lashTitle3").style.fontSize = "1rem";
-//   document.getElementById("lashTitle2").style.height = "auto";
-// }
 
 var bookIt = document.getElementById('navi');
 bookIt.addEventListener('click', open);
