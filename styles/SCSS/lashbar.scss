@@ -64,6 +64,14 @@ ul {
     color: blanchedalmond;
 }
 
+.title--maroon {
+    color: maroon;
+}
+
+.title--yellow {
+    color: yellow;
+}
+
 
 .title--spaceOut {
     letter-spacing: 10px;
@@ -257,26 +265,16 @@ ul {
     transition: 1s ease;
 }
 
-// .progress--container{
-//     position: fixed;
-//     top: 0;
-//     z-index: 1;
-//     width: 100%;
-//     background-color: red;
-// }
+
 
 .progress--container {
     width: 50%;
     height: 10px;
-    background: blanchedalmond;
+    background: lightblue;
     position: fixed;
     z-index: 1;
     top: 100px;
     right: 0;
-}
-
-#blogPst {
-    border: 3px solid orange;
 }
 
 /* The progress bar (scroll indicator) */
@@ -336,12 +334,12 @@ ul {
 }
 
 .slideshow li:nth-child(2) {
-    background-image: url('/hair9.jpg');
+    background-image: url('/lip1.jpg');
     animation-delay: 5s;
 }
 
 .slideshow li:nth-child(3) {
-    background-image: url('/eye9.jpg');
+    background-image: url('/hair13.jpg');
     animation-delay: 10s;
 }
 
@@ -1154,6 +1152,44 @@ img {
 
 }
 
+.scroll-indicator {
+    position: absolute;
+    left: 50%;
+    font-size: 2rem;
+    bottom: 0;
+
+    -webkit-animation: bounce 1s infinite;
+    animation: bounce 1s infinite;
+}
+
+@-webkit-keyframes bounce {
+    0% {
+        bottom: 5%;
+    }
+
+    50% {
+        bottom: 10%;
+    }
+
+    100% {
+        bottom: 5%;
+    }
+}
+
+@keyframes bounce {
+    0% {
+        bottom: 5%;
+    }
+
+    50% {
+        bottom: 10%;
+    }
+
+    100% {
+        bottom: 5%;
+    }
+}
+
 
 .footer__title {
     cursor: pointer;
@@ -1178,6 +1214,10 @@ img {
     .dividerBlack--thin {
         display: none;
     }
+
+    .progress--container {
+        width: 100%;
+    }
 }
 
 @media screen and (max-width: 900px) {
@@ -1185,6 +1225,10 @@ img {
     .img--largefill {
         max-height: 60vh;
         object-position: 0 40px;
+    }
+
+    .progress--container {
+        top: 83px;
     }
 
     .nav--link {

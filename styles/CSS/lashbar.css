@@ -36,6 +36,12 @@ ul {
 .title--blanchedA {
   color: blanchedalmond; }
 
+.title--maroon {
+  color: maroon; }
+
+.title--yellow {
+  color: yellow; }
+
 .title--spaceOut {
   letter-spacing: 10px; }
 
@@ -178,14 +184,11 @@ ul {
 .progress--container {
   width: 50%;
   height: 10px;
-  background: blanchedalmond;
+  background: lightblue;
   position: fixed;
   z-index: 1;
   top: 100px;
   right: 0; }
-
-#blogPst {
-  border: 3px solid orange; }
 
 /* The progress bar (scroll indicator) */
 .progress--bar {
@@ -239,12 +242,12 @@ ul {
   background-image: url("/mouth2.jpg"); }
 
 .slideshow li:nth-child(2) {
-  background-image: url("/hair9.jpg");
+  background-image: url("/lip1.jpg");
   -webkit-animation-delay: 5s;
           animation-delay: 5s; }
 
 .slideshow li:nth-child(3) {
-  background-image: url("/eye9.jpg");
+  background-image: url("/hair13.jpg");
   -webkit-animation-delay: 10s;
           animation-delay: 10s; }
 
@@ -860,6 +863,30 @@ img {
   transition: background .3s ease-in;
   color: maroon; }
 
+.scroll-indicator {
+  position: absolute;
+  left: 50%;
+  font-size: 2rem;
+  bottom: 0;
+  -webkit-animation: bounce 1s infinite;
+  animation: bounce 1s infinite; }
+
+@-webkit-keyframes bounce {
+  0% {
+    bottom: 5%; }
+  50% {
+    bottom: 10%; }
+  100% {
+    bottom: 5%; } }
+
+@keyframes bounce {
+  0% {
+    bottom: 5%; }
+  50% {
+    bottom: 10%; }
+  100% {
+    bottom: 5%; } }
+
 .footer__title {
   cursor: pointer;
   color: maroon; }
@@ -874,13 +901,17 @@ img {
 
 @media screen and (max-width: 1050px) {
   .dividerBlack--thin {
-    display: none; } }
+    display: none; }
+  .progress--container {
+    width: 100%; } }
 
 @media screen and (max-width: 900px) {
   .img--largefill {
     max-height: 60vh;
     -o-object-position: 0 40px;
        object-position: 0 40px; }
+  .progress--container {
+    top: 83px; }
   .nav--link {
     display: none; }
   .img--scaleUp {
