@@ -61,7 +61,9 @@ ul {
 
 #loaderCurrentNum {
   font-weight: 900;
-  opacity: 1; }
+  transition: all 1s ease 10s;
+  opacity: 1;
+  height: 100%; }
 
 .welcomeMsg {
   background-image: url(https://media.giphy.com/media/b5ujszyZhfZS0/source.gif);
@@ -84,6 +86,9 @@ ul {
 
 .title--md--vwVersion {
   font-size: 6vw; }
+
+.title--sm--vwVersion {
+  font-size: 4.5vw; }
 
 .title--underline {
   border-bottom: none;

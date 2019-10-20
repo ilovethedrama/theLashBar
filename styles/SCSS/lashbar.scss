@@ -95,8 +95,9 @@ ul {
 
 #loaderCurrentNum {
     font-weight: 900;
-    // transition: opacity 10s ease-in-out;
+    transition: all 1s ease 10s;
     opacity: 1;
+    height:100%;
 }
 
 
@@ -126,6 +127,10 @@ ul {
 
 .title--md--vwVersion {
     font-size: 6vw;
+}
+
+.title--sm--vwVersion {
+    font-size: 4.5vw;
 }
 
 .title--underline {
