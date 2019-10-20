@@ -1,5 +1,4 @@
 
-// function puuuuuun() {
 window.onload = function () {
 
 
@@ -32,14 +31,14 @@ window.onload = function () {
   // console.log(progressBar);
 
   function articleProgressBar() {
-     /*document.documentElement refers to the html file/window scope itself and scrolltop is the number of pixels that it is scrolled vertically...
+    /*document.documentElement refers to the html file/window scope itself and scrolltop is the number of pixels that it is scrolled vertically...
   so this is the number of pixels the html window is scrolled vertically */
     var winScroll = document.body.scrollTop || document.documentElement.scrollTop;
-      // the height of the window content, including content not visible on the screen minus the window height - not including the scrollbar
+    // the height of the window content, including content not visible on the screen minus the window height - not including the scrollbar
     var height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
     var scrolled = (winScroll / height) * 100;
     //this is the height of the section containing all the blog content
-  // var scrolled = (winScroll / singlePost.offsetTop) * 10;
+    // var scrolled = (winScroll / singlePost.offsetTop) * 10;
     var progressBar = document.getElementsByClassName('progress--bar')[0];
     if (scrolled <= 5) {
       progressBar.style.background = 'lightblue';
@@ -145,7 +144,7 @@ window.onload = function () {
       loadNum.addEventListener('click', function () {
         console.log('fuk dude')
       });
-      
+
     }
     if (count < 100) {
       count++;
@@ -153,9 +152,9 @@ window.onload = function () {
       console.log(loadNum.innerText);
       if (count > 99) {
         welcomeMsgDone.style.opacity = 1;
-        welcomeMsgDone.classList.add('item--pointer');
+        loaderContainer.classList.add('item--pointer');
         loadNum.style.opacity = 0;
-        loadNum.style.fontSize = 0;
+        loadNum.style.height = 0;
         loaderContainer.addEventListener('click', function () {
           loaderContainer.className = 'item--hide';
           console.log('container click clacked yo')
@@ -174,17 +173,22 @@ window.onload = function () {
 
 
 
-  // // if (!sessionStorage.isVisited) {
-  // //   sessionStorage.isVisited = 'true'
-  // //   $("#status").delay(1500).fadeOut("slow")
-  // //   $("#preloader").delay(2000).fadeOut("slow")
-  // // } else {
-  // //   $("#status").hide()
-  // //   $("#preloader").hide()
-  // // }
+  /*local storage name and reference, the name is local container and the
+   second param points to the var loaderContainer*/
+  console.log('localStorage: ', localStorage);
 
-  console.log(sessionStorage);
 
-  // console.log(progressBar);
+  localStorage.setItem('loaderContainer', loaderContainer)
+
+
+
+  if (localStorage.getItem('loaderContainer') !== undefined) {
+    loaderContainer.style.display = 'none';
+    console.log('yeah there');
+  } else {
+    localStorage.setItem('loaderContainer', loaderContainer)
+    console.log('nah its not there but i\'m adding it now');
+
+  }
 }
-// puuuuuun()
+
