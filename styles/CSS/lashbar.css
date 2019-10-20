@@ -52,6 +52,28 @@ ul {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent; }
 
+.loader {
+  height: 100vh;
+  width: 100vw;
+  position: fixed;
+  z-index: 100000;
+  overflow-y: hidden; }
+
+#loaderCurrentNum {
+  font-weight: 900;
+  opacity: 1; }
+
+.welcomeMsg {
+  background-image: url(https://media.giphy.com/media/b5ujszyZhfZS0/source.gif);
+  background-size: cover;
+  color: transparent;
+  background-clip: text;
+  -moz-background-clip: text;
+  -webkit-background-clip: text;
+  text-transform: uppercase;
+  margin: 10px 0;
+  opacity: 1; }
+
 .title--lg {
   font-size: 15em;
   display: block;
@@ -557,6 +579,10 @@ article {
 
 .item--showDaBlock {
   display: block; }
+
+#welcomeMsgDone {
+  opacity: 0;
+  transition: all ease 5s; }
 
 .nav {
   width: 100%;

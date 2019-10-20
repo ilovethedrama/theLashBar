@@ -85,20 +85,34 @@ ul {
     -webkit-text-fill-color: transparent;
 }
 
-// #welcomeMsg {
-//     position: absolute;
-//     background-image: url(https://media.giphy.com/media/b5ujszyZhfZS0/source.gif);
-//     background-size: cover;
-//     color: transparent;
-//     background-clip: text;
-//     -moz-background-clip: text;
-//     -webkit-background-clip: text;
-//     text-transform: uppercase;
-//     // font-size: 120px;
-//     line-height: .75;
-//     margin: 10px 0;
-//     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-// }
+.loader {
+    height: 100vh;
+    width: 100vw;
+    position: fixed;
+    z-index: 100000;
+    overflow-y: hidden;
+}
+
+#loaderCurrentNum {
+    font-weight: 900;
+    // transition: opacity 10s ease-in-out;
+    opacity: 1;
+}
+
+
+.welcomeMsg {
+    background-image: url(https://media.giphy.com/media/b5ujszyZhfZS0/source.gif);
+    background-size: cover;
+    color: transparent;
+    background-clip: text;
+    -moz-background-clip: text;
+    -webkit-background-clip: text;
+    text-transform: uppercase;
+    margin: 10px 0;
+    opacity: 1;
+    // transition: all 10s ease 10s;
+}
+
 
 .title--lg {
     font-size: 15em;
@@ -725,10 +739,16 @@ article {
 
 .item--hide {
     display: none;
+
 }
 
 .item--showDaBlock {
     display: block;
+}
+
+#welcomeMsgDone {
+    opacity: 0;
+    transition: all ease 5s;
 }
 
 .nav {
@@ -792,16 +812,6 @@ section {
     max-width: 100vw;
     overflow: hidden;
     position: relative;
-
-    //       /* Needed for children to be absolutely positioned relative to the parent. */
-    //   position: relative;
-    //   /* The height of the container. Must be set, but it doesn't really matter what the value is. */
-    //   height: 100vh;
-
-    //   /* For text formatting. */
-    //   display: flex;
-    //   align-items: center;
-    //   justify-content: center;
 }
 
 
