@@ -1,4 +1,5 @@
 const port = process.env.PORT || 3000,
+  cookieParser = require('cookie-parser'),
   bodyparser = require("body-parser"),
   mongoose = require("mongoose"),
   express = require("express"),
@@ -22,8 +23,12 @@ app.use(
     extended: true
   })
 );
-//this is a way of using, requiring and running at the same time.
-//It needs 3 options, the secret can be literally anything, it is used to code and decode web sessions
+
+/*this is a way of using, requiring and running at the same time.
+It needs 3 options, the secret can be literally anything, it is used to code and decode web sessions
+The saveUninitialized if set to true will mean that even if server goes down, 
+when it comes back customers will still be logged into their accounts as the login status is stored on a permanent db for persistant login ux
+resave when true means that if no details have changed on the login side, the details will be save again anyway - can be bad performance wise sometimes*/
 app.use(
   require("express-session")({
     secret: "Mama Mia Thats a Spicy Meatball!",
@@ -35,7 +40,7 @@ app.use(
 app.use(express.static(__dirname + "/styles/CSS/"));
 app.use(express.static(__dirname + "/Media/"));
 app.use(express.static(__dirname + "/JS/"));
-
+app.use(cookieParser());
 
 const nexmo = new Nexmo({
   apiKey: nexmoAPI_KEY,
@@ -74,6 +79,9 @@ mongCon.on("error", function () {
 });
 
 app.get("/", function (req, res) {
+  res.cookie('theLashCookie', 'solo', {
+    maxAge: 900000
+  })
   res.render("main");
 });
 
@@ -85,18 +93,12 @@ app.get("/appointmentConfirmation", function (req, res) {
   res.render("appConfirmation");
 });
 
+
+
 app.get("/blogHome", function (req, res) {
   res.render("blogHome");
 });
-// var http = require('http');
-// var servz = http.createServer(function (req, res) {
-//     res.writeHead(200, {
-//         'Content-Type': 'text/plain'
-//     });
-//     res.end('Sup bitches?');
-// });
 
-// servz.listen(3001, '127.0.0.1');
 
 
 
