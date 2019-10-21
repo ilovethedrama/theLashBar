@@ -176,10 +176,11 @@ window.onload = function () {
    second param points to the var loaderContainer*/
   console.log('localStorage: ', localStorage);
 
-
+// set loaderContainer within the localstorage
   localStorage.setItem('loaderContainer', loaderContainer)
 
-
+/*check to see if loaderContainer is not undefined, if so add the class of itemhide,
+ otherwise if it is undefined, set it to the localstorage*/
 
   if (localStorage.getItem('loaderContainer') !== undefined) {
     loaderContainer.className = 'item--hide';
