@@ -1,4 +1,3 @@
-
 window.onload = function () {
 
 
@@ -183,7 +182,7 @@ window.onload = function () {
 
 
   if (localStorage.getItem('loaderContainer') !== undefined) {
-    loaderContainer.style.display = 'none';
+    loaderContainer.className = 'item--hide';
     console.log('yeah there');
   } else {
     localStorage.setItem('loaderContainer', loaderContainer)
@@ -191,4 +190,3 @@ window.onload = function () {
 
   }
 }
-
