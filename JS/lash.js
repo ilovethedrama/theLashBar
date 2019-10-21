@@ -170,24 +170,35 @@ window.onload = function () {
 
   countDown;
 
+  console.log('sessionStorage: ', sessionStorage);
+
+  sessionStorage.setItem('loadscreen', loaderContainer)
+  if (sessionStorage.getItem('loadscreen') !== undefined) {
+    loaderContainer.className = 'item--hide';
+    console.log('yeah there');
+  } else {
+    sessionStorage.setItem('loadscreen', loaderContainer)
+    console.log('nah its not there but i\'m adding it now');
+
+  }
 
 
   /*local storage name and reference, the name is local container and the
    second param points to the var loaderContainer*/
-  console.log('localStorage: ', localStorage);
+  // console.log('localStorage: ', localStorage);
 
-// set loaderContainer within the localstorage
-  localStorage.setItem('loaderContainer', loaderContainer)
+  // set loaderContainer within the localstorage
+  // localStorage.setItem('loadscreen', loaderContainer)
 
-/*check to see if loaderContainer is not undefined, if so add the class of itemhide,
- otherwise if it is undefined, set it to the localstorage*/
+  /*check to see if loaderContainer is not undefined, if so add the class of itemhide,
+   otherwise if it is undefined, set it to the localstorage*/
 
-  if (localStorage.getItem('loaderContainer') !== undefined) {
-    loaderContainer.className = 'item--hide';
-    console.log('yeah there');
-  } else {
-    localStorage.setItem('loaderContainer', loaderContainer)
-    console.log('nah its not there but i\'m adding it now');
+  // if (localStorage.getItem('loadscreen') !== undefined) {
+  //   loaderContainer.className = 'item--hide';
+  //   console.log('yeah there');
+  // } else {
+  //   localStorage.setItem('loadscreen', loaderContainer)
+  //   console.log('nah its not there but i\'m adding it now');
 
-  }
+  // }
 }
