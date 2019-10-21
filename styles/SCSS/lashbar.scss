@@ -466,10 +466,30 @@ ul {
     transition: all 1s ease;
     color: black;
 
-    &:hover {
-        color: maroon;
-
+    &:hover[class*="pinterest"] {
+        color: #E60023;
     }
+
+    &:hover[class*="spotify"] {
+        color: #1DB954;
+    }
+
+    &:hover[class*="youtube"] {
+        color: #FF0000;
+    }
+
+    &:hover[class*="snapchat"] {
+        color: #FFFC00;
+    }
+
+    &:hover[class*="instagram"] {
+        color: #C13584;
+    }
+
+    &:hover[class*="facebook"] {
+        color: #4267B2;
+    }
+
 }
 
 
@@ -703,7 +723,7 @@ article {
 
 .tweetContainer {
     width: 55%;
-    height: 500px;
+    height: auto;
 }
 
 .item--sticky {
@@ -1234,6 +1254,11 @@ img {
     .progress--container {
         width: 100%;
     }
+
+    .fab {
+        font-size: 1.5rem;
+    }
+
 }
 
 @media screen and (max-width: 900px) {
@@ -1258,6 +1283,10 @@ img {
     #blogPost article {
         @include contentStack;
     }
+
+    .fab {
+        font-size: 1rem;
+    }
 }
 
 @media screen and (max-width: 745px) {
@@ -1275,6 +1304,16 @@ img {
     .img--scaleUp {
         transform: scale(1);
     }
+
+    #social {
+        flex-flow: column wrap;
+    }
+
+    .tweetContainer {
+        width: 100%;
+    }
+
+
 }
 
 @media screen and (max-width: 600px) {
@@ -1287,6 +1326,14 @@ img {
         width: 100%;
         // flex: 1 1 50%;
         height: 100%;
+    }
+
+    #blogPost article {
+        padding-top: 50px;
+        h3 {
+            letter-spacing: 5px;
+            width:100vw;
+        }
     }
 
     .scroll-indicator {
@@ -1322,11 +1369,6 @@ img {
         100% {
             bottom: 15%;
         }
-    }
-
-
-    #social {
-        display: none;
     }
 
     .navChoices {

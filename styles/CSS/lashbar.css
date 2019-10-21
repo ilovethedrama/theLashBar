@@ -368,8 +368,18 @@ ul {
 .fab {
   transition: all 1s ease;
   color: black; }
-  .fab:hover {
-    color: maroon; }
+  .fab:hover[class*="pinterest"] {
+    color: #E60023; }
+  .fab:hover[class*="spotify"] {
+    color: #1DB954; }
+  .fab:hover[class*="youtube"] {
+    color: #FF0000; }
+  .fab:hover[class*="snapchat"] {
+    color: #FFFC00; }
+  .fab:hover[class*="instagram"] {
+    color: #C13584; }
+  .fab:hover[class*="facebook"] {
+    color: #4267B2; }
 
 .sellBox {
   text-align: center;
@@ -548,7 +558,7 @@ article {
 
 .tweetContainer {
   width: 55%;
-  height: 500px; }
+  height: auto; }
 
 .item--sticky {
   top: -70px;
@@ -935,7 +945,9 @@ img {
   .dividerBlack--thin {
     display: none; }
   .progress--container {
-    width: 100%; } }
+    width: 100%; }
+  .fab {
+    font-size: 1.5rem; } }
 
 @media screen and (max-width: 900px) {
   .img--largefill {
@@ -952,7 +964,9 @@ img {
     display: flex;
     align-content: center;
     justify-content: space-between;
-    flex-flow: row wrap; } }
+    flex-flow: row wrap; }
+  .fab {
+    font-size: 1rem; } }
 
 @media screen and (max-width: 745px) {
   .img--largefill {
@@ -965,7 +979,11 @@ img {
   .footer__section {
     padding: 0; }
   .img--scaleUp {
-    transform: scale(1); } }
+    transform: scale(1); }
+  #social {
+    flex-flow: column wrap; }
+  .tweetContainer {
+    width: 100%; } }
 
 @media screen and (max-width: 600px) {
   .item--pointer {
@@ -975,6 +993,11 @@ img {
        object-position: top;
     width: 100%;
     height: 100%; }
+  #blogPost article {
+    padding-top: 50px; }
+    #blogPost article h3 {
+      letter-spacing: 5px;
+      width: 100vw; }
   .scroll-indicator {
     -webkit-animation: bounceSm 1s infinite;
     animation: bounceSm 1s infinite; }
@@ -992,8 +1015,6 @@ img {
       bottom: 20%; }
     100% {
       bottom: 15%; } }
-  #social {
-    display: none; }
   .navChoices {
     display: none; }
   .sellBox__img {
