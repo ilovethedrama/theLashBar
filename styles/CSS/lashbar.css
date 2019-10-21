@@ -580,7 +580,8 @@ article {
   color: red; }
 
 .item--hide {
-  display: none; }
+  display: none;
+  opacity: 0; }
 
 .item--showDaBlock {
   display: block; }
@@ -974,6 +975,23 @@ img {
        object-position: top;
     width: 100%;
     height: 100%; }
+  .scroll-indicator {
+    -webkit-animation: bounceSm 1s infinite;
+    animation: bounceSm 1s infinite; }
+  @-webkit-keyframes bounceSm {
+    0% {
+      bottom: 15%; }
+    50% {
+      bottom: 20%; }
+    100% {
+      bottom: 15%; } }
+  @keyframes bounceSm {
+    0% {
+      bottom: 15%; }
+    50% {
+      bottom: 20%; }
+    100% {
+      bottom: 15%; } }
   #social {
     display: none; }
   .navChoices {
