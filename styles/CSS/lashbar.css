@@ -578,7 +578,7 @@ article {
      object-fit: cover; }
 
 .img--scaleUp {
-  transform: scale(1.4); }
+  transform: scale(1.7); }
 
 .img--scaleUp--extra {
   transform: scale(3.4); }
@@ -683,6 +683,9 @@ section {
 .section--screenHalf {
   height: 50vh; }
 
+#twitter-widget-0 {
+  width: 100%; }
+
 .text-overlap {
   position: absolute;
   right: 0;
@@ -782,6 +785,9 @@ h3 {
 
 .padding-top-boost {
   padding-top: 100px; }
+
+.padding-bottom-boost__mini {
+  padding-bottom: 30px; }
 
 .padding-bottom-boost {
   padding-bottom: 100px; }
@@ -947,13 +953,15 @@ img {
   .progress--container {
     width: 100%; }
   .fab {
-    font-size: 1.5rem; } }
+    font-size: 1.5rem; }
+  .img--scaleUp {
+    transform: scale(2); } }
 
 @media screen and (max-width: 900px) {
   .img--largefill {
     max-height: 60vh;
-    -o-object-position: 0 40px;
-       object-position: 0 40px; }
+    -o-object-position: 0 50px;
+       object-position: 0 50px; }
   .progress--container {
     top: 83px; }
   .nav--link {
@@ -971,8 +979,8 @@ img {
 @media screen and (max-width: 745px) {
   .img--largefill {
     max-height: 60vh;
-    -o-object-position: 0 -110px;
-       object-position: 0 -110px;
+    -o-object-position: 0 -90px;
+       object-position: 0 -90px;
     width: 100%;
     -o-object-fit: cover;
        object-fit: cover; }
@@ -989,8 +997,8 @@ img {
   .item--pointer {
     display: none; }
   .img--largefill {
-    -o-object-position: top;
-       object-position: top;
+    -o-object-position: 0 -65px;
+       object-position: 0 -65px;
     width: 100%;
     height: 100%; }
   #blogPost article {
@@ -1068,7 +1076,7 @@ img {
     transform: scale(1); }
   .blog--introText {
     font-size: .7em;
-    line-height: 1rem; }
+    line-height: 1.5rem; }
   .blogPst--introText--extra {
     display: none; }
   #navbar div ul {
@@ -1094,7 +1102,10 @@ img {
   .nav div {
     display: block; }
   .img--scaleUp--extra {
-    transform: scale(6.4); } }
+    transform: scale(6.4); }
+  .welcomeMsg--introText {
+    padding: 30px 0px;
+    font-size: 1.5em; } }
 
 @media (prefers-reduced-motion: reduce) {
   html {
