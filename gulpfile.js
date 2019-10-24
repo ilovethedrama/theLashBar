@@ -5,6 +5,7 @@ const browserSync = require("browser-sync").create(),
     uglifycss = require('gulp-uglifycss'),
     plumber = require("gulp-plumber"),
     nodemon = require("gulp-nodemon"),
+    minify = require('gulp-minify'),
     notify = require('gulp-notify'),
     sass = require("gulp-sass"),
     gulp = require("gulp");
@@ -57,6 +58,16 @@ const bSync = () => {
 
 
 
+const smallerJS = (done) => {
+    gulp.src('./JS/lash.js')
+        .pipe(minify())
+        .pipe(gulp.dest('./JS/dist'))
+    done();
+}
+
+smallerJS.description = "minifies your JS file";
+
+
 
 bSync.description = "allows for live browser view of file as changes are made";
 
@@ -99,3 +110,5 @@ gulp.task('now', gulp.parallel(gulp.series(scssToCss), watcher));
 changes to the scss files and ejs files and updates the browser if
  either one changes and also injects css when scss is ListeningStateChangedEvent. SICCKKK */
 gulp.task("default", gulp.parallel(server, holdIt, gulp.parallel(gulp.series(scssToCss), watcher)));
+
+gulp.task('squeezeJS', gulp.series(smallerJS));

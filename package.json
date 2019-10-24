@@ -24,6 +24,7 @@
     "express-session": "^1.16.1",
     "gulp-connect": "^5.7.0",
     "gulp-open": "^3.0.1",
+
     "gulp-webp": "^4.0.1",
     "instafeed.js": "^1.4.1",
     "method-override": "^3.0.0",
@@ -39,6 +40,7 @@
     "child-process": "^1.0.2",
     "gulp": "^4.0.2",
     "gulp-autoprefixer": "^7.0.0",
+    "gulp-minify": "^3.1.0",
     "gulp-nodemon": "^2.4.2",
     "gulp-notify": "^3.2.0",
     "gulp-plumber": "^1.2.1",
