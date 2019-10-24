@@ -177,21 +177,20 @@ window.onload = function () {
   console.log('localStorage: ', localStorage);
 
   // set loaderContainer within the localstorage
-  localStorage.setItem('loadscreen', loaderContainer)
+  // localStorage.setItem('loadscreen', loaderContainer)
 
   /*check to see if loaderContainer is not undefined, if so add the class of itemhide,
    otherwise if it is undefined, set it to the localstorage*/
 
-    if (localStorage.getItem('loadscreen') !== undefined) {
-      loaderContainer.className = 'item--hide';
-      console.log('yeah there');
-    } else {
-      localStorage.setItem('loadscreen', loaderContainer)
-      console.log('nah its not there but i\'m adding it now');
-    }
+  // if (localStorage.getItem('loadscreen') !== undefined) {
+  //   loaderContainer.className = 'item--hide';
+  //   console.log('yeah there');
+  // } else {
+  //   localStorage.setItem('loadscreen', loaderContainer)
+  //   console.log('nah its not there but i\'m adding it now');
+  // }
 
 
 
 
 }
-
