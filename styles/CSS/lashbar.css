@@ -266,25 +266,25 @@ ul {
     i.e. linear and keeps looping 4eva */ }
 
 .slideshow li:nth-child(1) {
-  background-image: url("/mouth2.jpg"); }
+  background-image: url("https://res.cloudinary.com/yelpcampmedia/image/upload/v1571873301/lashbar/mouth2.jpg"); }
 
 .slideshow li:nth-child(2) {
-  background-image: url("/lip1.jpg");
+  background-image: url("https://res.cloudinary.com/yelpcampmedia/image/upload/v1571873300/lashbar/lip1.jpg");
   -webkit-animation-delay: 5s;
           animation-delay: 5s; }
 
 .slideshow li:nth-child(3) {
-  background-image: url("/hair13.jpg");
+  background-image: url("https://res.cloudinary.com/yelpcampmedia/image/upload/v1571873299/lashbar/hair13.jpg");
   -webkit-animation-delay: 10s;
           animation-delay: 10s; }
 
 .slideshow li:nth-child(4) {
-  background-image: url("/hair3.jpg");
+  background-image: url("https://res.cloudinary.com/yelpcampmedia/image/upload/v1571873295/lashbar/hair3.jpg");
   -webkit-animation-delay: 15s;
           animation-delay: 15s; }
 
 .slideshow li:nth-child(5) {
-  background-image: url("/hair4.jpg");
+  background-image: url("https://res.cloudinary.com/yelpcampmedia/image/upload/v1571873295/lashbar/hair4.jpg");
   -webkit-animation-delay: 20s;
           animation-delay: 20s; }
 
@@ -324,34 +324,12 @@ ul {
 
 .parallaxTry {
   /* The image used */
-  background-image: url("/Media/nails1.jpg");
+  background-image: url("https://res.cloudinary.com/yelpcampmedia/image/upload/v1558689329/nails1.jpg");
   /* Full height */
   height: 900px;
   /* Create the parallax scrolling effect */
   background-attachment: fixed;
   background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover; }
-
-.parallaxTry2 {
-  /* The image used */
-  background-image: url("/Media/nail3.jpg");
-  /* Full height */
-  height: 900px;
-  /* Create the parallax scrolling effect */
-  background-attachment: fixed;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover; }
-
-.parallaxTry3 {
-  /* The image used */
-  background-image: url("/Media/hair5.jpg");
-  /* Full height */
-  height: 900px;
-  /* Create the parallax scrolling effect */
-  background-attachment: fixed;
-  background-position: top;
   background-repeat: no-repeat;
   background-size: cover; }
 
@@ -669,13 +647,6 @@ section {
 /* The styling for the static div. */
 .static {
   background: red; }
-
-/* Sets the actual background images to adorable kitties. This part is crucial. */
-.bg1::after {
-  background-image: url(/Media/nail3.jpg); }
-
-.bg2::after {
-  background-image: url(/Media/hair5.jpg); }
 
 .section--screenHg {
   height: 100vh; }
