@@ -17,12 +17,14 @@
   "license": "ISC",
   "dependencies": {
     "cloudinary": "^1.14.0",
+    "cookie-parser": "latest",
     "dotenv": "^8.1.0",
     "ejs": "^2.6.1",
     "express": "^4.17.1",
     "express-session": "^1.16.1",
     "gulp-connect": "^5.7.0",
     "gulp-open": "^3.0.1",
+    "gulp-webp": "^4.0.1",
     "instafeed.js": "^1.4.1",
     "method-override": "^3.0.0",
     "mongoose": "^5.5.11",
@@ -30,8 +32,7 @@
     "node-sass": "^4.12.0",
     "passport": "^0.4.0",
     "passport-local": "^1.0.0",
-    "passport-local-mongoose": "^5.0.1",
-    "cookie-parser": "latest"
+    "passport-local-mongoose": "^5.0.1"
   },
   "devDependencies": {
     "browser-sync": "^2.26.5",
