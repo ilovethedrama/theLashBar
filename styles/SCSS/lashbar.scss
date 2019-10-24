@@ -77,13 +77,7 @@ ul {
     letter-spacing: 10px;
 }
 
-.title--gradientColor {
-    font-size: 72px;
-    background: -webkit-linear-gradient(#eee, pink);
-    background-clip: text;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-}
+
 
 .loader {
     height: 100vh;
@@ -134,17 +128,6 @@ ul {
     font-size: 4.5vw;
 }
 
-.title--underline {
-    border-bottom: none;
-    margin-bottom: 0;
-}
-
-.title--xl {
-    font-size: 20em;
-    display: block;
-    padding: 10px;
-    line-height: 250px;
-}
 
 .title--md {
     display: block;
@@ -162,21 +145,7 @@ ul {
     font-size: 1em;
 }
 
-.textPanel {
-    padding: 40px;
-    margin: 50px;
-}
 
-.title__caption {
-    font-size: 1.5em;
-}
-
-.title__details {
-    margin: 40px 0px;
-    padding: 20px 0px;
-    width: 80%;
-
-}
 
 .title--fancy {
     font-family: 'Caveat', cursive;
@@ -207,19 +176,6 @@ ul {
     text-transform: uppercase;
 }
 
-.title--vacuumSeal {
-    height: 110px;
-}
-
-.title--border {
-    border: 2px solid rgba(0, 0, 0, 1);
-    margin: 0px 10px;
-}
-
-.title--edgeBuffer {
-    margin: 0 200px;
-}
-
 .title--padding {
     padding: 30px;
 }
@@ -228,17 +184,7 @@ ul {
     padding: 10px;
 }
 
-.title--blush {
-    color: pink;
-    text-shadow: 1px 1px 2px red, 0 0 4em pink, 0 0 0.2em pink;
-    z-index: 20;
-}
 
-.text--middleLeft {
-    display: flex;
-    justify-content: left;
-    align-content: center;
-}
 
 .img--fade {
     opacity: .5;
@@ -271,14 +217,7 @@ ul {
     overflow: hidden;
 }
 
-.contentBorder {
-    border: 40px solid grey;
-}
 
-.contentContainer--topToBtm {
-    display: flex;
-    flex-flow: column wrap;
-}
 
 .contentContainer--pale {
     background: lightblue;
@@ -350,12 +289,10 @@ ul {
 }
 
 .slideshow li:nth-child(1) {
-    // background-image: url('/mouth2.webp');
     background-image: url('https://res.cloudinary.com/yelpcampmedia/image/upload/v1571873301/lashbar/mouth2.webp');
 }
 
 .slideshow li:nth-child(2) {
-    // background-image: url('/lip1.webp');
     background-image: url('https://res.cloudinary.com/yelpcampmedia/image/upload/v1571873300/lashbar/lip1.webp');
     animation-delay: 5s;
 }
@@ -371,7 +308,6 @@ ul {
 }
 
 .slideshow li:nth-child(5) {
-    // background-image: url('/hair4.webp');
     background-image: url('https://res.cloudinary.com/yelpcampmedia/image/upload/v1571873295/lashbar/hair4.webp');
     animation-delay: 20s;
 }
@@ -399,26 +335,6 @@ ul {
 #lashIntro img {
     opacity: 0;
 }
-
-.hero {
-    position: relative;
-}
-
-.parallaxTry {
-    /* The image used */
-    background-image: url("https://res.cloudinary.com/yelpcampmedia/image/upload/v1558689329/nails1.webp");
-
-    /* Full height */
-    height: 900px;
-
-    /* Create the parallax scrolling effect */
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-}
-
-
 
 
 .priceList__category {
@@ -474,26 +390,6 @@ ul {
     overflow: hidden;
 }
 
-.sellBox--bdr--topL {
-    border-left: 100px solid blanchedalmond;
-    border-top: 50px solid blanchedalmond;
-}
-
-.sellBox--bdr--topR {
-    border-right: 100px solid blanchedalmond;
-    border-top: 100px solid blanchedalmond;
-}
-
-.sellBox--bdr--topLB {
-    border-left: 100px solid blanchedalmond;
-    border-top: 100px solid blanchedalmond;
-    border-bottom: 50px solid blanchedalmond;
-}
-
-
-.sellBox--bdr--bottom {
-    border-bottom: 25px solid blanchedalmond;
-}
 
 
 .widthMod300 {
@@ -533,11 +429,6 @@ ul {
 
 
 
-.item--noborder {
-    border: none;
-}
-
-
 .navMini {
     z-index: 5;
     color: blanchedalmond;
@@ -549,12 +440,6 @@ ul {
     left: 0;
     text-align: center;
     overflow-x: hidden;
-
-    label {
-        padding: 10px;
-        width: 100%;
-
-    }
 }
 
 ::placeholder {
@@ -562,37 +447,12 @@ ul {
     text-align: center;
 }
 
-.testBorder {
-    border: 10px solid greenyellow;
-}
 
 *:focus {
     outline: none;
 }
 
 .form__button--text {
-    text-align: left;
-    padding: 5px;
-    margin-bottom: 40px;
-    width: 300px;
-    border-top: none;
-    border-left: none;
-    border-right: none;
-    outline-color: none;
-    border-bottom: 2px blanchedalmond solid;
-    text-transform: uppercase;
-
-    // :active {
-    //     background: lightblue;
-    // }
-    // :after {
-    //     content:'Tick';
-    //     color: green;
-    // }
-    // :hover {
-    //     background:lightblue;
-    //     color:lightblue;
-    // }
     :valid {
         color: green;
     }
@@ -638,16 +498,6 @@ ul {
     align-items: flex-end;
 }
 
-.item--H100pc {
-    height: 100%;
-}
-
-.item--rails {
-    border-left: 3px solid blanchedalmond;
-    border-top: none;
-    border-bottom: none;
-    border-right: 3px solid blanchedalmond;
-}
 
 a {
     text-decoration: none;
@@ -657,11 +507,6 @@ a {
 .blogPst--article--buffer {
     margin: 10rem 5rem;
 }
-
-// .blogPst {
-//     height: 100vh;
-//     overflow-y: scroll;
-// }
 
 
 .blogPst--moreTease {
@@ -692,20 +537,12 @@ article {
     width: 100%;
 }
 
-.img--stretch {
-    width: 100%;
-    height: 500px;
-}
 
 .tweetContainer {
     width: 55%;
     height: auto;
 }
 
-.item--sticky {
-    top: -70px;
-    position: sticky;
-}
 
 .item--snap--5Hunna {
     flex: 1 1 500px;
@@ -730,19 +567,7 @@ article {
     transform: scale(3.4);
 }
 
-.item--green {
-    color: green;
-}
 
-.item--red {
-    color: red;
-}
-
-.item--hide {
-    display: none;
-    opacity: 0;
-
-}
 
 .item--showDaBlock {
     display: block;
@@ -764,32 +589,6 @@ article {
     box-shadow: 3px 4px 14px 1px rgba(0, 0, 0, 0.67);
 }
 
-
-
-.itemUnderline:before {
-    content: "";
-    position: absolute;
-    width: 100%;
-    height: 5px;
-    z-index: 0;
-    bottom: 0;
-    left: 0;
-    background: #000;
-    visibility: hidden;
-    transform: scaleX(0);
-    box-sizing: border-box;
-}
-
-.itemlimit {
-    width: auto;
-}
-
-
-.itemUnderline:hover:before,
-.itemUnderline:focus:before {
-    visibility: visible;
-    transform: scaleX(1);
-}
 
 .nav2 {
     width: 100%;
@@ -816,46 +615,11 @@ section {
     position: relative;
 }
 
-
-
-
-.parallax::after {
-
-    content: " ";
-    position: absolute;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-
-    /* Move the pseudo-element back away from the camera,
-     * then scale it back up to fill the viewport.
-     * Because the pseudo-element is further away, it appears to move more slowly, like in real life. */
-    transform: translateZ(-1px) scale(1.5);
-    /* Force the background image to fill the whole element. */
-    background-size: 100%;
-    /* Keep the image from overlapping sibling elements. */
-    z-index: -1;
-}
-
-/* The styling for the static div. */
-.static {
-    background: red;
-}
-
-
-
 .section--screenHg {
     height: 100vh;
 }
 
-.section--screenHalf {
-    height: 50vh;
-}
 
-#twitter-widget-0 {
-    width: 100%;
-}
 
 .text-overlap {
     position: absolute;
@@ -873,21 +637,7 @@ section {
     margin-top: 140px;
 }
 
-.section--grey {
-    background: grey;
-}
 
-.section--lightblue {
-    background: lightblue;
-}
-
-.section--white {
-    background: white;
-}
-
-.section--lightgrey {
-    background: lightgray;
-}
 
 h3 {
     font: 3rem 'Caveat Brush', cursive;
@@ -920,9 +670,7 @@ h3 {
     flex-flow: row wrap;
 }
 
-.item--stretchtoContentHeight {
-    margin-top: 250px;
-}
+
 
 .item--snap--small {
     flex: 1 1 200px;
@@ -939,10 +687,6 @@ h3 {
     flex-flow: row wrap;
 }
 
-.contentContainer--singleCenter {
-    display: flex;
-    align-self: center;
-}
 
 .contentContainer--oneMiddle {
     display: flex;
@@ -951,20 +695,6 @@ h3 {
 }
 
 
-
-.contentContainer--spreadOut {
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-    height: 100%;
-}
-
-.listGrid {
-    display: inline-grid;
-    grid-gap: 10px;
-    // grid-template-columns: repeat(auto-fit, minmax(200px, 200px)); 
-    grid-template-columns: repeat(auto-fit, minmax(300px, 100px) minmax(100px, 100px));
-}
 
 .form__input {
     height: 30px;
@@ -1009,9 +739,7 @@ h3 {
     width: 570px;
 }
 
-.form__input--full {
-    width: 100%;
-}
+
 
 
 
@@ -1020,15 +748,6 @@ h3 {
     font-size: 2.5rem;
 }
 
-
-
-
-
-
-.edgeRound {
-    border-bottom-right-radius: 10px;
-    border-bottom-left-radius: 10px;
-}
 
 .contentContainer--spreadOutWide {
     display: flex;
@@ -1046,21 +765,6 @@ h3 {
 
 .contentContainer__sideByside {
     flex-flow: row wrap;
-}
-
-.img--soft {
-    filter: blur(20px) grayscale(20%);
-}
-
-.borderCheck {
-    border: 3px dashed orange;
-}
-
-
-.borderCheck2 {
-    border: 3px solid maroon;
-    padding: 10px;
-
 }
 
 
@@ -1086,7 +790,7 @@ h3 {
     padding: 10px;
 }
 
-img {
+.content--fullwidth {
     width: 100%;
 }
 
@@ -1100,20 +804,11 @@ img {
     }
 }
 
-.locationSection {
-
-    background: grey;
-}
 
 .font--weight--thin {
     font-weight: 500;
 }
 
-
-.adc {
-    overflow: hidden;
-    width: auto;
-}
 
 .ABZ {
     position: absolute;
@@ -1154,7 +849,10 @@ img {
     background: lightblue;
     text-align: center;
     padding: 30px 0;
+}
 
+.section--lightblue {
+    background: lightblue;
 }
 
 .footer__title:hover,
@@ -1162,6 +860,11 @@ img {
     background: blanchedalmond;
     transition: background .3s ease-in;
     color: maroon;
+
+}
+.item--hide {
+    display: none;
+    opacity: 0;
 
 }
 
@@ -1218,9 +921,6 @@ img {
     overflow: hidden;
     max-height: 0;
 }
-
-
-
 
 
 @media screen and (max-width: 1050px) {
@@ -1375,13 +1075,6 @@ img {
         font-size: 1em;
     }
 
-    /* or :
-    #lashTitle1,
-    #lashTitle2,
-    #lashTitle3 {
-        font-size: 1em;
-    }*/
-
     [class *='sellBox--bdr'] {
         border: none;
     }
@@ -1416,20 +1109,7 @@ img {
         right: 0%;
     }
 
-    #nailIntro {
-        h1 {
-            font-size: 3rem;
-        }
-    }
 
-    .title--underline {
-        border-bottom: 1px solid black;
-        margin-bottom: 30px;
-    }
-
-    .title--xl {
-        font-size: 10rem;
-    }
 
     .title--lg--vwVersion {
         font-size: 10vw;
@@ -1509,10 +1189,7 @@ img {
         font-size: 1.5em;
 
     }
-
-
 }
-
 
 
 //These are settings for users who get dizzy/have motion sickness and minimizes all non-essential movement
