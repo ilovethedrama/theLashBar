@@ -67,10 +67,10 @@ ul {
 
 .welcomeMsg {
   background-image: url(https://res.cloudinary.com/yelpcampmedia/image/upload/v1571875813/lashbar/fireWhip.gif);
+  -moz-background-clip: text;
   background-size: cover;
   color: transparent;
   background-clip: text;
-  -moz-background-clip: text;
   -webkit-background-clip: text;
   text-transform: uppercase;
   margin: 10px 0;
