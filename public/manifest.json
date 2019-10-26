@@ -1,12 +1,12 @@
 {
     "name": "The Lash Bar Beauty Bar App",
     "short_name": "Lash Bar",
-    "start_url": "main.ejs",
+    "start_url": "/",
     "lang": "en-US",
     "display": "standalone",
-    "background_color": "lightblue",
+    "background_color": "#ADD8E6",
     "orientation": "portrait-primary",
-    "theme_color": "lightblue",
+    "theme_color": "#ADD8E6",
     "version": "1.0",
     "description": "The Lash Bar Beauty Progressive Web App",
     "icons": [{
