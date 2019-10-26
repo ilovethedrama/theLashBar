@@ -40,6 +40,7 @@ app.use(
 app.use(express.static(__dirname + "/styles/CSS/"));
 app.use(express.static(__dirname + "/Media/"));
 app.use(express.static(__dirname + "/JS/"));
+app.use(express.static('public'));
 app.use(cookieParser());
 
 const nexmo = new Nexmo({
@@ -125,33 +126,6 @@ var Customer = mongoose.model("Customer", customerSchema, "Customer");
 /* this makes a model based on the customer schema with methods on it so that you can do Customer.find etc
  and expressly names it customer as mongo will by default change the collection name to Customers */
 
-
-
-/*app.post('/appointment', function (req, res) {
-  var firstName = req.body.firstName,
-    lastName = req.body.lastName,
-    mobile = req.body.mobile,
-    email = req.body.email,
-    treatment = req.body.treatment,
-    time = req.body.time,
-    date = req.body.date;
-  var deetz = {
-    date: date,
-    time: time,
-    treatment: treatment,
-    email: email,
-    mobile: mobile,
-    firstName: firstName,
-    lastName: lastName
-  }
-  Customer.collection.insertOne(deetz, function (err, info) {
-    if (err) {
-      console.log(err, `something went wrong`);
-    } else {
-      console.log(`this is the info passed through: `, info);
-      console.log('newly created file for a customer');
-    }
-  }); */
 
 app.post('/appointment', function (req, res) {
   var firstName = req.body.firstName,
