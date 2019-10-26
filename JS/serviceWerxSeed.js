@@ -2,7 +2,7 @@
 basically checking to make sure its supported in the current browser */
 
 
-var path = 'serviceWerx.js';
+var path = '../../serviceWerx.js';
 
 console.log(navigator);
 if (navigator.serviceWorker) {
