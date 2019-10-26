@@ -1,9 +1,6 @@
 /*register service worker fo' PWA. Navigator = browser, 
 basically checking to make sure its supported in the current browser */
-
-
-
-// console.log(navigator);
+console.log(navigator);
 if (navigator.serviceWorker) {
     /* This is an asynchronous task as it takes time to complete and
      so the then function will be resolved once the register part is sorted. The async task creates an implied/implicit 'promise', this promise, 
