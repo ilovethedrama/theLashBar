@@ -2,6 +2,7 @@
     "name": "The Lash Bar Beauty Bar App",
     "short_name": "Lash Bar",
     "start_url": "/",
+    "scope": "/",
     "lang": "en-US",
     "display": "standalone",
     "background_color": "#ADD8E6",
