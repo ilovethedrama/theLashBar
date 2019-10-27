@@ -48,7 +48,9 @@ html {
 
 body {
     height: 100vh;
-    background-color: rgb(226, 226, 226);
+    background-color: lightblue;
+    position: relative;
+    font-size: 16px;
 }
 
 ul {
@@ -77,6 +79,9 @@ ul {
     letter-spacing: 10px;
 }
 
+.close--CB {
+    bottom: 0%;
+}
 
 
 .loader {
@@ -94,6 +99,13 @@ ul {
     height: 100%;
 }
 
+.hellaChoc {
+    background-image: url(/Media/fireWhip.mp4);
+    height: 500px;
+    width: 500px;
+    position: fixed;
+    z-index: 10000;
+}
 
 .welcomeMsg {
     background-image: url(https://res.cloudinary.com/yelpcampmedia/image/upload/v1571875813/lashbar/fireWhip.gif);
@@ -474,23 +486,30 @@ ul {
 }
 
 
+
+
 .form__button--submit {
     border: none;
     border-radius: 10px;
     text-align: center;
-    padding: 10px 60px;
-    margin-bottom: 10px;
     color: maroon;
     cursor: pointer;
     background: blanchedalmond;
+
+    &:hover {
+        background: maroon;
+        color: blanchedalmond;
+    }
+
+    a {
+        &:hover {
+            background: maroon;
+            color: blanchedalmond;
+            transition: .5s ease-out;
+        }
+    }
 }
 
-.form__button--submit:hover {
-    transition: .5s ease-out;
-    background: maroon;
-    color: blanchedalmond;
-
-}
 
 
 
@@ -601,12 +620,6 @@ article {
 }
 
 
-
-body {
-    position: relative;
-    height: auto;
-    font-size: 16px;
-}
 
 
 section {
@@ -1003,7 +1016,8 @@ h3 {
     }
 
     .img--largefill {
-        object-position: 0 -65px;
+        object-position: 0 -50px;
+        // object-position: 0 -65px;
         width: 100%;
         // flex: 1 1 50%;
         height: 100%;
@@ -1099,20 +1113,15 @@ h3 {
 
     form {
         height: 100vh;
-        overflow: scroll;
-        padding: 0px;
+        padding-top: 150px;
+        margin-bottom: 50px;
     }
 
-    .close--CB {
-        bottom: 0%;
-        left: 0%;
-        right: 0%;
-    }
 
 
 
     .title--lg--vwVersion {
-        font-size: 10vw;
+        font-size: 13vw;
     }
 
 
@@ -1186,7 +1195,7 @@ h3 {
 
     .welcomeMsg--introText {
         padding: 30px 0px;
-        font-size: 1.5em;
+        font-size: 1.25em;
 
     }
 }
