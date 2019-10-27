@@ -27,6 +27,9 @@
     font-weight: normal;
 }
 
+input:focus::placeholder{
+    color:transparent;
+}
 
 input:-webkit-autofill,
 input:-webkit-autofill:hover,
@@ -875,6 +878,7 @@ h3 {
     color: maroon;
 
 }
+
 .item--hide {
     display: none;
     opacity: 0;

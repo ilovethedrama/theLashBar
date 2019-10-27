@@ -7,6 +7,21 @@
   box-sizing: border-box;
   font-weight: normal; }
 
+input:focus::-webkit-input-placeholder {
+  color: transparent; }
+
+input:focus::-moz-placeholder {
+  color: transparent; }
+
+input:focus:-ms-input-placeholder {
+  color: transparent; }
+
+input:focus::-ms-input-placeholder {
+  color: transparent; }
+
+input:focus::placeholder {
+  color: transparent; }
+
 input:-webkit-autofill,
 input:-webkit-autofill:hover,
 input:-webkit-autofill:focus input:-webkit-autofill,
