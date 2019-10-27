@@ -101,6 +101,10 @@ app.get("/blogHome", function (req, res) {
 });
 
 
+app.get("*", function (req, res) {
+  res.render("error");
+});
+
 
 
 
