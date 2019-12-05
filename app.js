@@ -37,6 +37,8 @@ app.use(
   })
 );
 
+
+
 app.use(express.static(__dirname + "/styles/CSS/"));
 app.use(express.static(__dirname + "/Media/"));
 app.use(express.static(__dirname + "/JS/"));
@@ -51,9 +53,10 @@ const nexmo = new Nexmo({
 });
 
 
-/*mongoose.connect("mongodb://localhost/lashB", {
-  useNewUrlParser: true
-});*/
+
+
+
+
 
 // this links the db with eith mongolab or the local version of the db
 mongoose.connect(mongolab_PW || 'mongodb://localhost/lashB', {
