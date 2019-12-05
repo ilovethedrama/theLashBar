@@ -105,7 +105,7 @@ ul {
   font-size: 15vw; }
 
 .title--md--vwVersion {
-  font-size: 6vw; }
+  font-size: 7vw; }
 
 .title--sm--vwVersion {
   font-size: 4.5vw; }
@@ -121,7 +121,7 @@ ul {
 
 .title--xs {
   display: block;
-  font-size: 1em; }
+  font-size: 1.25em; }
 
 .title--fancy {
   font-family: 'Caveat', cursive; }
@@ -157,7 +157,7 @@ ul {
   margin: 15px; }
 
 .img--fade--stronger {
-  opacity: .15; }
+  opacity: .05; }
 
 .img--position--btm {
   -o-object-position: 0px 144px;
@@ -398,6 +398,9 @@ ul {
   font-weight: 900;
   color: maroon; }
 
+.location__address {
+  line-height: 2rem; }
+
 .form__button--submit {
   border: none;
   border-radius: 10px;
@@ -631,13 +634,29 @@ h3 {
 .font--weight--thin {
   font-weight: 500; }
 
-.ABZ {
+.location__site {
   position: absolute;
   font-size: 7rem;
   font-weight: 900;
   left: -150px;
   top: -70px;
-  color: rgba(0, 0, 0, 0.3); }
+  color: rgba(0, 0, 0, 0.3);
+  position: absolute;
+  font-size: 7rem;
+  font-weight: 900;
+  left: 50%;
+  top: -70px;
+  color: rgba(0, 0, 0, 0.3);
+  transform: translateX(-50%); }
+
+.location__container {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center; }
+
+.location__hours {
+  padding: 0px 0px 30px 0px;
+  margin: 0px 0px 50px 0px; }
 
 .relativo {
   position: relative; }

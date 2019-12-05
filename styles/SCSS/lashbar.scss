@@ -14,11 +14,8 @@
 
 // font-family: 'Caveat Brush', cursive;
 // font-family: 'Caveat', cursive;
-// font-family: 'Fjalla One', sans-serif;
-// font-family: 'Teko', sans-serif;
 // font-family: 'Niramit', sans-serif;
 // font-family: 'Nova Round', cursive;
-// font-family: 'Elsie', cursive;
 
 * {
     padding: 0;
@@ -27,8 +24,8 @@
     font-weight: normal;
 }
 
-input:focus::placeholder{
-    color:transparent;
+input:focus::placeholder {
+    color: transparent;
 }
 
 input:-webkit-autofill,
@@ -110,10 +107,11 @@ ul {
     z-index: 10000;
 }
 
+
+
 .welcomeMsg {
     background-image: url(https://res.cloudinary.com/yelpcampmedia/image/upload/v1571875813/lashbar/fireWhip.gif);
     -moz-background-clip: text;
-    // background-image: url(/Media/fireFlash.webm);
     background-size: cover;
     color: transparent;
     background-clip: text;
@@ -136,7 +134,7 @@ ul {
 }
 
 .title--md--vwVersion {
-    font-size: 6vw;
+    font-size: 7vw;
 }
 
 .title--sm--vwVersion {
@@ -157,7 +155,7 @@ ul {
 
 .title--xs {
     display: block;
-    font-size: 1em;
+    font-size: 1.25em;
 }
 
 
@@ -172,8 +170,7 @@ ul {
 
 .title--neat {
     font-family: 'Nova Round', cursive;
-    // font-family: 'Fjalla One', sans-serif;
-    // font-family: 'Teko', sans-serif;
+
     // font-family: 'Niramit', sans-serif;
 }
 
@@ -211,7 +208,7 @@ ul {
 }
 
 .img--fade--stronger {
-    opacity: .15;
+    opacity: .05;
 }
 
 .img--position--btm {
@@ -488,6 +485,9 @@ ul {
     color: maroon;
 }
 
+.location__address {
+    line-height: 2rem;
+}
 
 
 
@@ -826,13 +826,31 @@ h3 {
 }
 
 
-.ABZ {
+.location__site {
     position: absolute;
     font-size: 7rem;
     font-weight: 900;
     left: -150px;
     top: -70px;
-    color: rgba(0, 0, 0, 0.3)
+    color: rgba(0, 0, 0, 0.3);
+    position: absolute;
+    font-size: 7rem;
+    font-weight: 900;
+    left: 50%;
+    top: -70px;
+    color: rgba(0, 0, 0, 0.3);
+    transform: translateX(-50%);
+}
+
+.location__container {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+}
+
+.location__hours {
+    padding: 0px 0px 30px 0px;
+    margin: 0px 0px 50px 0px;
 }
 
 .relativo {
