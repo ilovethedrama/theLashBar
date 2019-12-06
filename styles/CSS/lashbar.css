@@ -47,6 +47,29 @@ body {
 ul {
   list-style-type: none; }
 
+.subscribe--input {
+  border: 0 transparent;
+  height: 100%;
+  width: 100%;
+  text-align: center;
+  background: transparent;
+  font-family: 'Josefin Sans', sans-serif;
+  font-weight: 300;
+  text-transform: uppercase;
+  border-bottom: 2px solid black; }
+
+.subscription__container {
+  position: fixed;
+  width: 50%;
+  height: 50%;
+  z-index: 10;
+  top: 50%;
+  left: 50%; }
+
+.location__container--fitInside {
+  overflow: hidden;
+  height: 100vh; }
+
 .title {
   font-family: 'Caveat Brush', cursive; }
 
@@ -110,6 +133,9 @@ ul {
 .title--sm--vwVersion {
   font-size: 4.5vw; }
 
+.title--xs--vwVersion {
+  font-size: 2.5vw; }
+
 .title--md {
   display: block;
   font-size: 7em;
@@ -148,6 +174,9 @@ ul {
 
 .title--padding--mini {
   padding: 10px; }
+
+.title--padding--noBottom {
+  padding: 30px 30px 0 30px; }
 
 .img--fade {
   opacity: .5; }
@@ -398,7 +427,7 @@ ul {
   font-weight: 900;
   color: maroon; }
 
-.location__address {
+.location__content--address {
   line-height: 2rem; }
 
 .form__button--submit {
@@ -634,13 +663,7 @@ h3 {
 .font--weight--thin {
   font-weight: 500; }
 
-.location__site {
-  position: absolute;
-  font-size: 7rem;
-  font-weight: 900;
-  left: -150px;
-  top: -70px;
-  color: rgba(0, 0, 0, 0.3);
+.location__content--site {
   position: absolute;
   font-size: 7rem;
   font-weight: 900;
@@ -649,17 +672,14 @@ h3 {
   color: rgba(0, 0, 0, 0.3);
   transform: translateX(-50%); }
 
-.location__container {
+.location__content--container {
   display: flex;
   flex-flow: column nowrap;
   justify-content: center; }
 
-.location__hours {
+.location__content--hours {
   padding: 0px 0px 30px 0px;
   margin: 0px 0px 50px 0px; }
-
-.relativo {
-  position: relative; }
 
 .dividerBlack--thin {
   border: solid 1px black;
@@ -740,6 +760,10 @@ h3 {
     font-size: 1.5rem; }
   .img--scaleUp {
     transform: scale(2); } }
+
+@media screen and (max-width: 1005px) {
+  .location__container--fitInside {
+    height: 900px; } }
 
 @media screen and (max-width: 900px) {
   .img--largefill {
@@ -840,8 +864,8 @@ h3 {
   .img--scaleUp {
     transform: scale(1); }
   .blog--introText {
-    font-size: .7em;
-    line-height: 1.5rem; }
+    font-size: 1rem;
+    line-height: 2.5rem; }
   .blogPst--introText--extra {
     display: none; }
   #navbar div ul {
