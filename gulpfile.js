@@ -34,7 +34,7 @@ const distill = () => {
         .pipe(uglifycss({
             'uglyComments': true
         }))
-        .pipe(gulp.dest('./producki/'))
+        .pipe(gulp.dest('./styles/CSS'))
 }
 
 let thePausinator;
@@ -61,7 +61,7 @@ const bSync = () => {
 const smallerJS = (done) => {
     gulp.src('./JS/lash.js')
         .pipe(minify())
-        .pipe(gulp.dest('./JS/dist'))
+        .pipe(gulp.dest('./JS/'))
     done();
 }
 
@@ -111,4 +111,4 @@ changes to the scss files and ejs files and updates the browser if
  either one changes and also injects css when scss is ListeningStateChangedEvent. SICCKKK */
 gulp.task("default", gulp.parallel(server, holdIt, gulp.parallel(gulp.series(scssToCss), watcher)));
 
-gulp.task('squeezeJS', gulp.series(smallerJS));
+gulp.task('squeezeJSnCSS', gulp.series(smallerJS, distill));
