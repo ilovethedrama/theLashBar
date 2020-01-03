@@ -14,8 +14,9 @@
 
 // font-family: 'Caveat Brush', cursive;
 // font-family: 'Caveat', cursive;
-// font-family: 'Niramit', sans-serif;
 // font-family: 'Nova Round', cursive;
+// font-family: 'Old Standard TT', serif;
+// font-family: 'Cardo', serif;
 
 * {
     padding: 0;
@@ -164,7 +165,7 @@ ul {
 }
 
 .title--sm--vwVersion {
-    font-size: 4.5vw;
+    font-size: 3.7vw;
 }
 
 .title--xs--vwVersion {
@@ -198,10 +199,17 @@ ul {
     font-family: 'Caveat Brush', cursive;
 }
 
+.title--fancy3 {
+    font-family: 'Cardo', serif;
+}
+
+.title--fancy4 {
+    font-family: 'Old Standard TT', serif;
+}
+
 .title--neat {
     font-family: 'Nova Round', cursive;
 
-    // font-family: 'Niramit', sans-serif;
 }
 
 .title--neat2 {
@@ -233,7 +241,7 @@ ul {
 
 
 .img--fade {
-    opacity: .5;
+    opacity: .3;
 }
 
 .sellBox--tile__med {
@@ -253,6 +261,7 @@ ul {
     height: 100vh;
     object-fit: cover;
     display: block;
+    width:100%;
 }
 
 .blog--introText {
@@ -261,6 +270,11 @@ ul {
 
 .contentContainer--confine {
     overflow: hidden;
+    max-height: 100vh;
+}
+
+.contentContainer--confine--flex50 {
+ flex: 1 1 50%;
 }
 
 
@@ -587,10 +601,12 @@ article {
     position: relative;
 }
 
-.footer {
+footer {
     height: auto;
     overflow: hidden;
     width: 100%;
+    z-index: 1;
+    position: relative;
 }
 
 
@@ -612,7 +628,37 @@ article {
     height: 100%;
     width: 100%;
     object-fit: cover;
+}
 
+.blogPost--img--intro {
+    width: 100%;
+    object-fit: cover;
+    height: 100%;
+}
+
+.blogPost--container--intro {
+    height: 100vh;
+}
+
+.introSection--container {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    z-index: 11;
+    height:100vh;
+    position: relative;
+}
+
+.fadeToBlack {
+    background: linear-gradient(black, black, transparent 90%);
+}
+.text--white {
+    color:blanchedalmond;
+}
+
+.introSection--container--text {
+    position: absolute;
+    height: 100vh;
 }
 
 .img--scaleUp {
@@ -660,10 +706,19 @@ article {
 
 
 section {
-    max-width: 100vw;
-    overflow: hidden;
+    // max-width: 100vw;
+    // height: 100vh;
+    // border: 2px solid black;
+    // overflow: hidden;
     position: relative;
+    // min-width: 320px;
 }
+
+// .section--blogPost-intro {
+//     position: relative;
+//     overflow: hidden;
+//     height: 100vh;
+// }
 
 .section--screenHg {
     height: 100vh;
@@ -689,9 +744,9 @@ section {
 
 
 
-h3 {
-    font: 3rem 'Caveat Brush', cursive;
-}
+// h3 {
+//     font: 3rem 'Caveat Brush', cursive;
+// }
 
 .contentContainer {
     display: flex;
@@ -719,6 +774,12 @@ h3 {
     justify-content: space-between;
     flex-flow: row wrap;
 }
+
+@mixin contentContainer--oneMiddle {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
 
 
 
@@ -849,9 +910,6 @@ h3 {
     flex-flow: row wrap;
     justify-content: space-between;
 
-    aside {
-        flex: 1 1 45%;
-    }
 }
 
 
@@ -878,7 +936,7 @@ h3 {
 
 .location__content--hours {
     padding: 0px 0px 30px 0px;
-    margin: 0px 0px 50px 0px;
+    // margin: 0px 0px 50px 0px;
 }
 
 
@@ -1029,6 +1087,7 @@ h3 {
 
     #blogPost article {
         @include contentStack;
+        flex-flow:row nowrap;
     }
 
     .fab {
@@ -1060,7 +1119,12 @@ h3 {
         width: 100%;
     }
 
-
+    .introSection--container--text {
+        display: flex;
+    justify-content: center;
+    align-items: center  ;
+    flex-flow: column wrap;
+    }
 }
 
 @media screen and (max-width: 600px) {
@@ -1070,18 +1134,16 @@ h3 {
 
     .img--largefill {
         object-position: 0 -50px;
-        // object-position: 0 -65px;
         width: 100%;
-        // flex: 1 1 50%;
         height: 100%;
     }
 
     #blogPost article {
-        padding-top: 50px;
+
 
         h3 {
             letter-spacing: 5px;
-            width: 100vw;
+            // width: 100vw;
         }
     }
 
@@ -1175,7 +1237,17 @@ h3 {
         font-size: 13vw;
     }
 
+    .title--md--vwVersion {
+        font-size: 1.5rem;
+    }
 
+    #navi {
+        font-size: 1.25rem;
+    }
+
+    .title--xxs--vwVersion {
+        font-size: .75rem;
+    }
 
     .ABZ {
         display: none;
@@ -1188,8 +1260,8 @@ h3 {
 
 
     .blog--introText {
-        font-size: 1rem;
-        line-height: 2.5rem;
+        font-size: .75rem;
+        line-height: 1.5rem;
     }
 
     .blogPst--introText--extra {
@@ -1244,11 +1316,7 @@ h3 {
         transform: scale(6.4);
     }
 
-    .welcomeMsg--introText {
-        padding: 30px 0px;
-        font-size: 1.25em;
 
-    }
 }
 
 
