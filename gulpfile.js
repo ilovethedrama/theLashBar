@@ -48,8 +48,8 @@ const bSync = () => {
     browserSync.init({
         proxy: 'localhost:3000',
         port: 3003,
-        online: true,
-        tunnel: true
+        online: true
+        // tunnel: true
 
     });
     // done();
