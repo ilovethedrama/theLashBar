@@ -852,6 +852,8 @@ section {
   .scroll-indicator {
     -webkit-animation: bounceSm 1s infinite;
     animation: bounceSm 1s infinite; }
+  .introSection--container, .introSection--container--text, .lashIntro__img {
+    height: 50vh; }
   @-webkit-keyframes bounceSm {
     0% {
       bottom: 15%; }
