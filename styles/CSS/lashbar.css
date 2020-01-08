@@ -67,7 +67,21 @@ ul {
   left: 50%; }
 
 .location__container--fitInside {
-  overflow: hidden; }
+  overflow: hidden;
+  display: block;
+  position: relative; }
+  .location__container--fitInside:after {
+    content: '';
+    opacity: 0.04;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    position: absolute;
+    z-index: 0;
+    background-size: cover;
+    transform: scale(2.5);
+    background: no-repeat center url("https://res.cloudinary.com/yelpcampmedia/image/upload/v1571873303/lashbar/sheffMap.jpg"); }
 
 .title {
   font-family: 'Caveat Brush', cursive; }
@@ -733,7 +747,9 @@ section {
 .location__content--container {
   display: flex;
   flex-flow: column nowrap;
-  justify-content: center; }
+  justify-content: center;
+  background-image: url("https://res.cloudinary.com/yelpcampmedia/image/upload/v1571873303/lashbar/sheffMap.jpg");
+  position: relative; }
 
 .location__content--hours {
   padding: 0px 0px 30px 0px; }
