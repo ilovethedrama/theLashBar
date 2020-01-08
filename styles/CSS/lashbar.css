@@ -67,8 +67,7 @@ ul {
   left: 50%; }
 
 .location__container--fitInside {
-  overflow: hidden;
-  height: 100vh; }
+  overflow: hidden; }
 
 .title {
   font-family: 'Caveat Brush', cursive; }
@@ -188,7 +187,7 @@ ul {
   opacity: .3; }
 
 .sellBox--tile__med {
-  flex: 1 1 400px;
+  flex: 1 1 30%;
   margin: 15px; }
 
 .img--fade--stronger {
@@ -508,7 +507,9 @@ footer {
   width: 100%;
   -o-object-fit: cover;
      object-fit: cover;
-  height: 100%; }
+  height: 100%;
+  -o-object-position: top;
+     object-position: top; }
 
 .blogPost--container--intro {
   height: 100vh; }
@@ -519,7 +520,21 @@ footer {
   width: 100%;
   z-index: 11;
   height: 100vh;
-  position: relative; }
+  position: relative;
+  opacity: 1;
+  display: block; }
+  .introSection--container::after {
+    content: '';
+    background-image: url("https://res.cloudinary.com/yelpcampmedia/image/upload/v1571873299/lashbar/hair8.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: bottom;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    position: absolute;
+    z-index: -1; }
 
 .fadeToBlack {
   background: linear-gradient(black, black, transparent 90%); }
@@ -529,7 +544,14 @@ footer {
 
 .introSection--container--text {
   position: absolute;
-  height: 100vh; }
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: column wrap; }
+
+.introSection--container--textSignature {
+  align-self: flex-end; }
 
 .img--scaleUp {
   transform: scale(1.7); }
@@ -795,7 +817,7 @@ section {
 
 @media screen and (max-width: 1005px) {
   .location__container--fitInside {
-    height: 900px; } }
+    height: auto; } }
 
 @media screen and (max-width: 900px) {
   .img--largefill {
@@ -852,8 +874,12 @@ section {
   .scroll-indicator {
     -webkit-animation: bounceSm 1s infinite;
     animation: bounceSm 1s infinite; }
-  .introSection--container, .introSection--container--text, .lashIntro__img {
+  .introSection--container,
+  .introSection--container--text,
+  .lashIntro__img {
     height: 50vh; }
+  .introSection--container--textSignature {
+    color: lightblue; }
   @-webkit-keyframes bounceSm {
     0% {
       bottom: 15%; }
