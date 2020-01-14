@@ -4,23 +4,23 @@
 <section class="section--lightblue" id='bookingForm'>
     <form action='/appointment' method="POST" class=" padding-top-boost bookingForm section--lightblue">
 
-        <div class='title--small title--neat2a title--uppercase
-             title--padding'>
+        <div class='title__xxs--vwVersion title__neat2a title__uppercase
+             title__padding'>
 
-            <div class='form__line'>
+            <div class='title__padding--mini '>
                 Hi, I'm
 
-                <input type='text' class='form__input form__input--short' name='firstName' placeholder='first name'
+                <input type='text' class=' form__input form__input--short' name='firstName' placeholder='first name'
                     required>
 
-                <input type='text' class='form__input--short form__input' name='lastName' placeholder='last name'
+                <input type='text' class=' form__input--short form__input' name='lastName' placeholder='last name'
                     required><br>
             </div>
 
-            <div class='form__line'>
+            <div class='title__padding--mini '>
                 & I want you to give me a gorgeous
 
-                <input list="treatments" name='treatment' class='form__input' placeholder='    the treatment    '
+                <input list="treatments" name='treatment' class=' form__input' placeholder='    the treatment    '
                     required>
                 <datalist id="treatments">
                     <option value="Express Manicure">
@@ -35,7 +35,7 @@
             </div>
 
 
-            <div class='form__line'>
+            <div class='title__padding--mini '>
                 I want it on the
 
                 <input class='form__input' type='date' name='date' placeholder='date' required>
@@ -47,23 +47,23 @@
                     oninput="this.setCustomValidity('')">
                 <br>
             </div>
-            <div class='form__line'>
+            <div class='title__padding--mini '>
                 You can contact me on
 
-                <input type='tel' class='form__input' name='mobile' placeholder='    mobile number    ' required
+                <input type='tel' class=' form__input' name='mobile' placeholder='    phone number    ' required
                     pattern='^07\d{9}' title='A mobile number starting 07 with 9 more digits'><br>
             </div>
 
-            <div class='form__line'>
+            <div class='title__padding--mini  '>
                 & send me an email at
             </div>
 
-            <div class='form__line'>
-                <input type='email' class='form__input form__input--long' name='email'
+            <div class='title__padding--mini '>
+                <input type='email' class=' form__input form__input--long' name='email'
                     placeholder='          email          ' required><br>
             </div>
 
-            <div class='form__line'>
+            <div class='title__padding--mini '>
                 Thanks!
 
             </div>
@@ -73,15 +73,15 @@
     <div class='contentContainer--oneMiddle close--CB' id='itemClose'>
         <a href='/appConfirmation'>
             <input
-                class='form__input--short title--xs--vwVersion form__button--submit font--weight--thin title--neat title--padding--mini'
+                class='form__input--short title__xxs--vwVersion title__uppercase  form__button--submit font--weight--thin title__neat title__padding--mini'
                 type='submit'>
         </a>
     </div>
-    <div class="title--padding--mini contentContainer--oneMiddle">
+    <div class="title__padding--mini contentContainer--oneMiddle">
         <div class=' close--CB' id='itemClose'>
             <a href='/'>
                 <h3
-                    class='form__input--short title--xs--vwVersion item--showDaBlock form__button--submit font--weight--thin title--neat title--padding--mini'>
+                    class='form__input--short title__uppercase  item--showDaBlock form__button--submit font--weight--thin title__neat title__padding--mini'>
                     Close</h3>
             </a>
         </div>
