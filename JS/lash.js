@@ -115,7 +115,7 @@ window.onload = function () {
       theHour = theTime.getHours();
     console.log(theHour);
     if (theHour > 6 && theHour <= 11) {
-      return ('Good Morning!');
+      return ("Mornin' early bird!");
     } else if (theHour >= 12 && theHour < 19) {
       return ('Good Afternoon');
     } else {
