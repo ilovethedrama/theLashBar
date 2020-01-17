@@ -360,7 +360,7 @@ ul {
   position: fixed;
   z-index: 12;
   top: 42px;
-  padding-top: 10px;
+  padding: 10px;
   overflow: hidden;
   background: white;
   box-shadow: 3px 4px 14px 1px rgba(0, 0, 0, 0.67); }
