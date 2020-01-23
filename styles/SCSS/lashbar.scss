@@ -295,6 +295,7 @@ ul {
     margin: 10px;
     width: 200px;
     text-align: center;
+
     &:focus {
         border: 2px solid blanchedalmond;
         border-radius: 5px;
@@ -1333,6 +1334,12 @@ section {
 //////MEDIA QUERIES
 //////MEDIA QUERIES
 
+@media screen and (min-width: 1051px) {
+    a {
+        color: green;
+    }
+}
+
 @media screen and (max-width: 1050px) {
 
     .dividerBlack--thin {
@@ -1349,6 +1356,10 @@ section {
         padding-left: 20px;
     }
 
+    .social__icon {
+        font-size: 16px;
+    }
+
     .nav {
         padding: 0;
     }
@@ -1363,9 +1374,6 @@ section {
         @include contentContainer--oneMiddle;
     }
 
-    .fab {
-        font-size: 1.5rem;
-    }
 
     .nav__container--inner {
         flex-flow: row wrap;
@@ -1436,9 +1444,7 @@ section {
         flex-flow: row nowrap;
     }
 
-    .fab {
-        font-size: 1rem;
-    }
+
 }
 
 @media screen and (max-width: 745px) {
@@ -1478,11 +1484,21 @@ section {
         display: none;
     }
 
+    .social__container { 
+        display: flex;
+        flex-flow: row nowrap
+    }
+    .social__iconContainer {
+        flex-flow: column;
+        align-items: center;
+    }
+
     // .navChoices {
     // display: flex;
     // flex-flow: column;
     // align-items: center;
     // }
+
 
     .nav {
         padding: 0;
@@ -1583,7 +1599,7 @@ section {
 
     .nav__logo {
         font-size: 1em;
-        
+
     }
 
     [class *='sellBox--bdr'] {
@@ -1716,7 +1732,7 @@ section {
     }
 
     .hamburger__icon {
-        padding: 20px;
+        padding: 15px;
     }
 }
 

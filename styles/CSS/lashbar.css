@@ -935,6 +935,10 @@ section {
   overflow: hidden;
   max-height: 0; }
 
+@media screen and (min-width: 1051px) {
+  a {
+    color: green; } }
+
 @media screen and (max-width: 1050px) {
   .dividerBlack--thin {
     display: none; }
@@ -944,6 +948,8 @@ section {
     justify-content: flex-start;
     font-size: 2rem;
     padding-left: 20px; }
+  .social__icon {
+    font-size: 16px; }
   .nav {
     padding: 0; }
   .title__xxs--vwVersion {
@@ -952,8 +958,6 @@ section {
     display: flex;
     justify-content: center;
     align-items: center; }
-  .fab {
-    font-size: 1.5rem; }
   .nav__container--inner {
     flex-flow: row wrap; }
   .img--scaleUp {
@@ -992,9 +996,7 @@ section {
     align-content: center;
     justify-content: space-between;
     flex-flow: row wrap;
-    flex-flow: row nowrap; }
-  .fab {
-    font-size: 1rem; } }
+    flex-flow: row nowrap; } }
 
 @media screen and (max-width: 745px) {
   .img--largefill {
@@ -1021,6 +1023,12 @@ section {
 @media screen and (max-width: 600px) {
   .item--pointer {
     display: none; }
+  .social__container {
+    display: flex;
+    flex-flow: row nowrap; }
+  .social__iconContainer {
+    flex-flow: column;
+    align-items: center; }
   .nav {
     padding: 0; }
   .nav__logo {
@@ -1133,7 +1141,7 @@ section {
   .item--snap--5Hunna {
     margin: 0px 50px; }
   .hamburger__icon {
-    padding: 20px; } }
+    padding: 15px; } }
 
 @media (prefers-reduced-motion: reduce) {
   html {
