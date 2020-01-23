@@ -942,7 +942,8 @@ section {
     width: 100%; }
   .nav__logo {
     justify-content: flex-start;
-    font-size: 2rem; }
+    font-size: 2rem;
+    padding-left: 20px; }
   .nav {
     padding: 0; }
   .title__xxs--vwVersion {
