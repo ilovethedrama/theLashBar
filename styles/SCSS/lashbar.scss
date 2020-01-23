@@ -289,12 +289,16 @@ ul {
     border: none;
     background: none;
     border-bottom: 2px solid blanchedalmond;
-    font-family: 'Caveat Brush', cursive;
+    font-family: 'Josefin Sans', sans-serif;
     text-transform: uppercase;
-    // font-size: 2rem;
-    padding: 30px 0;
-    width: auto;
+    padding: 20px;
+    margin: 10px;
+    width: 200px;
     text-align: center;
+    &:focus {
+        border: 2px solid blanchedalmond;
+        border-radius: 5px;
+    }
 }
 
 .form__button--submit {
@@ -418,6 +422,15 @@ ul {
 //////////////////NAV STYLES
 //////////////////NAV STYLES
 
+.nav__container--inner {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    flex-flow: row nowrap;
+}
+
 .navPointer {
     height: auto;
     width: 50px;
@@ -430,6 +443,10 @@ ul {
     justify-content: space-around;
     text-align: center;
     font-size: 2rem;
+}
+
+.nav__logo {
+    font-size: 2.5rem;
 }
 
 .navPointer--item a {
@@ -625,6 +642,11 @@ ul {
     margin: 10px 0;
     opacity: 1;
     // transition: all 10s ease 10s;
+}
+
+.introSection--container--welcomeMsg {
+    top: 30px;
+    position: relative;
 }
 
 .slideshow {
@@ -1064,7 +1086,7 @@ section {
 
 [id *='lashTitle'] {
     transition: .4s ease-in;
-    font-size: 2.5rem;
+    // font-size: 2.5rem;
 }
 
 .contentContainer--spreadOutWide {
@@ -1212,8 +1234,6 @@ section {
 
 .nav__link {
     float: left;
-
-
 }
 
 
@@ -1224,7 +1244,7 @@ section {
 
 .hamburger__checkbox:checked~.navChoices {
     max-height: 600px;
-    width: 100%;
+    // width: 100%;
 }
 
 .hamburger__checkbox:checked~.hamburger__icon .navicon {
@@ -1280,12 +1300,12 @@ section {
 
 .navChoices {
     overflow: hidden;
+    width: 100%;
     display: flex;
     flex-flow: row nowrap;
-    width: 100%;
     align-items: center;
     justify-content: space-evenly;
-    transition: 2s max-height ease-out;
+    // transition: 2s max-height ease-out;
 
 }
 
@@ -1323,6 +1343,15 @@ section {
         width: 100%;
     }
 
+    .nav__logo {
+        justify-content: flex-start;
+        font-size: 2rem;
+    }
+
+    .nav {
+        padding: 0;
+    }
+
     .title__xxs--vwVersion {
         // font-size: .75rem;
         // display: block;
@@ -1337,6 +1366,10 @@ section {
         font-size: 1.5rem;
     }
 
+    .nav__container--inner {
+        flex-flow: row wrap;
+    }
+
     .img--scaleUp {
         transform: scale(2);
     }
@@ -1345,16 +1378,23 @@ section {
         max-height: 0;
         // width: 0;
         flex-flow: column;
-        justify-content: space-between;
-        align-items: center;
-        //   clear: none; 
+        // justify-content: space-between;
+        // align-items: center;
+        //   clear: both; 
         //   float: right; 
+        flex: 0 2 auto;
 
     }
 
+    .nav__link {
+        float: none;
+    }
+
     .hamburger__icon {
-        display: block;
+        display: flex;
+        justify-content: flex-end;
         cursor: pointer;
+        flex: 2 0 auto;
     }
 
     .location__content--site {
@@ -1447,6 +1487,10 @@ section {
         padding: 0;
     }
 
+    .nav__logo {
+        font-size: 1.2rem
+    }
+
     .img--largefill {
         object-position: 0 -50px;
         width: 100%;
@@ -1489,10 +1533,10 @@ section {
         color: lightblue;
     }
 
-.priceList__category li {
-    font-size: .75rem;
-    text-transform: uppercase;
-}
+    .priceList__category li {
+        font-size: .75rem;
+        text-transform: uppercase;
+    }
 
     @-webkit-keyframes bounceSm {
         0% {
@@ -1536,7 +1580,7 @@ section {
         padding-bottom: 40px;
     }
 
-    [id *='lashTitle'] {
+    .nav__logo {
         font-size: 1em;
     }
 
@@ -1558,6 +1602,8 @@ section {
         padding: 10px 0;
         margin: 10px;
         border-bottom: 1px solid black;
+
+
     }
 
     form {
@@ -1665,6 +1711,10 @@ section {
 
     .item--snap--5Hunna {
         margin: 0px 50px;
+    }
+
+    .hamburger__icon {
+        padding: 20px;
     }
 }
 
