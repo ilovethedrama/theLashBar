@@ -27,6 +27,7 @@
 
 input:focus::placeholder {
     color: transparent;
+
 }
 
 input:-webkit-autofill,
@@ -58,7 +59,12 @@ ul {
     list-style-type: none;
 }
 
-
+main {
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    width: 100%;
+}
 
 .input__subscribe {
     border: 0 transparent;
@@ -299,6 +305,7 @@ ul {
     &:focus {
         border: 2px solid blanchedalmond;
         border-radius: 5px;
+        transition: all .3s ease;
     }
 }
 
@@ -588,12 +595,12 @@ ul {
 /////////////PROGRESS BAR STYLES
 
 .progress--container {
-    width: 50%;
+    width: 100%;
     height: 10px;
     background: lightblue;
     position: fixed;
     z-index: 1;
-    top: 100px;
+    top: 120px;
     right: 0;
 }
 
@@ -742,6 +749,9 @@ ul {
 ////////////////PRICE LIST STYLING
 ////////////////PRICE LIST STYLING
 ////////////////PRICE LIST STYLING
+.priceList__category {
+    text-transform: uppercase;
+}
 
 .priceList__category {
     li {
@@ -878,7 +888,7 @@ footer {
 
 
 .tweetContainer {
-    width: 55%;
+    flex: 1 1 50%;
     height: auto;
 }
 
@@ -958,19 +968,10 @@ footer {
 
 
 section {
-    // max-width: 100vw;
-    // height: 100vh;
-    // border: 2px solid black;
-    // overflow: hidden;
+    max-width: 1222px;
     position: relative;
-    // min-width: 320px;
+    margin: 100px 0;
 }
-
-// .section--blogPost-intro {
-//     position: relative;
-//     overflow: hidden;
-//     height: 100vh;
-// }
 
 .section--screenHg {
     height: 100vh;
@@ -1119,7 +1120,7 @@ section {
 }
 
 .location__content--site {
-    position: absolute;
+    position: relative;
     font-size: 7rem;
     font-weight: 900;
     left: 50%;
@@ -1334,10 +1335,35 @@ section {
 //////MEDIA QUERIES
 //////MEDIA QUERIES
 
-@media screen and (min-width: 1051px) {
-    a {
-        color: green;
+@media screen and (min-width: 1222px) {
+
+
+    .title__sm--vwVersion {
+        font-size: 45.2px;
     }
+
+
+
+    .fab {
+        font-size: 19.4px;
+    }
+
+    .title__md--vwVersion {
+        font-size: 64.88px
+    }
+
+
+
+    // .title__xxs--vwVersion  {
+    // font-size: 17.78px;
+    // }
+
+    .title__xxs--vwVersion {
+        font-size: 18.31px;
+    }
+
+
+
 }
 
 @media screen and (max-width: 1050px) {
@@ -1348,6 +1374,7 @@ section {
 
     .progress--container {
         width: 100%;
+        top: 104px;
     }
 
     .nav__logo {
@@ -1369,6 +1396,8 @@ section {
         // display: block;
         letter-spacing: 0.04rem;
     }
+
+
 
     .nav__menu--mob {
         @include contentContainer--oneMiddle;
@@ -1430,10 +1459,11 @@ section {
         object-position: 0 50px;
     }
 
-    .progress--container {
-        top: 83px;
-    }
+  
 
+    section {
+        margin: 0;
+    }
 
     .img--scaleUp {
         transform: scale(2.1);
@@ -1442,6 +1472,15 @@ section {
     #blogPost article {
         @include contentStack;
         flex-flow: row nowrap;
+    }
+
+    .social__iconContainer {
+        padding: 0 30px 0 0;
+        order: 3;
+        height: 300px;
+        flex-flow: column;
+        flex: 1 1 20%;
+        align-items: center;
     }
 
 
@@ -1464,7 +1503,7 @@ section {
     }
 
     #social {
-        flex-flow: column wrap;
+        flex-flow: row wrap;
     }
 
     .tweetContainer {
@@ -1484,10 +1523,17 @@ section {
         display: none;
     }
 
-    .social__container { 
+    .social__container {
         display: flex;
         flex-flow: row nowrap
     }
+
+
+    .introSection--container::after {
+        content: '';
+        background-position: top;
+    }
+
     .social__iconContainer {
         flex-flow: column;
         align-items: center;
@@ -1540,11 +1586,13 @@ section {
         animation: bounceSm 1s infinite;
     }
 
-    .introSection--container,
-    .introSection--container--text,
-    .lashIntro__img {
-        height: 50vh;
-    }
+    // .introSection--container,
+    // .introSection--container--text,
+    // .lashIntro__img {
+    //     height: 50vh;
+    // }
+
+
 
     .introSection--container--textSignature {
         color: lightblue;
@@ -1552,7 +1600,7 @@ section {
 
     .priceList__category li {
         font-size: .75rem;
-        text-transform: uppercase;
+        // text-transform: uppercase;
     }
 
     @-webkit-keyframes bounceSm {
@@ -1715,9 +1763,6 @@ section {
         font-size: 1rem;
     }
 
-    .introSection--container {
-        margin-top: 80px;
-    }
 
     footer {
         padding-top: 50px;
@@ -1733,6 +1778,22 @@ section {
 
     .hamburger__icon {
         padding: 15px;
+    }
+
+    .item--snap--3Hunna {
+        display: flex;
+        flex-flow: column;
+        align-items: center;
+    }
+
+    .priceList__ColorBlock--pink {
+        align-self: flex-start;
+        margin-left: 20%;
+
+    }
+
+      .progress--container {
+        top: 78px;
     }
 }
 
