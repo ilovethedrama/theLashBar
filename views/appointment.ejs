@@ -1,10 +1,10 @@
 <% include partials/header %>
 
 
-<section class="section--lightblue" id='bookingForm'>
-    <form action='/appointment' method="POST" class=" padding-top-boost bookingForm section--lightblue">
+<div class="section--lightblue" id='bookingForm'>
+    <form action='/appointment' method="POST" class=" padding-top-boost padding-bottom-boost bookingForm section--lightblue">
 
-        <div class='title__xxs--vwVersion title__neat2a title__uppercase
+        <div class='padding-bottom-boost title__xxs--vwVersion title__neat2a title__uppercase
              title__padding'>
 
             <div class='title__padding--mini '>
@@ -70,7 +70,7 @@
         </div>
 
 <div class="contentContainer--collapse ">
-    <div class='contentContainer--oneMiddle close--CB' id='itemClose'>
+    <div class='contentContainer--oneMiddle close--CB' role='button' id='itemClose'>
         <a href='/appConfirmation'>
             <input
                 class='form__input--short title__xxs--vwVersion title__uppercase  form__button--submit font--weight--thin title__neat title__padding--mini'
@@ -78,10 +78,10 @@
         </a>
     </div>
     <div class="title__padding--mini contentContainer--oneMiddle">
-        <div class=' close--CB' id='itemClose'>
+        <div class=' close--CB' role='button' id='itemClose'>
             <a href='/'>
                 <h3
-                    class='form__input--short title__uppercase  item--showDaBlock form__button--submit font--weight--thin title__neat title__padding--mini'>
+                    class='form__input--short title__xxs--vwVersion  title__uppercase  item--showDaBlock form__button--submit font--weight--thin title__neat title__padding--mini'>
                     Close</h3>
             </a>
         </div>
@@ -90,7 +90,7 @@
 
     </form>
 
-</section>
+</div>
 
 
 <% include partials/footer %>
