@@ -62,7 +62,6 @@ window.onload = function () {
 
   window.onscroll = function () {
     articleProgressBar();
-    scrollFunction();
   };
 
   function scrollFunction() {
