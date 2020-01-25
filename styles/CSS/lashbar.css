@@ -89,6 +89,30 @@ main {
     transform: scale(2.5);
     background: no-repeat center url("https://res.cloudinary.com/yelpcampmedia/image/upload/v1571873303/lashbar/sheffMap.jpg"); }
 
+.error__container {
+  min-height: 100%;
+  width: 100%;
+  position: relative; }
+
+.error__message--intro {
+  padding-top: 4rem;
+  z-index: 1; }
+  .error__message--intro:after {
+    content: 'Fancy a manicure instead?';
+    font-family: 'Cardo', serif;
+    font-size: 25px;
+    display: block;
+    position: relative;
+    letter-spacing: .3rem; }
+
+.error__video {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  opacity: .3; }
+
 .title {
   font-family: 'Caveat Brush', cursive; }
 
@@ -484,7 +508,8 @@ main {
 
 .introSection--container--welcomeMsg {
   top: 30px;
-  position: relative; }
+  position: relative;
+  transition: all 2s ease; }
 
 .slideshow {
   position: fixed;
@@ -954,12 +979,20 @@ section {
     font-size: 19.4px; }
   .title__md--vwVersion {
     font-size: 64.88px; }
+  .title__lg--vwVersion {
+    font-size: 174.3px; }
   .title__xxs--vwVersion {
     font-size: 18.31px; } }
 
 @media screen and (max-width: 1050px) {
   .dividerBlack--thin {
     display: none; }
+  .error__message--intro {
+    position: relative;
+    font-size: 9vw;
+    display: flex;
+    flex-flow: column;
+    justify-content: center; }
   .progress--container {
     width: 100%;
     top: 104px; }
@@ -1044,7 +1077,12 @@ section {
     display: flex;
     justify-content: center;
     align-items: center;
-    flex-flow: column nowrap; } }
+    flex-flow: column nowrap; }
+  .error__message--intro {
+    font-size: 8vw; }
+  .error__message--intro:after {
+    content: 'Fancy a manicure instead?';
+    font-size: 20px; } }
 
 @media screen and (max-width: 600px) {
   .item--pointer {
