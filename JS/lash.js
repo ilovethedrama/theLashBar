@@ -1,6 +1,24 @@
 'use strict'
 
+
+
 window.onload = function () {
+
+
+
+  var formBook = document.getElementById('bookingForm');
+  // var formChoice = document.getElementsByClassName('form__input');
+
+  // formChoice.addEventListener('click', function () {
+  //   console.log('you clicked the a choice');
+  //   window.navigator.vibrate([200]);
+  // })
+
+  formBook.addEventListener('click', function () {
+    console.log('you clicked the form');
+    window.navigator.vibrate([2000]);
+  })
+
 
 
 
@@ -92,9 +110,8 @@ window.onload = function () {
 
 
   var bookIt = document.getElementById('navi');
-  if (bookIt) {
-    bookIt.addEventListener('click', open);
-  }
+
+  bookIt.addEventListener('click', open);
 
 
   function backgroundSwitch() {
@@ -190,6 +207,8 @@ window.onload = function () {
   //   localStorage.setItem('loadscreen', loaderContainer)
   //   console.log('nah its not there but i\'m adding it now');
   // }
+
+
 
 
 
