@@ -1121,7 +1121,9 @@ section {
     animation: bounceSm 1s infinite; }
   .introSection--container--textSignature {
     color: lightblue;
-    font-size: .75rem; }
+    font-size: .75rem;
+    position: relative;
+    top: 10%; }
   .priceList__category li {
     font-size: .75rem; }
   @-webkit-keyframes bounceSm {
