@@ -1657,6 +1657,7 @@ section {
 
     .introSection--container--textSignature {
         color: lightblue;
+        font-size: .75rem;
     }
 
     .priceList__category li {
@@ -1848,8 +1849,9 @@ section {
     }
 
     .priceList__ColorBlock--pink {
-        align-self: flex-start;
-        margin-left: 20%;
+        align-self: center;
+        margin-left: 0%;
+        width: auto;
 
     }
 
@@ -1858,7 +1860,14 @@ section {
     }
 }
 
-
+@media screen and (max-width: 380px) {
+    .social__iconContainer {
+        align-items: center;
+        height: auto;
+        flex-flow: row wrap;
+        padding: 30px;
+    }
+}
 //These are settings for users who get dizzy/have motion sickness and minimizes all non-essential movement
 @media (prefers-reduced-motion: reduce) {
     html {

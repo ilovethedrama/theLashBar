@@ -1120,7 +1120,8 @@ section {
     -webkit-animation: bounceSm 1s infinite;
     animation: bounceSm 1s infinite; }
   .introSection--container--textSignature {
-    color: lightblue; }
+    color: lightblue;
+    font-size: .75rem; }
   .priceList__category li {
     font-size: .75rem; }
   @-webkit-keyframes bounceSm {
@@ -1207,10 +1208,18 @@ section {
     flex-flow: column;
     align-items: center; }
   .priceList__ColorBlock--pink {
-    align-self: flex-start;
-    margin-left: 20%; }
+    align-self: center;
+    margin-left: 0%;
+    width: auto; }
   .progress--container {
     top: 78px; } }
+
+@media screen and (max-width: 380px) {
+  .social__iconContainer {
+    align-items: center;
+    height: auto;
+    flex-flow: row wrap;
+    padding: 30px; } }
 
 @media (prefers-reduced-motion: reduce) {
   html {
