@@ -20,7 +20,7 @@
     "cookie-parser": "latest",
     "dotenv": "^8.1.0",
     "ejs": "^2.6.1",
-    "express": "^4.17.1",
+    "express": "^4.17.3",
     "express-session": "^1.16.1",
     "gulp-connect": "^5.7.0",
     "gulp-open": "^3.0.1",
